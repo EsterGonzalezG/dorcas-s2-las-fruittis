@@ -95,7 +95,7 @@ gulp.task('scripts-min', function(done){
 
 
 // > Arranca el servidor web con BrowserSync
-gulp.task('default', gulp.series(['styles'], function(done) {
+gulp.task('default', gulp.series(['styles', 'scripts'], function(done) {
   browserSync.init({
     server : {
       baseDir: './'
@@ -113,7 +113,7 @@ gulp.task('default', gulp.series(['styles'], function(done) {
 
 
 // > Genera una versión lista para producción
-gulp.task('deploy', gulp.series(['styles-min'], function(done) {
+gulp.task('deploy', gulp.series(['styles-min', 'scripts-min'], function(done) {
   console.log('> Versión de producción: OK');
   done();
 }));
