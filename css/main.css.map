@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css","sourcesContent":[]}
+{"version":3,"sources":["core/_base.scss","main.css"],"names":[],"mappings":"AAAA;EACE,UAAS;EACT,WAAU;CCCX","file":"main.css","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\n","* {\n  margin: 0;\n  padding: 0;\n}\n"]}
