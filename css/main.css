@@ -6,14 +6,36 @@
 .header__logo {
   width: 100%;
   height: 111px;
-  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #ffffff;
+}
+
+.header__logo--image {
+  width: 201px;
+  height: 52px;
+}
+
+@media all and (min-width: 768px) {
+  .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 40px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

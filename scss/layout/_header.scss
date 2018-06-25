@@ -1,8 +1,20 @@
 .header__logo {
   width: 100%;
   height: 111px;
-  padding: 10px;
   display: flex;
   justify-content: center;
-  background: #ffffff;
+  align-items: center;
+  background: $background_header;
+
+  &--image {
+    width: 201px;
+    height: 52px;
+  }
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+  }
 }
