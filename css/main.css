@@ -23,6 +23,81 @@
   height: 52px;
 }
 
+.main__header {
+  width: 250px;
+  margin: 94px auto 0px auto;
+}
+
+.main__intro .main__title {
+  text-align: center;
+  font-size: 19px;
+  color: #e17334;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  margin: 35.4px auto 4px auto;
+}
+
+.main__intro .main__paragraph {
+  font-family: 'OpenSans-Regular',serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 auto;
+  text-align: center;
+  color: #114e4e;
+  width: 265px;
+}
+
+.main__intro .main__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.main__intro .main__list-item {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.main__intro .main__list .main__list--text {
+  color: #54585a;
+  font-size: 16px;
+}
+
+.main__intro .main__list .icon {
+  color: #e17334;
+  font-size: 28px;
+}
+
+.main__intro .main__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.main__intro .main__button--start {
+  font-size: 16px;
+  font-family: 'OpenSans',serif;
+  width: 129px;
+  height: 42px;
+  background-color: #438792;
+  border: none;
+  border-radius: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 @media all and (min-width: 768px) {
   .header__logo {
     display: -webkit-box;
