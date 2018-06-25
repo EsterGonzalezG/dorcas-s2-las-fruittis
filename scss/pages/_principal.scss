@@ -6,7 +6,7 @@
   .main__title{
     text-align: center;
     font-size: 19px;
-    color: #e17334;
+    color:$color_dull_orange;
     font-family: 'Merriweather', serif;
     font-weight: 900;
     margin:35.4px auto 4px auto;
@@ -17,19 +17,29 @@
     font-weight: 500;
     margin: 0 auto;
     text-align: center;
-    color:#114e4e;
+    color:$color_very_dark_cyan;
     width: 265px;
   }
   .main__list{
   display: flex;
 justify-content: center;
 
+
     &-item{
       text-decoration: none;
       list-style: none;
       padding: 10px;
+      text-align: center;
 
     }
+.main__list--text{
+  color:$color_grey_smoke;
+  font-size: 16px;
+}
+.icon{
+  color:$color_dull_orange;
+  font-size: 28px;
+}
 
   }
   .main__button{
@@ -38,6 +48,8 @@ align-items: center;
 justify-content: center;
 margin: 30px 0;
     &--start{
+      font-size: 16px;
+      font-family: 'OpenSans',serif;
       width: 129px;
       height: 42px;
       background-color: $color_dirty_bluw;

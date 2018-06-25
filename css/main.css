@@ -60,6 +60,17 @@
   text-decoration: none;
   list-style: none;
   padding: 10px;
+  text-align: center;
+}
+
+.main__intro .main__list .main__list--text {
+  color: #54585a;
+  font-size: 16px;
+}
+
+.main__intro .main__list .icon {
+  color: #e17334;
+  font-size: 28px;
 }
 
 .main__intro .main__button {
@@ -76,6 +87,8 @@
 }
 
 .main__intro .main__button--start {
+  font-size: 16px;
+  font-family: 'OpenSans',serif;
   width: 129px;
   height: 42px;
   background-color: #438792;
