@@ -25,7 +25,7 @@
 
 .main__header {
   width: 250px;
-  margin: 94px auto 0px auto;
+  margin: 94px auto 0 auto;
 }
 
 .main__intro .main__title {
@@ -38,7 +38,7 @@
 }
 
 .main__intro .main__paragraph {
-  font-family: 'OpenSans-Regular',serif;
+  font-family: 'OpenSans-Regular', serif;
   font-size: 15px;
   font-weight: 500;
   margin: 0 auto;
@@ -88,7 +88,7 @@
 
 .main__intro .main__button--start {
   font-size: 16px;
-  font-family: 'OpenSans',serif;
+  font-family: 'OpenSans', serif;
   width: 129px;
   height: 42px;
   background-color: #438792;
