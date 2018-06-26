@@ -25,6 +25,7 @@
   .main__list{
   display: flex;
   justify-content: center;
+}  
 
   .main__list {
     display: flex;
@@ -38,7 +39,7 @@
     }
 
     .main__list--text {
-      color: $color_grey_smoke;
+      color: $colorGreySmoke;
       font-size: 16px;
     }
 .main__list--text{
@@ -52,7 +53,7 @@
 }
 
     .icon {
-      color: $color_dull_orange;
+      color: $colorDullOrange;
       font-size: 28px;
     }
   }

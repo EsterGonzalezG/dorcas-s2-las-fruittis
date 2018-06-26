@@ -56,18 +56,35 @@
   justify-content: center;
 }
 
+.main__intro .main__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .main__intro .main__list-item {
   text-decoration: none;
   list-style: none;
   padding: 10px;
-<<<<<<< HEAD
-=======
   text-align: center;
 }
 
 .main__intro .main__list .main__list--text {
   color: #54585a;
   font-size: 16px;
+}
+
+.main__intro .main__list .main__list--text {
+  color: #54585a;
+  font-size: 16px;
+}
+
+.main__intro .main__list .icon {
+  color: #e17334;
+  font-size: 28px;
 }
 
 .main__intro .main__list .icon {
@@ -98,7 +115,6 @@
   border-radius: 21px;
   color: #ffffff;
   text-transform: uppercase;
->>>>>>> e6a9d0c84ad0f1a87b1ff0bf11a4dc0a32fb3f1b
 }
 
 @media all and (min-width: 768px) {
