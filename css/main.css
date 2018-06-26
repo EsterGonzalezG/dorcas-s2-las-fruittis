@@ -98,11 +98,27 @@
   text-transform: uppercase;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
 .footer__copyright {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #d8d8d8;
   margin-top: 20px;
+}
+
+.footer__logo {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .footer__logo--image {

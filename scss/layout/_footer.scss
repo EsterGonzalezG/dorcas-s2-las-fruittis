@@ -1,5 +1,7 @@
 .footer {
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer__copyright {
@@ -10,7 +12,8 @@
 }
 
 .footer__logo {
-  
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .footer__logo--image {
