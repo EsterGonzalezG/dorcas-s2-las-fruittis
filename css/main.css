@@ -18,6 +18,10 @@
   background: #ffffff;
 }
 
+.header__logo--image {
+  width: 201px;
+  height: 52px;
+}
 
 .main__header {
   width: 250px;
@@ -56,10 +60,6 @@
   text-decoration: none;
   list-style: none;
   padding: 10px;
-
-.header__logo--image {
-  width: 201px;
-  height: 52px;
 }
 
 @media all and (min-width: 768px) {
@@ -75,7 +75,6 @@
     align-items: center;
     padding-left: 40px;
   }
-
 }
 
 /*# sourceMappingURL=main.css.map */
