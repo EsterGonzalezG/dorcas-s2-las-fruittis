@@ -3,9 +3,17 @@
 }
 
 .footer__copyright {
-
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: $copyFooterTextColor;
+  margin-top: 20px;
 }
 
 .footer__logo {
   
+}
+
+.footer__logo--image {
+  width: 103px;
+  height: 40px;
 }
