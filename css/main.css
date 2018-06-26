@@ -98,6 +98,18 @@
   text-transform: uppercase;
 }
 
+.footer__copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #d8d8d8;
+  margin-top: 20px;
+}
+
+.footer__logo--image {
+  width: 103px;
+  height: 40px;
+}
+
 .dropdown__desing {
   display: -webkit-box;
   display: -ms-flexbox;
