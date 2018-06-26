@@ -7,7 +7,7 @@
   .main__title {
     text-align: center;
     font-size: 19px;
-    color: $color_dull_orange;
+    color:$colorDullOrange;
     font-family: 'Merriweather', serif;
     font-weight: 900;
     margin: 35.4px auto 4px auto;
@@ -19,7 +19,7 @@
     font-weight: 500;
     margin: 0 auto;
     text-align: center;
-    color: $color_very_dark_cyan;
+    color:$colorVeryDarkCyan;
     width: 265px;
   }
 
@@ -38,6 +38,14 @@
       color: $color_grey_smoke;
       font-size: 16px;
     }
+.main__list--text{
+  color:$colorGreySmoke;
+  font-size: 16px;
+}
+.icon{
+  color:$colorDullOrange;
+  font-size: 28px;
+}
 
     .icon {
       color: $color_dull_orange;
@@ -56,10 +64,10 @@
       font-family: 'OpenSans', serif;
       width: 129px;
       height: 42px;
-      background-color: $color_dirty_bluw;
+      background-color: $colorDirtyBluw;
       border: none;
       border-radius: 21px;
-      color: $color_white;
+      color:$colorWhite;
       text-transform: uppercase;
     }
   }
