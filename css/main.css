@@ -60,6 +60,8 @@
   text-decoration: none;
   list-style: none;
   padding: 10px;
+<<<<<<< HEAD
+=======
   text-align: center;
 }
 
@@ -96,6 +98,7 @@
   border-radius: 21px;
   color: #ffffff;
   text-transform: uppercase;
+>>>>>>> e6a9d0c84ad0f1a87b1ff0bf11a4dc0a32fb3f1b
 }
 
 @media all and (min-width: 768px) {
