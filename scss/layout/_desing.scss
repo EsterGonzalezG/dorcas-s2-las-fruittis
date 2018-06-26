@@ -1,4 +1,12 @@
 .dropdown__desing {
+  background-color: yellow;
   display: flex;
-  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.dropdown__desing--text {
+  color: $colorGreySmoke;
+  font-size: 18px;
+  font-family: 'OpenSans-Regular', serif;
+  font-weight: 500;
 }
