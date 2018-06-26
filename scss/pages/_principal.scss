@@ -1,83 +1,66 @@
 .main__header {
- width: 250px;
- margin: 94px auto 0 auto;
+  width: 250px;
+  margin: 94px auto 0 auto;
 }
 
 .main__intro {
- .main__title {
-   text-align: center;
-   font-size: 19px;
-   color:$colorDullOrange;
-   font-family: 'Merriweather', serif;
-   font-weight: 900;
-   margin: 35.4px auto 4px auto;
- }
+  .main__title {
+    text-align: center;
+    font-size: 19px;
+    color: $colorDullOrange;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    margin: 35.4px auto 4px auto;
+  }
 
- .main__paragraph {
-   font-family: 'OpenSans-Regular', serif;
-   font-size: 15px;
-   font-weight: 500;
-   margin: 0 auto;
-   text-align: center;
-   color:$colorVeryDarkCyan;
-   width: 265px;
- }
- .main__list{
- display: flex;
- justify-content: center;
+  .main__paragraph {
+    font-family: 'OpenSans-Regular', serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    color: $colorVeryDarkCyan;
+    width: 265px;
+  }
 
-}
- .main__list {
-   display: flex;
-   justify-content: center;
+  .main__list {
+    display: flex;
+    justify-content: center;
+  }
 
-   &-item {
-     text-decoration: none;
-     list-style: none;
-     padding: 10px;
-     text-align: center;
-   }
+  &-item {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+  }
 
-   .main__list--text {
-     color: $colorGreySmoke;
-     font-size: 16px;
-   }
-.main__list--text{
- color:$colorGreySmoke;
- font-size: 16px;
-}
-.icon{
- color:$colorDullOrange;
- font-size: 28px;
+  .main__list--text {
+    color: $colorGreySmoke;
+    font-size: 16px;
+  }
+
+  .icon {
+    color: $colorDullOrange;
+    font-size: 28px;
+  }
 }
 
-   .icon {
-     color: $colorDullOrange;
-     font-size: 28px;
-   }
- }
+.main__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
 
- .main__button {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin: 30px 0;
-
-   &--start {
-     font-size: 16px;
-     font-family: 'OpenSans', serif;
-     width: 129px;
-     height: 42px;
-     background-color: $colorDirtyBluw;
-     border: none;
-     border-radius: 21px;
-     color:$colorWhite;
-     text-transform: uppercase;
-   }
- }
+  &--start {
+    font-size: 16px;
+    font-family: 'OpenSans', serif;
+    width: 129px;
+    height: 42px;
+    background-color: $colorDirtyBluw;
+    border: none;
+    border-radius: 21px;
+    color: $colorWhite;
+    text-transform: uppercase;
+  }
 }
-
-Ir a
-Entrada de mensaje
-
-Enviar mensaje a @Ester González Galindo
