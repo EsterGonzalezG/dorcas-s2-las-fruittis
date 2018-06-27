@@ -2,17 +2,32 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  
+  height: 110px;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+  }
+
   &__copyright {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: $copyFooterTextColor;
     margin-top: 20px;
+
+    @media all and (min-width: 768px) {
+      margin-left: 40px;
+    }
   }
 
   &__logo {
     margin-top: 10px;
     margin-bottom: 20px;
+
+    @media all and (min-width: 768px) {
+      margin-right: 40px;
+    }
 
     &--image {
       width: 103px;
