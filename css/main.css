@@ -51,9 +51,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #e17334;
+  width: 268px;
+  height: 74px;
+  margin: 10px auto;
+  border-radius: 4px;
 }
 
 .main__intro .main__list-item {
@@ -66,6 +73,7 @@
 .main__intro .main__list .main__list--text {
   color: #54585a;
   font-size: 16px;
+  padding-top: 10px;
 }
 
 .main__intro .main__list .icon {
