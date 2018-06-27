@@ -1,12 +1,24 @@
 .dropdown__desing {
+  padding: 20px 30px 10px 31px;
   background-color: yellow;
   display: flex;
   align-items: center;
-}
 
-.dropdown__desing--text {
-  color: $colorGreySmoke;
-  font-size: 18px;
-  font-family: 'OpenSans-Regular', serif;
-  font-weight: 500;
+  &--icon {
+    padding-right: 10px;
+    color: $colorDullOrange;
+  }
+
+  &--text {
+    color: $colorGreySmoke;
+    font-size: 18px;
+    font-family: 'OpenSans-Regular', serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &--angleUp {
+    text-align: right;
+    padding-right: 20px;
+  }
 }

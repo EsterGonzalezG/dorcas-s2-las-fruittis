@@ -127,6 +127,7 @@
 }
 
 .dropdown__desing {
+  padding: 20px 30px 10px 31px;
   background-color: yellow;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,11 +137,22 @@
   align-items: center;
 }
 
+.dropdown__desing--icon {
+  padding-right: 10px;
+  color: #e17334;
+}
+
 .dropdown__desing--text {
   color: #54585a;
   font-size: 18px;
   font-family: 'OpenSans-Regular', serif;
   font-weight: 500;
+  text-transform: uppercase;
+}
+
+.dropdown__desing--angleUp {
+  text-align: right;
+  padding-right: 20px;
 }
 
 @media all and (min-width: 768px) {
