@@ -137,21 +137,36 @@
 
 .dropdown__desing {
   padding: 20px 30px 10px 31px;
-  background-color: yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.dropdown__desing--icon {
-  padding-right: 10px;
-  color: #e17334;
+.dropdown__desing--angleUp {
+  text-align: right;
+  padding-right: 20px;
 }
 
-.dropdown__desing--text {
+.dropdown__desing--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dropdown__desing--name .dropdown__desing--nameText {
+  padding-left: 10px;
   color: #54585a;
   font-size: 18px;
   font-family: 'OpenSans-Regular', serif;
@@ -159,9 +174,9 @@
   text-transform: uppercase;
 }
 
-.dropdown__desing--angleUp {
-  text-align: right;
-  padding-right: 20px;
+.dropdown__desing--name .dropdown__desing--nameIcon {
+  padding-right: 10px;
+  color: #e17334;
 }
 
 @media all and (min-width: 768px) {
