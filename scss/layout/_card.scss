@@ -1,0 +1,18 @@
+.viewfinder{
+  background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.viewfinder__icons{
+  display: flex;
+  justify-content: space-around;
+}
+.viewfinder__tags{
+  display: flex;
+  justify-content:flex-start;
+}
+.viewfinder__tags--text{
+  padding-left: 10px;
+}
