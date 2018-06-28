@@ -48,14 +48,14 @@ display: flex;
   }
   &-name{
     padding: 20px 14px 5px 0px;
-    font-family: 'ComicSans', sans-serif;/*ojo mirar la fuente bien*/
+    font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;/*ojo mirar la fuente bien*/
     font-size: 18px;
     line-height:  20px;
     color:$colorTextTitleName;
   }
   &-job{
     padding: 0 14px 5px 0px;
-    font-family: 'Comic Sans', sans-serif;/*ojo mirar la fuente bien*/
+    font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;/*ojo mirar la fuente bien*/
     font-size: 18px;
     line-height:20px;
     color:$colorTextTitleJob;/*añadir variable*/

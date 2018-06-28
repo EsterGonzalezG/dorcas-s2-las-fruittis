@@ -96,7 +96,7 @@
 
 .viewfinder__card-title-name {
   padding: 20px 14px 5px 0px;
-  font-family: 'ComicSans', sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
  /*ojo mirar la fuente bien*/
   font-size: 18px;
   line-height: 20px;
@@ -105,7 +105,7 @@
 
 .viewfinder__card-title-job {
   padding: 0 14px 5px 0px;
-  font-family: 'Comic Sans', sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
  /*ojo mirar la fuente bien*/
   font-size: 18px;
   line-height: 20px;
