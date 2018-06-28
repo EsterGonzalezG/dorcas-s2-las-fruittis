@@ -1,12 +1,18 @@
 .main__header {
   width: 250px;
   margin: 94px auto 0 auto;
+
+  &--logo{
+    background-image:  url("../images/logo-awesome-profile-cards.png");
+    width: 250px;
+    height: 64px;
+  }
 }
 .main__intro{
   .main__title{
     text-align: center;
     font-size: 19px;
-    color:$colorDullOrange;
+    color:$colorMainTitle;
     font-family: 'Merriweather', serif;
     font-weight: 900;
     margin:35.4px auto 4px auto;
@@ -17,14 +23,14 @@
     font-weight: 500;
     margin: 0 auto;
     text-align: center;
-    color:$colorVeryDarkCyan;
+    color:$colorMainParagraph;
     width: 265px;
   }
   .main__list{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid $colorDullOrange;
+    border: 1px solid $colorMainList;
     width: 268px;
     height: 74px;
     margin: 10px auto;
@@ -68,4 +74,23 @@
       text-transform: uppercase;
     }
   }
+}
+@media all and (min-width:768px){
+.main__header {
+  &--logo{
+     background-image:  url("../images/logo-awesome-profile-cards-tablet.png");
+     width: 419px;
+     height: 107px;
+   }
+}
+
+.main__intro{
+  .main__title{
+    font-size: 24px;
+  }
+  .main__paragraph{
+  font-size: 16px;
+}
+}
+
 }
