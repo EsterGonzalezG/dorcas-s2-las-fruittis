@@ -69,3 +69,22 @@
     }
   }
 }
+@media all and (min-width:768px){
+.main__header {
+  &--logo{
+     background-image:  url("../images/logo-awesome-profile-cards-tablet.png");
+     width: 419px;
+     height: 107px;
+   }
+}
+
+.main__intro{
+  .main__title{
+    font-size: 24px;
+  }
+  .main__paragraph{
+  font-size: 16px;
+}
+}
+
+}
