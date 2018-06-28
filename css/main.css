@@ -182,6 +182,12 @@
   margin: 94px auto 0 auto;
 }
 
+.main__header--logo {
+  background-image: url("../images/logo-awesome-profile-cards.png");
+  width: 250px;
+  height: 64px;
+}
+
 .main__intro .main__title {
   text-align: center;
   font-size: 19px;
