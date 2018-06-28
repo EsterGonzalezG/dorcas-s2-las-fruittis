@@ -1,0 +1,31 @@
+.dropdown__desing {
+  padding: 20px 30px 10px 31px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &--angleUp {
+    text-align: right;
+    padding-right: 20px;
+  }
+}
+
+.dropdown__desing--name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .dropdown__desing--nameText {
+    padding-left: 10px;
+    color: $colorGreySmoke;
+    font-size: 18px;
+    font-family: 'OpenSans-Regular', serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .dropdown__desing--nameIcon {
+    padding-right: 10px;
+    color: $colorDullOrange;
+  }
+}

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +25,158 @@
   height: 52px;
 }
 
+.viewfinder {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
+  background: linear-gradient(#bfcdd0, #dde9ed);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 475px;
+}
+
+.viewfinder__card {
+  position: relative;
+  background-color: #ffffff;
+  height: 367px;
+}
+
+.viewfinder__button {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 75px;
+  height: 30px;
+}
+
+.viewfinder__button-reset {
+  background-color: #bfcdd0;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  font-family: 'OpenSans',serif;
+  font-size: 12px;
+  color: #54585a;
+  padding: 5px 10px;
+}
+
+.viewfinder__button-icono {
+  margin-right: 5px;
+  width: 11px;
+  height: 20px;
+}
+
+.viewfinder__card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.viewfinder__card-title-titlebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.viewfinder__card-title-rectangule {
+  height: 42px;
+  width: 5px;
+  background-color: #a2deaf;
+  margin: 20px 15px 0 0;
+}
+
+.viewfinder__card-title-name {
+  padding: 20px 14px 5px 0px;
+  font-family: 'ComicSans', sans-serif;
+ /*ojo mirar la fuente bien*/
+  font-size: 18px;
+  line-height: 20px;
+  color: #114e4e;
+}
+
+.viewfinder__card-title-job {
+  padding: 0 14px 5px 0px;
+  font-family: 'Comic Sans', sans-serif;
+ /*ojo mirar la fuente bien*/
+  font-size: 18px;
+  line-height: 20px;
+  color: #54585a;
+ /*añadir variable*/;
+}/*quitar es para que marque la posicion de la foto sin internet */.viewfinder__photo {
+  width: 240px;
+  height: 200px;
+  background-color: purple;
+}/*quitar */.viewfinder__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 10px 0 10px 10px;
+}
+
+.viewfinder__icons-box {
+  margin-left: 10px;
+  border-radius: 22px;
+  border: 2px solid #a2deaf;
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #114e4e;
+}
+
+.viewfinder__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 5px 20px;
+}
+
+.viewfinder__tags-text {
+  width: 36px;
+  height: 18px;
+  font-size: 13px;
+  border-radius: 4px;
+  background-color: #438792;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0 5px;
+}
+
 .main__header {
   width: 250px;
   margin: 94px auto 0 auto;
@@ -38,7 +192,7 @@
 }
 
 .main__intro .main__paragraph {
-  font-family: 'OpenSans-Regular', serif;
+  font-family: 'OpenSans-Regular',serif;
   font-size: 15px;
   font-weight: 500;
   margin: 0 auto;
@@ -51,18 +205,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.main__intro .main__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #e17334;
+  width: 268px;
+  height: 74px;
+  margin: 10px auto;
+  border-radius: 4px;
 }
 
 .main__intro .main__list-item {
@@ -75,16 +227,7 @@
 .main__intro .main__list .main__list--text {
   color: #54585a;
   font-size: 16px;
-}
-
-.main__intro .main__list .main__list--text {
-  color: #54585a;
-  font-size: 16px;
-}
-
-.main__intro .main__list .icon {
-  color: #e17334;
-  font-size: 28px;
+  padding-top: 10px;
 }
 
 .main__intro .main__list .icon {
@@ -117,6 +260,79 @@
   text-transform: uppercase;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  height: 110px;
+}
+
+.footer__copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #d8d8d8;
+  margin-top: 20px;
+}
+
+.footer__logo {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.footer__logo--image {
+  width: 103px;
+  height: 40px;
+}
+
+.dropdown__desing {
+  padding: 20px 30px 10px 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.dropdown__desing--angleUp {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.dropdown__desing--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dropdown__desing--name .dropdown__desing--nameText {
+  padding-left: 10px;
+  color: #54585a;
+  font-size: 18px;
+  font-family: 'OpenSans-Regular', serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.dropdown__desing--name .dropdown__desing--nameIcon {
+  padding-right: 10px;
+  color: #e17334;
+}
+
 @media all and (min-width: 768px) {
   .header__logo {
     display: -webkit-box;
@@ -129,6 +345,25 @@
     -ms-flex-align: center;
     align-items: center;
     padding-left: 40px;
+  }
+
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .footer__copyright {
+    margin-left: 40px;
+  }
+
+  .footer__logo {
+    margin-right: 40px;
   }
 }
 
