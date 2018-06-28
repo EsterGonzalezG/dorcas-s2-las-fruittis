@@ -29,3 +29,12 @@
     color: $colorDullOrange;
   }
 }
+
+.dropdown__colors {
+  display: flex;
+
+  .dropdown__colors--selectors {
+    display: flex;
+    flex-direction: column;
+  }
+}
