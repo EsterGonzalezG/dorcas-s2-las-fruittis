@@ -4,10 +4,10 @@
   align-items: center;
   justify-content: space-between;
 
-  &--angleUp {
+  /*&--angleUp {
     text-align: right;
-    padding-right: 20px;
-  }
+    padding-right: 200px;
+  }*/
 }
 
 .dropdown__desing--name {
@@ -20,7 +20,7 @@
     color: $colorGreySmoke;
     font-size: 18px;
     font-family: 'OpenSans-Regular', serif;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
@@ -36,6 +36,62 @@
   .dropdown__colors--selectors {
     display: flex;
     flex-direction: column;
+
+    .colors {
+      display: flex;
+    }
+
+    .colors__darkCyan {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSelectorGreenOne;
+    }
+
+    .colors__dirtyblue {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSelectorGreenTwo;
+    }
+
+    .colors__hospitalGreen {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSelectorGreenThree;
+    }
+
+    .colors__darkRed {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSelectorRedOne;
+    }
+    .colors__strongRed {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSelectorRedTwo;
+    }
+
+    .colors__brightRed {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSelectorRedThree;
+    }
+
+    .colors__darkBlue {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSelectorGreyOne;
+    }
+    .colors__lightBlue {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSelectorGreyTwo;
+    }
+
+    .colors__brightBlue {
+      width: 30px;
+      height: 25px;
+      background-color: $colorSelectorGreyThree;
+    }
   }
 }
 
