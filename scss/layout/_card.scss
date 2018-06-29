@@ -58,18 +58,11 @@ display: flex;
     font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;/*ojo mirar la fuente bien*/
     font-size: 18px;
     line-height:20px;
-    color:$colorTextTitleJob;/*añadir variable*/
+    color:$colorTextTitleJob;
   }
 
 }
 
-/*quitar es para que marque la posicion de la foto sin internet */
-.viewfinder__photo{
-  width:240px;
-   height: 200px;
-   background-color: purple;
-}
-/*quitar */
 .viewfinder__icons{
   display: flex;
   justify-content:flex-start;
