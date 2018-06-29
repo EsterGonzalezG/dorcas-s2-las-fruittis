@@ -1,5 +1,5 @@
 .dropdown__desing {
-  padding: 20px 30px 10px 31px;
+  padding: 30px 20px 31px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,4 +93,10 @@
       background-color: $colorSelectorGreyThree;
     }
   }
+}
+
+.dropdown__fill {
+  margin: 10px 20px 25px 20px;
+  display: flex;
+  width: 200px;
 }
