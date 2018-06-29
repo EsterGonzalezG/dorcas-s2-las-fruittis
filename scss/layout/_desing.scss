@@ -34,16 +34,6 @@
   display: flex;
   justify-content: space-between;
 
-
-  .dropdown__colors--colors {
-    padding-left: 39px;
-    color: $colorDropdownH3;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: 'Open Sans';
-    font-weight: 400;
-  }
-
   .dropdown__colors--selectors {
     display: flex;
     flex-direction: column;
@@ -113,11 +103,43 @@
     padding-right: 20px;
     padding-bottom: 20px;
   }
-
-    .radio {
-      margin-right: 10px;
-    }
 }
+
+.radio {
+  margin-right: 10px;
+}
+
+.dropdown__title {
+  padding-left: 39px;
+  color: $colorDropdownH3;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+.dropdown__fonts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown__fonts--selectors {
+  display: flex;
+  flex-direction: column;
+
+  .dropdown__fontsgroups {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .fonts {
+    display: flex;
+    align-items: flex-start;
+    color: $colorDropdownH3;
+    padding-bottom: 9px;
+  }
+}
+
 
 .dropdown__fill {
   margin: 10px 20px 25px 20px;
