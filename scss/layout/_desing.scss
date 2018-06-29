@@ -19,7 +19,7 @@
     padding-left: 10px;
     color: $colorGreySmoke;
     font-size: 18px;
-    font-family: 'OpenSans-Regular', serif;
+    font-family: 'Open Sans';
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -32,10 +32,23 @@
 
 .dropdown__colors {
   display: flex;
+  justify-content: space-between;
+
+
+  .dropdown__colors--colors {
+    padding-left: 39px;
+    color: $colorDropdownH3;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 400;
+  }
 
   .dropdown__colors--selectors {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .colors {
       display: flex;
@@ -93,6 +106,17 @@
       background-color: $colorSelectorGreyThree;
     }
   }
+
+  .dropdown__colorsgroups {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+    .radio {
+      margin-right: 10px;
+    }
 }
 
 .dropdown__fill {
