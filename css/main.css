@@ -296,7 +296,7 @@
 }
 
 .dropdown__desing {
-  padding: 20px 30px 10px 31px;
+  padding: 30px 20px 31px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,6 +353,14 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.dropdown__fill {
+  margin: 10px 20px 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
 }
 
 @media all and (min-width: 768px) {
