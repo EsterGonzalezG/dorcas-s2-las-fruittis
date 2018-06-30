@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Proyecto Fruittis</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome profile-cards</title>
@@ -28,40 +28,64 @@
         <i class="fas fa-angle-up"></i>
       </div>
       <div class="dropdown__colors">
-        <div class="dropdown__colors--name">
+        <div class="dropdown__title">
           <h3>Colores</h3>
         </div>
         <div class="">
           <form class="dropdown__colors--selectors" action="index.html" method="post">
-            <label class="colors" for="blue">
-              <div class="colors__darkCyan"></div>
-              <div class="colors__dirtyblue"></div>
-              <div class="colors__hospitalGreen"></div>
-            </label>
-            <input id="green" type="radio" name="colors">
-            <label class="colors"  for="red">
-              <div class="colors__darkRed"></div>
-              <div class="colors__strongRed"></div>
-              <div class="colors__brightRed"></div>
-            </label>
-            <input id="red" type="radio" name="colors">
-            <label class="colors" for="grey">
-              <div class="colors__darkBlue"></div>
-              <div class="colors__lightBlue"></div>
-              <div class="colors__brightBlue"></div>
-            </label>
-            <input id="grey" type="radio" name="colors">
+            <div class="dropdown__colorsgroups">
+              <label class="colors" for="blue">
+                <div class="colors__darkCyan"></div>
+                <div class="colors__dirtyblue"></div>
+                <div class="colors__hospitalGreen"></div>
+              </label>
+              <input class="radio" id="green" type="radio" name="colors">
+            </div>
+            <div class="dropdown__colorsgroups">
+              <label class="colors"  for="red">
+                <div class="colors__darkRed"></div>
+                <div class="colors__strongRed"></div>
+                <div class="colors__brightRed"></div>
+              </label>
+              <input class="radio" id="red" type="radio" name="colors">
+            </div>
+            <div class="dropdown__colorsgroups">
+              <label class="colors" for="grey">
+                <div class="colors__darkBlue"></div>
+                <div class="colors__lightBlue"></div>
+                <div class="colors__brightBlue"></div>
+              </label>
+              <input class="radio" id="grey" type="radio" name="colors">
+          </div>
           </form>
         </div>
       </div>
       <div class="dropdown__fonts">
-        <div class="dropdown__fonts--name">
+        <div class="dropdown__title">
+          <h3>Fuentes</h3>
         </div>
-        <div class="dropdown__fonts--selectors">
+        <div class="">
+          <form class="dropdown__fonts--selectors" action="index.html" method="post">
+            <div class="dropdown__fontsgroups">
+              <label class="fonts" for="ubuntu">Ubuntu
+              </label>
+              <input class="radio" id="ubuntu" type="radio" name="fonts">
+            </div>
+            <div class="dropdown__fontsgroups">
+              <label class="fonts"  for="comic">Comic Sans
+              </label>
+              <input class="radio" id="comic" type="radio" name="fonts">
+            </div>
+            <div class="dropdown__fontsgroups">
+              <label class="fonts" for="monstserrat">Montserrat
+              </label>
+              <input class="radio" id="montserrat" type="radio" name="fonts">
+            </div>
+          </form>
         </div>
       </div>
     </section>
-<!-- Parten Diseño -->
+<!-- Parte Diseño -->
 <!-- Parte Rellena -->
     <section class="dropdown__second">
       <div class="dropdown__fill">

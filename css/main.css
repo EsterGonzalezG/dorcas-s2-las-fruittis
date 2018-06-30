@@ -324,7 +324,7 @@
   padding-left: 10px;
   color: #54585a;
   font-size: 18px;
-  font-family: 'OpenSans-Regular', serif;
+  font-family: 'Open Sans';
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -338,6 +338,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .dropdown__colors .dropdown__colors--selectors {
@@ -348,6 +351,12 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .dropdown__colors .dropdown__colors--selectors .colors {
@@ -410,6 +419,74 @@
   background-color: #a0c0cf;
 }
 
+<<<<<<< HEAD
+=======
+.dropdown__colors .dropdown__colorsgroups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.radio {
+  margin-right: 10px;
+}
+
+.dropdown__title {
+  padding-left: 39px;
+  color: #54585a;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+.dropdown__fonts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.dropdown__fonts--selectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.dropdown__fonts--selectors .dropdown__fontsgroups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.dropdown__fonts--selectors .fonts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  color: #54585a;
+  padding-bottom: 9px;
+}
+
+>>>>>>> 4d49cc0b7f96d362f1248fecaa0dec73f0c8f18f
 .dropdown__fill {
   margin: 10px 20px 25px 20px;
   display: -webkit-box;
