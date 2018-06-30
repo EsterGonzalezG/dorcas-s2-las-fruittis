@@ -102,6 +102,7 @@
     flex-direction: row-reverse;
     padding-right: 20px;
     padding-bottom: 20px;
+    align-items: center;
   }
 }
 
@@ -112,10 +113,14 @@
 .dropdown__title {
   padding-left: 39px;
   color: $colorDropdownH3;
-  font-size: 14px;
   text-transform: uppercase;
   font-family: 'Open Sans';
-  font-weight: 400;
+
+
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 .dropdown__fonts {
@@ -126,17 +131,21 @@
 .dropdown__fonts--selectors {
   display: flex;
   flex-direction: column;
+  width: 132px;
 
   .dropdown__fontsgroups {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 9px;
+
   }
 
   .fonts {
     display: flex;
     align-items: flex-start;
     color: $colorDropdownH3;
-    padding-bottom: 9px;
   }
 }
 
