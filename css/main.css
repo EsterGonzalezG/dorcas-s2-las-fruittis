@@ -350,14 +350,6 @@
   flex-direction: column;
 }
 
-<<<<<<< HEAD
-.dropdown__fill {
-  margin: 10px 20px 25px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 200px;
-=======
 .dropdown__colors .dropdown__colors--selectors .colors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,7 +408,14 @@
   width: 30px;
   height: 25px;
   background-color: #a0c0cf;
->>>>>>> 413dfc4d4d128338124232a3525cb9b7a65f4981
+}
+
+.dropdown__fill {
+  margin: 10px 20px 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
 }
 
 @media all and (min-width: 768px) {
