@@ -330,7 +330,6 @@
 }
 
 .dropdown__desing--name .dropdown__desing--nameIcon {
-  padding-right: 10px;
   color: #e17334;
 }
 
@@ -434,6 +433,10 @@
   align-items: center;
 }
 
+.dropdown__colors .dropdown__colorsgroups:last-child {
+  padding-bottom: 32px;
+}
+
 .radio {
   margin-right: 10px;
 }
@@ -494,6 +497,26 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  color: #54585a;
+}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #54585a;
+}
+
+.comic {
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
+  font-size: 16px;
+  color: #54585a;
+}
+
+.montserrat {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: 400;
   color: #54585a;
 }
 
