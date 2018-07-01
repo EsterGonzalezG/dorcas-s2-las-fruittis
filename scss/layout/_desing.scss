@@ -25,7 +25,6 @@
   }
 
   .dropdown__desing--nameIcon {
-    padding-right: 10px;
     color: $colorDullOrange;
   }
 }
@@ -67,6 +66,7 @@
       height: 25px;
       background-color: $colorSelectorRedOne;
     }
+
     .colors__strongRed {
       width: 30px;
       height: 25px;
@@ -102,6 +102,11 @@
     flex-direction: row-reverse;
     padding-right: 20px;
     padding-bottom: 20px;
+    align-items: center;
+  }
+
+  .dropdown__colorsgroups:last-child {
+    padding-bottom: 32px;
   }
 }
 
@@ -112,10 +117,13 @@
 .dropdown__title {
   padding-left: 39px;
   color: $colorDropdownH3;
-  font-size: 14px;
   text-transform: uppercase;
   font-family: 'Open Sans';
-  font-weight: 400;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 .dropdown__fonts {
@@ -126,20 +134,42 @@
 .dropdown__fonts--selectors {
   display: flex;
   flex-direction: column;
+  width: 132px;
 
   .dropdown__fontsgroups {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 9px;
   }
 
   .fonts {
     display: flex;
     align-items: flex-start;
     color: $colorDropdownH3;
-    padding-bottom: 9px;
   }
 }
 
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorSelectorFonts;
+}
+
+.comic {
+  font-family:  'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
+  font-size: 16px;
+  color: $colorSelectorFonts;
+}
+
+.montserrat {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorSelectorFonts;
+}
 
 .dropdown__fill {
   margin: 10px 20px 25px 20px;

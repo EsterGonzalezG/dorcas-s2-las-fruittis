@@ -330,7 +330,6 @@
 }
 
 .dropdown__desing--name .dropdown__desing--nameIcon {
-  padding-right: 10px;
   color: #e17334;
 }
 
@@ -429,6 +428,13 @@
   flex-direction: row-reverse;
   padding-right: 20px;
   padding-bottom: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dropdown__colors .dropdown__colorsgroups:last-child {
+  padding-bottom: 32px;
 }
 
 .radio {
@@ -438,9 +444,12 @@
 .dropdown__title {
   padding-left: 39px;
   color: #54585a;
-  font-size: 14px;
   text-transform: uppercase;
   font-family: 'Open Sans';
+}
+
+.dropdown__title h3 {
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -461,6 +470,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 132px;
 }
 
 .dropdown__fonts--selectors .dropdown__fontsgroups {
@@ -471,6 +481,13 @@
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 9px;
 }
 
 .dropdown__fonts--selectors .fonts {
@@ -481,9 +498,31 @@
   -ms-flex-align: start;
   align-items: flex-start;
   color: #54585a;
-  padding-bottom: 9px;
 }
 
+<<<<<<< HEAD
+=======
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #54585a;
+}
+
+.comic {
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
+  font-size: 16px;
+  color: #54585a;
+}
+
+.montserrat {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #54585a;
+}
+
+>>>>>>> 07c15b1d71e88492df1f1fa6884daa3a7fb9dc2a
 .dropdown__fill {
   margin: 10px 20px 25px 20px;
   display: -webkit-box;
