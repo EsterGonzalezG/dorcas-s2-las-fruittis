@@ -1,3 +1,7 @@
+.fas {
+  color: $colorGreySmoke;
+}
+
 .dropdown__desing {
   padding: 30px 20px 31px 20px;
   display: flex;
@@ -171,8 +175,35 @@
   color: $colorSelectorFonts;
 }
 
+.bookmark {
+  height: 1px;
+  background-color: $colorHrBookmarks;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none;
+
+}
+
 .dropdown__fill {
   margin: 10px 20px 25px 20px;
   display: flex;
-  width: 200px;
+  align-items: center;
+  justify-content: space-between;
+
+.dropdown__fill--name {
+  display: flex;
+  align-items: center;
+}
+  .dropdown__fill--nameText {
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $colorGreySmoke;
+  }
+
+  .dropdown__fill--nameIcon {
+    color: $colorDesignFillShareIcons;
+  }
 }

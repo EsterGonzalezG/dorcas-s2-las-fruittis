@@ -291,6 +291,10 @@
   height: 40px;
 }
 
+.fas {
+  color: #54585a;
+}
+
 .dropdown__desing {
   padding: 30px 20px 31px 20px;
   display: -webkit-box;
@@ -500,8 +504,6 @@
   color: #54585a;
 }
 
-<<<<<<< HEAD
-=======
 .ubuntu {
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
@@ -522,13 +524,47 @@
   color: #54585a;
 }
 
->>>>>>> 07c15b1d71e88492df1f1fa6884daa3a7fb9dc2a
+.bookmark {
+  height: 1px;
+  background-color: #d8d8d8;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none;
+}
+
 .dropdown__fill {
   margin: 10px 20px 25px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.dropdown__fill .dropdown__fill--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dropdown__fill .dropdown__fill--nameText {
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #54585a;
+}
+
+.dropdown__fill .dropdown__fill--nameIcon {
+  color: #e17334;
 }
 
 @media all and (min-width: 768px) {
