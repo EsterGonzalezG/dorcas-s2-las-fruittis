@@ -545,7 +545,7 @@
   justify-content: space-between;
 }
 
-.dropdown__fill .dropdown__fill--name {
+.dropdown__fill--name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,7 +554,7 @@
   align-items: center;
 }
 
-.dropdown__fill .dropdown__fill--nameText {
+.dropdown__fill--name .dropdown__fill--nameText {
   margin-left: 10px;
   font-size: 18px;
   font-family: 'Open Sans';
@@ -563,8 +563,40 @@
   color: #54585a;
 }
 
-.dropdown__fill .dropdown__fill--nameIcon {
+.dropdown__fill--name .dropdown__fill--nameIcon {
   color: #e17334;
+}
+
+.fill_form--container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.fill__form--labelinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.fill__form--labelinput .fill__label--items {
+  margin-bottom: 5px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: #114e4e;
+  font-size: 14px;
+}
+
+.fill__form--labelinput .fill__input--items {
+  margin-bottom: 20px;
+  line-height: 30px;
+  border: solid 1px #a2deaf;
+  padding-left: 9px;
+  font-size: 14px;
 }
 
 @media all and (min-width: 768px) {

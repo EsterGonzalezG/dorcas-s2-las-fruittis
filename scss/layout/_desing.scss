@@ -181,7 +181,6 @@
   margin-left: 20px;
   margin-right: 20px;
   border: none;
-
 }
 
 .dropdown__fill {
@@ -189,11 +188,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
 .dropdown__fill--name {
   display: flex;
   align-items: center;
-}
+
   .dropdown__fill--nameText {
     margin-left: 10px;
     font-size: 18px;
@@ -205,5 +205,32 @@
 
   .dropdown__fill--nameIcon {
     color: $colorDesignFillShareIcons;
+  }
+}
+
+.fill_form--container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.fill__form--labelinput {
+  display: flex;
+  flex-direction: column;
+
+  .fill__label--items {
+    margin-bottom: 5px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: $colorFillLabelText;
+    font-size: 14px;
+  }
+
+  .fill__input--items {
+    margin-bottom: 20px;
+    line-height: 30px;
+    border: solid 1px $colorFillInputBorder;
+    padding-left: 9px;
+    font-size: 14px;
   }
 }
