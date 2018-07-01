@@ -234,3 +234,27 @@
     font-size: 14px;
   }
 }
+
+.fill__input--buttonandminiimg {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .fill__input--addimgbutton {
+    background-color: $colorFillAddImgButtonBackg;
+    color: $colorFillAddImgButtonText;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    width: 140px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  }
+
+  .fill__input--miniimg {
+    height: 30px;
+    width: 30px;
+    border: solid 1px $colorFillInputBorder;
+    margin-left: 20px;
+  }
+}

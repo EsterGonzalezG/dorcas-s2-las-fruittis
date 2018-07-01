@@ -599,6 +599,36 @@
   font-size: 14px;
 }
 
+.fill__input--buttonandminiimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.fill__input--buttonandminiimg .fill__input--addimgbutton {
+  background-color: #e17334;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  width: 140px;
+  height: 30px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+}
+
+.fill__input--buttonandminiimg .fill__input--miniimg {
+  height: 30px;
+  width: 30px;
+  border: solid 1px #a2deaf;
+  margin-left: 20px;
+}
+
 @media all and (min-width: 768px) {
   .header__logo {
     display: -webkit-box;
