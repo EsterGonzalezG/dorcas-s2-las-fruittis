@@ -131,9 +131,18 @@
             <label class="fill__label--items" for="github">Github</label>
             <input class="fill__input--items" type="text" id="github" name="github" placeholder="Ej: @sally-jill">
           </div>
-          <div class="fill__form--labelinput">
+          <div class="fill__form--abilitieslabelinput">
             <label class="fill__label--items" for="habilidades">Habilidades (máximo 3)</label>
-            <input class="fill__input--items" type="text" id="habilidades" name="abilities">
+            <div class="fill__input--selectabilities">
+              <select class"abilitiesdropdown" name="abilities" id="habilidades">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="others">OTHER</option>
+              </select>
+              <button class="fill__input--addabilitiebutton">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
           </div>
         </form>
       </div>

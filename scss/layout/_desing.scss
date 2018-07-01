@@ -211,28 +211,28 @@
 .fill_form--container {
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .fill__form--labelinput {
   display: flex;
   flex-direction: column;
+}
 
-  .fill__label--items {
-    margin-bottom: 5px;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    color: $colorFillLabelText;
-    font-size: 14px;
-  }
+.fill__label--items {
+  margin-bottom: 5px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: $colorFillLabelText;
+  font-size: 14px;
+}
 
-  .fill__input--items {
-    margin-bottom: 20px;
-    line-height: 30px;
-    border: solid 1px $colorFillInputBorder;
-    padding-left: 9px;
-    font-size: 14px;
-  }
+.fill__input--items {
+  margin-bottom: 20px;
+  line-height: 30px;
+  border: solid 1px $colorFillInputBorder;
+  padding-left: 9px;
+  font-size: 14px;
 }
 
 .fill__input--buttonandminiimg {
@@ -256,5 +256,32 @@
     width: 30px;
     border: solid 1px $colorFillInputBorder;
     margin-left: 20px;
+  }
+}
+
+.fill__form--abilitieslabelinput {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.fill__input--selectabilities {
+  width: 165px;
+
+  .abilitiesdropdown {
+    font-family: 'Open Sans';
+    font-size: 18px;
+  }
+
+  .fill__input--addabilitiebutton {
+    border: 1px solid $colorFillSelectAbbilitiesBorder;
+    border-radius: 45px;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+
+    .fa-minus {
+      color: $colorFillSelectAbbilitiesText;
+    }
   }
 }

@@ -570,7 +570,7 @@
 .fill_form--container {
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .fill__form--labelinput {
@@ -583,7 +583,7 @@
   flex-direction: column;
 }
 
-.fill__form--labelinput .fill__label--items {
+.fill__label--items {
   margin-bottom: 5px;
   font-family: 'Open Sans';
   font-weight: 400;
@@ -591,7 +591,7 @@
   font-size: 14px;
 }
 
-.fill__form--labelinput .fill__input--items {
+.fill__input--items {
   margin-bottom: 20px;
   line-height: 30px;
   border: solid 1px #a2deaf;
@@ -627,6 +627,38 @@
   width: 30px;
   border: solid 1px #a2deaf;
   margin-left: 20px;
+}
+
+.fill__form--abilitieslabelinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.fill__input--selectabilities {
+  width: 165px;
+}
+
+.fill__input--selectabilities .abilitiesdropdown {
+  font-family: 'Open Sans';
+  font-size: 18px;
+}
+
+.fill__input--selectabilities .fill__input--addabilitiebutton {
+  border: 1px solid #e17334;
+  border-radius: 45px;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+
+.fill__input--selectabilities .fill__input--addabilitiebutton .fa-minus {
+  color: #e17334;
 }
 
 @media all and (min-width: 768px) {
