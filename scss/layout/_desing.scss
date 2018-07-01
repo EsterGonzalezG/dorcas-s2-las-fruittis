@@ -43,60 +43,48 @@
     align-items: center;
     justify-content: center;
 
-    .colors {
+    .colors-container {
       display: flex;
     }
 
-    .colors__darkCyan {
+    .colors {
       width: 30px;
       height: 25px;
+    }
+
+    .colors__darkCyan {
       background-color: $colorSelectorGreenOne;
     }
 
     .colors__dirtyblue {
-      width: 30px;
-      height: 25px;
       background-color: $colorSelectorGreenTwo;
     }
 
     .colors__hospitalGreen {
-      width: 30px;
-      height: 25px;
       background-color: $colorSelectorGreenThree;
     }
 
     .colors__darkRed {
-      width: 30px;
-      height: 25px;
       background-color: $colorSelectorRedOne;
     }
 
     .colors__strongRed {
-      width: 30px;
-      height: 25px;
       background-color: $colorSelectorRedTwo;
     }
 
     .colors__brightRed {
-      width: 30px;
-      height: 25px;
       background-color: $colorSelectorRedThree;
     }
 
     .colors__darkBlue {
-      width: 30px;
-      height: 25px;
       background-color: $colorSelectorGreyOne;
     }
+
     .colors__lightBlue {
-      width: 30px;
-      height: 25px;
       background-color: $colorSelectorGreyTwo;
     }
 
     .colors__brightBlue {
-      width: 30px;
-      height: 25px;
       background-color: $colorSelectorGreyThree;
     }
   }
@@ -107,10 +95,10 @@
     padding-right: 20px;
     padding-bottom: 20px;
     align-items: center;
-  }
 
-  .dropdown__colorsgroups:last-child {
-    padding-bottom: 32px;
+    &:last-child {
+      padding-bottom: 32px;
+    }
   }
 }
 
@@ -146,6 +134,10 @@
     justify-content: flex-end;
     align-items: center;
     padding-bottom: 9px;
+
+    &:last-child {
+      padding-bottom: 30px;
+    }
   }
 
   .fonts {
@@ -163,7 +155,7 @@
 }
 
 .comic {
-  font-family:  'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
   font-size: 16px;
   color: $colorSelectorFonts;
 }

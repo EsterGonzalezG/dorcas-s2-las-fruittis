@@ -362,63 +362,50 @@
   justify-content: center;
 }
 
-.dropdown__colors .dropdown__colors--selectors .colors {
+.dropdown__colors .dropdown__colors--selectors .colors-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.dropdown__colors .dropdown__colors--selectors .colors__darkCyan {
+.dropdown__colors .dropdown__colors--selectors .colors {
   width: 30px;
   height: 25px;
+}
+
+.dropdown__colors .dropdown__colors--selectors .colors__darkCyan {
   background-color: #114e4e;
 }
 
 .dropdown__colors .dropdown__colors--selectors .colors__dirtyblue {
-  width: 30px;
-  height: 25px;
   background-color: #438792;
 }
 
 .dropdown__colors .dropdown__colors--selectors .colors__hospitalGreen {
-  width: 30px;
-  height: 25px;
   background-color: #a2deaf;
 }
 
 .dropdown__colors .dropdown__colors--selectors .colors__darkRed {
-  width: 30px;
-  height: 25px;
   background-color: #420101;
 }
 
 .dropdown__colors .dropdown__colors--selectors .colors__strongRed {
-  width: 30px;
-  height: 25px;
   background-color: #bd1010;
 }
 
 .dropdown__colors .dropdown__colors--selectors .colors__brightRed {
-  width: 30px;
-  height: 25px;
   background-color: #e95626;
 }
 
 .dropdown__colors .dropdown__colors--selectors .colors__darkBlue {
-  width: 30px;
-  height: 25px;
   background-color: #3e5b65;
 }
 
 .dropdown__colors .dropdown__colors--selectors .colors__lightBlue {
-  width: 30px;
-  height: 25px;
   background-color: #dfe5eb;
 }
 
 .dropdown__colors .dropdown__colors--selectors .colors__brightBlue {
-  width: 30px;
-  height: 25px;
   background-color: #a0c0cf;
 }
 
@@ -492,6 +479,10 @@
   -ms-flex-align: center;
   align-items: center;
   padding-bottom: 9px;
+}
+
+.dropdown__fonts--selectors .dropdown__fontsgroups:last-child {
+  padding-bottom: 30px;
 }
 
 .dropdown__fonts--selectors .fonts {
