@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <title>Proyecto Fruittis</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,600|Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Awesome profile-cards</title>
 </head>
 <body>
   <header>
@@ -20,34 +20,85 @@
     <section class="dropdown__first">
       <div class="dropdown__desing">
         <div class="dropdown__desing--name">
-          <div class=""><i class="far fa-object-ungroup dropdown__desing--nameIcon"></i></div>
+          <div class="">
+            <i class="far fa-object-ungroup dropdown__desing--nameIcon"></i>
+          </div>
           <h2 class="dropdown__desing--nameText">Diseña</h2>
         </div>
         <i class="fas fa-angle-up"></i>
       </div>
       <div class="dropdown__colors">
-        <div class="dropdown__colors--name">
+        <div class="dropdown__title">
           <h3>Colores</h3>
         </div>
         <div class="">
           <form class="dropdown__colors--selectors" action="index.html" method="post">
-            <label for="blue"></label>
-            <input id="blue" type="radio" name="colors">
-            <label for="red"></label>
-            <input id="red" type="radio" name="colors">
-            <label for="grey"></label>
-            <input id="grey" type="radio" name="colors">
+            <div class="dropdown__colorsgroups">
+              <label class="colors" for="blue">
+                <div class="colors__darkCyan"></div>
+                <div class="colors__dirtyblue"></div>
+                <div class="colors__hospitalGreen"></div>
+              </label>
+              <input class="radio" id="green" type="radio" name="colors">
+            </div>
+            <div class="dropdown__colorsgroups">
+              <label class="colors"  for="red">
+                <div class="colors__darkRed"></div>
+                <div class="colors__strongRed"></div>
+                <div class="colors__brightRed"></div>
+              </label>
+              <input class="radio" id="red" type="radio" name="colors">
+            </div>
+            <div class="dropdown__colorsgroups">
+              <label class="colors" for="grey">
+                <div class="colors__darkBlue"></div>
+                <div class="colors__lightBlue"></div>
+                <div class="colors__brightBlue"></div>
+              </label>
+              <input class="radio" id="grey" type="radio" name="colors">
+          </div>
           </form>
         </div>
       </div>
       <div class="dropdown__fonts">
-        <div class="dropdown__fonts--name">
+        <div class="dropdown__title">
+          <h3>Fuentes</h3>
         </div>
-        <div class="dropdown__fonts--selectors">
+        <div class="">
+          <form class="dropdown__fonts--selectors" action="index.html" method="post">
+            <div class="dropdown__fontsgroups">
+              <label class="fonts ubuntu" for="ubuntu">Ubuntu
+              </label>
+              <input class="radio" id="ubuntu" type="radio" name="fonts">
+            </div>
+            <div class="dropdown__fontsgroups">
+              <label class="fonts comic"  for="comic">Comic Sans
+              </label>
+              <input class="radio" id="comic" type="radio" name="fonts">
+            </div>
+            <div class="dropdown__fontsgroups">
+              <label class="fonts montserrat" for="monstserrat">Montserrat
+              </label>
+              <input class="radio" id="montserrat" type="radio" name="fonts">
+            </div>
+          </form>
         </div>
       </div>
     </section>
-<!-- Parten Diseño -->
+<!-- Parte Diseño -->
+<!-- Parte Rellena -->
+    <section class="dropdown__second">
+      <div class="dropdown__fill">
+        <div class="dropdown__fill--name">
+          <div class="">
+            <i class="far fa-keyboard dropdown__desing--nameIcon"></i>
+          </div>
+          <h2 class="dropdown__desing--nameText">Rellena</h2>
+        </div>
+        <i class="fas fa-angle-up"></i>
+      </div>
+    </section>
+<!-- Parte Rellena -->
     <section class="viewfinder">
       <div class="viewfinder__card">
 
