@@ -521,15 +521,12 @@
   color: #54585a;
 }
 
-<<<<<<< HEAD
-=======
 .bookmark {
   border: 0.5px solid #d8d8d8;
   margin-left: 20px;
   margin-right: 20px;
 }
 
->>>>>>> 3b03d7d4a10a55f0523b37a83b1b417806ca9d35
 .dropdown__fill {
   margin: 10px 20px 25px 20px;
   display: -webkit-box;
@@ -696,7 +693,7 @@
   }
 
   .main__intro .main__list {
-    border: 1px solid #e17334;
+    border: 1px solid rgba(255, 115, 52, 0.21);
     width: 325px;
     height: 86px;
     margin: 21px auto;
