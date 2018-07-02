@@ -86,16 +86,65 @@
       </div>
     </section>
 <!-- Parte Diseño -->
+    <hr class="bookmark">
 <!-- Parte Rellena -->
     <section class="dropdown__second">
       <div class="dropdown__fill">
         <div class="dropdown__fill--name">
           <div class="">
-            <i class="far fa-keyboard dropdown__desing--nameIcon"></i>
+            <i class="far fa-keyboard dropdown__fill--nameIcon"></i>
           </div>
-          <h2 class="dropdown__desing--nameText">Rellena</h2>
+          <h2 class="dropdown__fill--nameText">Rellena</h2>
         </div>
         <i class="fas fa-angle-up"></i>
+      </div>
+      <div class="fill_form--container">
+        <form class="fill__form--itemscontainer" action="index.html" method="post">
+          <div class="fill__form--labelinput">
+            <label class="fill__label--items" for="nombrecompleto">Nombre completo</label>
+            <input class="fill__input--items" type="text" id="nombrecompleto" name="completename" placeholder="Ej: Sally Jill">
+          </div>
+          <div class="fill__form--labelinput">
+            <label class="fill__label--items" for="puesto">Puesto</label>
+            <input class="fill__input--items" type="text" id="puesto" name="job" placeholder="Ej: Front-end unicorn">
+          </div>
+          <div class="fill__form--labelinput">
+            <label class="fill__label--items" for="imagenperfil">Imagen de perfil</label>
+            <div class="fill__input--buttonandminiimg">
+              <button class="fill__input--addimgbutton">Añadir imagen</button>
+              <div class="fill__input--miniimg"></div>
+            </div>
+          </div>
+          <div class="fill__form--labelinput">
+            <label class="fill__label--items" for="email">Email</label>
+            <input class="fill__input--items" type="email" id="email" name="mail" placeholder="Ej: sally-jill@gmail.com">
+          </div>
+          <div class="fill__form--labelinput">
+            <label class="fill__label--items" for="tlf">Teléfono</label>
+            <input class="fill__input--items" type="tel" id="tlf" name="phone" placeholder="Ej: 555-55-55-55">
+          </div>
+          <div class="fill__form--labelinput">
+            <label class="fill__label--items" for="linkedin">Linkedin</label>
+            <input class="fill__input--items" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.jill">
+          </div>
+          <div class="fill__form--labelinput">
+            <label class="fill__label--items" for="github">Github</label>
+            <input class="fill__input--items" type="text" id="github" name="github" placeholder="Ej: @sally-jill">
+          </div>
+          <div class="fill__form--abilitieslabelinput">
+            <label class="fill__label--items" for="habilidades">Habilidades (máximo 3)</label>
+            <div class="fill__input--selectabilities">
+              <select class"abilitiesdropdown" name="abilities" id="habilidades">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="others">OTHER</option>
+              </select>
+              <button class="fill__input--addabilitiebutton">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
 <!-- Parte Rellena -->
