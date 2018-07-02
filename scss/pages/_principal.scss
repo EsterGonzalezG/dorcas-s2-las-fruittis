@@ -1,6 +1,13 @@
+.main{
+  background: #f5f5f5;
+}
+// esto es lo que he modificado de color, hy que añadir variable
+
 .main__header {
   width: 250px;
-  margin: 94px auto 0 auto;
+  margin: 0px auto 0 auto;
+  padding-top: 94px;
+
 
   &--logo{
     background-image:  url("../images/logo-awesome-profile-cards.png");
@@ -36,12 +43,12 @@
     margin: 10px auto;
     border-radius: 4px;
 
-
     &-item{
       text-decoration: none;
       list-style: none;
       padding: 10px;
       text-align: center;
+      color: $colorMainTitle;
 
     }
     .main__list--text{
@@ -50,7 +57,7 @@
       padding-top: 10px;
     }
     .icon{
-      color:$colorMainList;
+      color:$colorMainTitle;
       font-size: 28px;
     }
 
@@ -60,7 +67,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 0;
+    padding: 30px 0;
 
     &--start {
       font-size: 16px;
@@ -77,21 +84,47 @@
   }
 }
 @media all and (min-width:768px){
-.main__header {
-  &--logo{
-     background-image:  url("../images/logo-awesome-profile-cards-tablet.png");
-     width: 419px;
-     height: 107px;
-   }
-}
+  .main__header {
+    width: 419px;
+    padding-top: 348px ;
 
-.main__intro{
-  .main__title{
-    font-size: 24px;
+    &--logo{
+      background-image:  url("../images/logo-awesome-profile-cards-tablet.png");
+      width: 419px;
+      height: 107px;
+    }
   }
-  .main__paragraph{
-  font-size: 16px;
-}
-}
+
+  .main__intro{
+    .main__title{
+      font-size: 24px;
+      margin:31px auto 4px auto;
+
+    }
+    .main__paragraph{
+      font-size: 16px;
+      margin: 4px auto;
+      width: 278px;
+    }
+    .main__list{
+
+      border: 1px solid $colorMainList;
+      width: 325px;
+      height: 86px;
+      margin: 21px auto;
+
+      &-item{
+        text-decoration: none;
+        list-style: none;
+        padding: 10px;
+        text-align: center;
+
+      }
+    }
+    .main__button {
+      padding: 186px 0 59px;
+      // cambiado de margin a padding:
+    }
+  }
 
 }
