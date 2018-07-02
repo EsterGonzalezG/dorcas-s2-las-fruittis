@@ -172,9 +172,14 @@
   padding: 0 5px;
 }
 
+.main {
+  background: #f5f5f5;
+}
+
 .main__header {
   width: 250px;
-  margin: 94px auto 0 auto;
+  margin: 0px auto 0 auto;
+  padding-top: 94px;
 }
 
 .main__header--logo {
@@ -247,7 +252,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 30px 0;
+  padding: 30px 0;
 }
 
 .main__intro .main__button--start {
@@ -516,6 +521,8 @@
   color: #54585a;
 }
 
+<<<<<<< HEAD
+=======
 .bookmark {
   height: 1px;
   background-color: #d8d8d8;
@@ -524,6 +531,7 @@
   border: none;
 }
 
+>>>>>>> 3b03d7d4a10a55f0523b37a83b1b417806ca9d35
 .dropdown__fill {
   margin: 10px 20px 25px 20px;
   display: -webkit-box;
@@ -667,6 +675,11 @@
     padding-left: 40px;
   }
 
+  .main__header {
+    width: 419px;
+    padding-top: 348px;
+  }
+
   .main__header--logo {
     background-image: url("../images/logo-awesome-profile-cards-tablet.png");
     width: 419px;
@@ -675,10 +688,31 @@
 
   .main__intro .main__title {
     font-size: 24px;
+    margin: 31px auto 4px auto;
   }
 
   .main__intro .main__paragraph {
     font-size: 16px;
+    margin: 4px auto;
+    width: 278px;
+  }
+
+  .main__intro .main__list {
+    border: 1px solid #e17334;
+    width: 325px;
+    height: 86px;
+    margin: 21px auto;
+  }
+
+  .main__intro .main__list-item {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .main__intro .main__button {
+    padding: 186px 0 59px;
   }
 
   .footer {
