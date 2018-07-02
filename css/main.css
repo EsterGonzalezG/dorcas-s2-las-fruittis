@@ -516,11 +516,9 @@
 }
 
 .bookmark {
-  height: 1px;
-  background-color: #d8d8d8;
+  border: 0.5px solid #d8d8d8;
   margin-left: 20px;
   margin-right: 20px;
-  border: none;
 }
 
 .dropdown__fill {
