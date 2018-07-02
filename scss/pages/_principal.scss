@@ -37,11 +37,13 @@
     border-radius: 4px;
 
 
+
     &-item{
       text-decoration: none;
       list-style: none;
       padding: 10px;
       text-align: center;
+      color: $colorMainTitle;
 
     }
     .main__list--text{
@@ -50,7 +52,7 @@
       padding-top: 10px;
     }
     .icon{
-      color:$colorMainList;
+      color:$colorMainTitle;
       font-size: 28px;
     }
 

@@ -211,7 +211,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #e17334;
+  border: 1px solid rgba(255, 115, 52, 0.21);
   width: 268px;
   height: 74px;
   margin: 10px auto;
@@ -223,6 +223,7 @@
   list-style: none;
   padding: 10px;
   text-align: center;
+  color: #e17334;
 }
 
 .main__intro .main__list .main__list--text {
