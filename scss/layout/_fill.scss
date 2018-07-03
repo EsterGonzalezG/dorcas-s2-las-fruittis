@@ -86,24 +86,14 @@
   margin-top: 20px;
 }
 
-.fill__input--selectabilities {
-  // width: 165px;
+.fill__input--addabilitiebutton {
+  border: 1px solid $colorFillSelectAbbilitiesBorder;
+  border-radius: 45px;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
 
-  .abilitiesdropdown {
-    font-family: 'Open Sans';
-    font-size: 18px;
-    border:none;
-  }
-
-  .fill__input--addabilitiebutton {
-    border: 1px solid $colorFillSelectAbbilitiesBorder;
-    border-radius: 45px;
-    height: 30px;
-    width: 30px;
-    margin-left: 20px;
-
-    .fa-minus {
+  .fa-minus {
       color: $colorFillSelectAbbilitiesText;
-    }
   }
 }
