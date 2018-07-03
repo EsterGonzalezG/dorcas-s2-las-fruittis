@@ -635,17 +635,7 @@
   margin-top: 20px;
 }
 
-<<<<<<< HEAD
-.fill__input--selectabilities .abilitiesdropdown {
-  font-family: 'Open Sans';
-  font-size: 18px;
-  border: none;
-}
-
-.fill__input--selectabilities .fill__input--addabilitiebutton {
-=======
 .fill__input--addabilitiebutton {
->>>>>>> d4320ac78a465d1b64f342c2bd2377d0d9286dcd
   border: 1px solid #e17334;
   border-radius: 45px;
   height: 30px;

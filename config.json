@@ -5,7 +5,9 @@
 	},
 	"js": {
 		"src": [
+			"js/card.js",
 			"js/main.js"
+
 		],
 		"dest": "js/"
 	},

@@ -1,8 +1,4 @@
 'use strict';
-
-console.log('>> Ready :)');
-
-'use strict';
 var nameCard= document.querySelector('.viewfinder__card-title-name');
 var nameInput=document.querySelector('.fill__input--items');
 
@@ -14,5 +10,3 @@ function mostrar() {
 
   nameCard.innerHtml=escribir;
 }
-
-//# sourceMappingURL=main.min.js.map
