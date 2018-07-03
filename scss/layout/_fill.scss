@@ -87,11 +87,12 @@
 }
 
 .fill__input--selectabilities {
-  width: 165px;
+  // width: 165px;
 
   .abilitiesdropdown {
     font-family: 'Open Sans';
     font-size: 18px;
+    border:none;
   }
 
   .fill__input--addabilitiebutton {

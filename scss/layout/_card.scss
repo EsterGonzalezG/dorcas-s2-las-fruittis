@@ -3,11 +3,13 @@ background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
 display: flex;
 justify-content: center;
 align-items: center;
-height: 475px;
+padding-top:60px;
+padding-bottom: 30px;
+
 &__card{
   position: relative;
   background-color: $backgroundHeader;
-  height: 367px;
+  width: 240px;
 }
 &__button{
   position: absolute;
@@ -85,7 +87,6 @@ display: flex;
   align-items: center;
   margin:5px 20px;
   &-text{
-    width: 36px;
     height: 18px;
     font-size: 13px;
     border-radius: 4px;

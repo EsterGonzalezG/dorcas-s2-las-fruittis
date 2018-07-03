@@ -35,13 +35,14 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 475px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .viewfinder__card {
   position: relative;
   background-color: #ffffff;
-  height: 367px;
+  width: 240px;
 }
 
 .viewfinder__button {
@@ -152,7 +153,6 @@
 }
 
 .viewfinder__tags-text {
-  width: 36px;
   height: 18px;
   font-size: 13px;
   border-radius: 4px;
@@ -635,13 +635,10 @@
   margin-top: 20px;
 }
 
-.fill__input--selectabilities {
-  width: 165px;
-}
-
 .fill__input--selectabilities .abilitiesdropdown {
   font-family: 'Open Sans';
   font-size: 18px;
+  border: none;
 }
 
 .fill__input--selectabilities .fill__input--addabilitiebutton {
