@@ -635,17 +635,7 @@
   margin-top: 20px;
 }
 
-<<<<<<< HEAD
-.fill__input--selectabilities .abilitiesdropdown {
-  font-family: 'Open Sans';
-  font-size: 18px;
-  border: none;
-}
-
-.fill__input--selectabilities .fill__input--addabilitiebutton {
-=======
 .fill__input--addabilitiebutton {
->>>>>>> d4320ac78a465d1b64f342c2bd2377d0d9286dcd
   border: 1px solid #e17334;
   border-radius: 45px;
   height: 30px;
@@ -655,6 +645,32 @@
 
 .fill__input--addabilitiebutton .fa-minus {
   color: #e17334;
+}
+
+.shares__input--buttonandminiimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.shares__input--buttonandminiimg .shares__input--addimgbutton {
+  background-color: #e17334;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  text-transform: inherit;
 }
 
 @media all and (min-width: 768px) {
@@ -673,7 +689,7 @@
 
   .main__header {
     width: 419px;
-    padding-top: 348px;
+    padding-top: 50px;
   }
 
   .main__header--logo {
