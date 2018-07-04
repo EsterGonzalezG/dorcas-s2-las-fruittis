@@ -53,7 +53,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: $colorBackgroundIcons;
     }
   }
 
@@ -117,6 +116,7 @@
 
     .viewfinder__icons-box {
       border: 2px solid  $colorBorderIcons;
+      color: $colorBackgroundIcons;
     }
 
     .viewfinder__tags-text {
