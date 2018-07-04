@@ -44,31 +44,6 @@
   height: 367px;
 }
 
-.viewfinder__button {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  width: 75px;
-  height: 30px;
-}
-
-.viewfinder__button-reset {
-  background-color: #bfcdd0;
-  border-radius: 15px;
-  border: 1px solid #ffffff;
-  text-transform: uppercase;
-  font-family: 'OpenSans',serif;
-  font-size: 12px;
-  color: #54585a;
-  padding: 5px 10px;
-}
-
-.viewfinder__button-icono {
-  margin-right: 5px;
-  width: 11px;
-  height: 20px;
-}
-
 .viewfinder__card-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,26 +63,23 @@
 .viewfinder__card-title-rectangule {
   height: 42px;
   width: 5px;
-  background-color: #a2deaf;
   margin: 20px 15px 0 0;
 }
 
 .viewfinder__card-title-name {
-  padding: 20px 14px 5px 0px;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+  padding: 20px 14px 5px 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', sans-serif;
  /*ojo mirar la fuente bien*/
   font-size: 18px;
   line-height: 20px;
-  color: #114e4e;
 }
 
 .viewfinder__card-title-job {
-  padding: 0 14px 5px 0px;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+  padding: 0 14px 5px 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', sans-serif;
  /*ojo mirar la fuente bien*/
   font-size: 18px;
   line-height: 20px;
-  color: #54585a;
 }
 
 .viewfinder__icons {
@@ -123,7 +95,6 @@
 .viewfinder__icons-box {
   margin-left: 10px;
   border-radius: 22px;
-  border: 2px solid #a2deaf;
   width: 32px;
   height: 32px;
   display: -webkit-box;
@@ -156,7 +127,6 @@
   height: 18px;
   font-size: 13px;
   border-radius: 4px;
-  background-color: #438792;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,9 +137,54 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #ffffff;
   text-transform: uppercase;
   padding: 0 5px;
+}
+
+.viewfinder__button {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 75px;
+  height: 30px;
+}
+
+.viewfinder__button-reset {
+  background-color: #bfcdd0;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  font-family: 'OpenSans', serif;
+  font-size: 12px;
+  color: #54585a;
+  padding: 5px 10px;
+}
+
+.viewfinder__button-icono {
+  margin-right: 5px;
+  width: 11px;
+  height: 20px;
+}
+
+.viewfinder.viewfinder--blue .viewfinder__card-title-rectangule {
+  background-color: #a2deaf;
+}
+
+.viewfinder.viewfinder--blue .viewfinder__card-title-name {
+  color: #114e4e;
+}
+
+.viewfinder.viewfinder--blue .viewfinder__card-title-job {
+  color: #54585a;
+}
+
+.viewfinder.viewfinder--blue .viewfinder__icons-box {
+  border: 2px solid #a2deaf;
+}
+
+.viewfinder.viewfinder--blue .viewfinder__tags-text {
+  background-color: #438792;
+  color: #ffffff;
 }
 
 .main {
