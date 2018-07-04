@@ -1,12 +1,11 @@
 'use strict';
-var nameCard= document.querySelector('.viewfinder__card-title-name');
-var nameInput=document.querySelector('.fill__input--items');
+var nameCard= document.querySelector('.fill__input-name');
+var nameInput=document.querySelector('.fill__input-job');
 
-//con el keypress y una funcion
-nameInput.addEventListener('keypress', mostrar);
-
-function mostrar() {
-  var escribir=nameInput.value;
-
-  nameCard.innerHTML=escribir;
+function writeData(event) {
+  var guiltyElement = event.currentTarget;
+  var targetID = guiltyElement.getAttribute('data-info');
+  document.querySelector('#' + targetID).innerHTML = guiltyElement.value;
 }
+nameCard.addEventListener('keyup', writeData);
+nameInput.addEventListener('keyup', writeData);
