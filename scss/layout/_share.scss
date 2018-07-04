@@ -1,0 +1,21 @@
+
+.shares__input--buttonandminiimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+
+
+  .shares__input--addimgbutton {
+    background-color: $colorFillAddImgButtonBackg;
+    color: $colorFillAddImgButtonText;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    width: 199px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    text-transform: inherit;
+  }
+
+}
