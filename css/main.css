@@ -76,7 +76,7 @@
 
 .viewfinder__card-title-job {
   padding: 0 14px 5px 0;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', sans-serif;
+  font-family: 'Comic Sans MS';
  /*ojo mirar la fuente bien*/
   font-size: 18px;
   line-height: 20px;
@@ -183,6 +183,28 @@
 }
 
 .viewfinder.viewfinder--blue .viewfinder__tags-text {
+  background-color: #438792;
+  color: #ffffff;
+}
+
+.viewfinder.viewfinder--red .viewfinder__card-title-rectangule {
+  background-color: #e95626;
+}
+
+.viewfinder.viewfinder--red .viewfinder__card-title-name {
+  color: #420101;
+}
+
+.viewfinder.viewfinder--red .viewfinder__card-title-job {
+  color: #54585a;
+}
+
+.viewfinder.viewfinder--red .viewfinder__icons-box {
+  border: 2px solid #a2deaf;
+  color: #114e4e;
+}
+
+.viewfinder.viewfinder--red .viewfinder__tags-text {
   background-color: #438792;
   color: #ffffff;
 }
