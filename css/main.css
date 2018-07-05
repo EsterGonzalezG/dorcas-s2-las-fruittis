@@ -647,6 +647,39 @@
   color: #e17334;
 }
 
+.shares__input--buttonandminiimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px 0 30px;
+}
+
+.shares__input--buttonandminiimg .shares__input--addimgbutton {
+  background-color: #e17334;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  text-transform: uppercase;
+}
+
+.bookmark2 {
+  border: 0.5px solid #d8d8d8;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
 @media all and (min-width: 768px) {
   .header__logo {
     display: -webkit-box;
@@ -661,9 +694,14 @@
     padding-left: 40px;
   }
 
+  .main__2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .main__header {
     width: 419px;
-    padding-top: 348px;
+    padding-top: 50px;
   }
 
   .main__header--logo {
@@ -698,7 +736,7 @@
   }
 
   .main__intro .main__button {
-    padding: 186px 0 59px;
+    padding: 100px 0 59px;
   }
 
   .footer {

@@ -1,3 +1,4 @@
+
 .viewfinder{
 background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
 display: flex;
@@ -100,3 +101,10 @@ display: flex;
     padding: 0 5px;
   }
 }
+
+  @media all and (min-width: 768px){
+    .main__2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
