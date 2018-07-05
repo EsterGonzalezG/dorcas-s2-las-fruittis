@@ -5,7 +5,9 @@
 	},
 	"js": {
 		"src": [
+
 			"js/card.js",
+			"js/cardImage.js",
 			"js/main.js"
 
 		],
@@ -13,7 +15,7 @@
 	},
 	"images": "images/**/*.{gif,jpg,png,svg}",
 	"html": [
-    "**/*.html",
-    "!node_modules/**/*.*"
-  ]
+		"**/*.html",
+		"!node_modules/**/*.*"
+	]
 }

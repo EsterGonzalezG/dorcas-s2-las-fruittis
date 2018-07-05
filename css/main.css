@@ -39,6 +39,15 @@
   padding-bottom: 30px;
 }
 
+.viewfinder__photo {
+  background-image: url("https://place-hold.it/240x200/red");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 240px;
+  height: 200px;
+}
+
 .viewfinder__card {
   position: relative;
   background-color: #ffffff;
@@ -645,6 +654,10 @@
 
 .fill__input--addabilitiebutton .fa-minus {
   color: #e17334;
+}
+
+.action__hiddenField {
+  display: none;
 }
 
 .shares__input--buttonandminiimg {
