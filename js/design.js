@@ -13,13 +13,18 @@ function init() {
 }
 
 function setStyles() {
+  resetColor();
   if (radioRed.checked) {
-    cardContainer.className = 'viewfinder viewfinder--red' /*className remplaza el valor de la clase actual por esta*/
+    cardContainer.classList.add('viewfinder viewfinder--red');/*className remplaza el valor de la clase actual por esta*/
   } else if (radioGrey.checked) {
-    cardContainer.className = 'viewfinder viewfinder--grey'
+    cardContainer.classList.add('viewfinder viewfinder--grey');
   } else {
-    cardContainer.className = 'viewfinder viewfinder--blue'
+    cardContainer.className.add('viewfinder viewfinder--blue');
   }
 }
 
 init();
+
+function resetColor() {
+  cardContainer.classList.remove('viewfinder--red', 'viewfinder--grey', 'viewfinder--blue');
+}
