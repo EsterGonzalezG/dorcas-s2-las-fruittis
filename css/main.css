@@ -200,12 +200,34 @@
 }
 
 .viewfinder.viewfinder--red .viewfinder__icons-box {
-  border: 2px solid #a2deaf;
-  color: #114e4e;
+  border: 2px solid #e95626;
+  color: #420101;
 }
 
 .viewfinder.viewfinder--red .viewfinder__tags-text {
-  background-color: #438792;
+  background-color: #bd1010;
+  color: #ffffff;
+}
+
+.viewfinder.viewfinder--grey .viewfinder__card-title-rectangule {
+  background-color: #a0c0cf;
+}
+
+.viewfinder.viewfinder--grey .viewfinder__card-title-name {
+  color: #3e5b65;
+}
+
+.viewfinder.viewfinder--grey .viewfinder__card-title-job {
+  color: #54585a;
+}
+
+.viewfinder.viewfinder--grey .viewfinder__icons-box {
+  border: 2px solid #a0c0cf;
+  color: #3e5b65;
+}
+
+.viewfinder.viewfinder--grey .viewfinder__tags-text {
+  background-color: #dfe5eb;
   color: #ffffff;
 }
 

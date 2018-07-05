@@ -139,12 +139,36 @@
     }
 
     .viewfinder__icons-box {
-      border: 2px solid  $colorBorderIcons;
-      color: $colorBackgroundIcons;
+      border: 2px solid  $colorSelectorRedThree;
+      color: $colorSelectorRedOne;
     }
 
     .viewfinder__tags-text {
-      background-color: $colorBackgroundTags;
+      background-color: $colorSelectorRedTwo;
+      color: $colorTextTagsCard;
+    }
+  }
+
+  &.viewfinder--grey {
+    .viewfinder__card-title-rectangule {
+      background-color: $colorSelectorGreyThree;
+    }
+
+    .viewfinder__card-title-name {
+      color: $colorSelectorGreyOne;
+    }
+
+    .viewfinder__card-title-job {
+      color: $colorTextTitleJob;
+    }
+
+    .viewfinder__icons-box {
+      border: 2px solid  $colorSelectorGreyThree;
+      color: $colorSelectorGreyOne;
+    }
+
+    .viewfinder__tags-text {
+      background-color: $colorSelectorGreyTwo;
       color: $colorTextTagsCard;
     }
   }

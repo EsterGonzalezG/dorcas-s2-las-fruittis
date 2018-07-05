@@ -4,10 +4,11 @@ var cardContainer = document.querySelector('.viewfinder');
 var colorContainer = document.querySelectorAll('.dropdown__colorsgroups');
 var radioRed = document.querySelector('.radio--red');
 var radioGrey = document.querySelector('.radio--grey');
+var radios = document.querySelectorAll('.radio');
 
 function init() {
   for(var i = 0; i < colorContainer.length; i++) {
-    colorContainer[i].addEventListener('click', setStyles);
+    radios[i].addEventListener('click', setStyles);
   }
 }
 
@@ -20,6 +21,5 @@ function setStyles() {
     cardContainer.className = 'viewfinder viewfinder--blue'
   }
 }
-
 
 init();
