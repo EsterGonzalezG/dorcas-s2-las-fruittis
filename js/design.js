@@ -15,16 +15,16 @@ function init() {
 function setStyles() {
   resetColor();
   if (radioRed.checked) {
-    cardContainer.classList.add('viewfinder viewfinder--red');/*className remplaza el valor de la clase actual por esta*/
+    cardContainer.classList.add('viewfinder--red');
   } else if (radioGrey.checked) {
-    cardContainer.classList.add('viewfinder viewfinder--grey');
+    cardContainer.classList.add('viewfinder--grey');
   } else {
-    cardContainer.className.add('viewfinder viewfinder--blue');
+    cardContainer.classList.add('viewfinder--blue');
   }
 }
-
-init();
 
 function resetColor() {
   cardContainer.classList.remove('viewfinder--red', 'viewfinder--grey', 'viewfinder--blue');
 }
+
+init();
