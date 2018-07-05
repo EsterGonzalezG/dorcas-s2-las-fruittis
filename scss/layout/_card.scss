@@ -103,7 +103,7 @@ display: flex;
 }
 
   @media all and (min-width: 768px){
-    .main{
+    .main__2{
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
