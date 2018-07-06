@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -35,23 +37,13 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 30px;
-}
-
-.viewfinder__photo {
-  background-image: url("https://place-hold.it/240x200/red");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 240px;
-  height: 200px;
+  height: 475px;
 }
 
 .viewfinder__card {
   position: relative;
   background-color: #ffffff;
-  width: 240px;
+  height: 367px;
 }
 
 .viewfinder__card-title {
@@ -78,7 +70,7 @@
 
 .viewfinder__card-title-name {
   padding: 20px 14px 5px 0;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', sans-serif;
+  font-family: ‘Comic Sans MS’, ‘Comic Sans’, ‘TSCu_Comic’, sans-serif;
  /*ojo mirar la fuente bien*/
   font-size: 18px;
   line-height: 20px;
@@ -86,7 +78,7 @@
 
 .viewfinder__card-title-job {
   padding: 0 14px 5px 0;
-  font-family: 'Comic Sans MS';
+  font-family: ‘Comic Sans MS’;
  /*ojo mirar la fuente bien*/
   font-size: 18px;
   line-height: 20px;
@@ -132,6 +124,7 @@
 }
 
 .viewfinder__tags-text {
+  width: 36px;
   height: 18px;
   font-size: 13px;
   border-radius: 4px;
@@ -162,7 +155,7 @@
   border-radius: 15px;
   border: 1px solid #ffffff;
   text-transform: uppercase;
-  font-family: 'OpenSans', serif;
+  font-family: ‘OpenSans’, serif;
   font-size: 12px;
   color: #54585a;
   padding: 5px 10px;
@@ -381,9 +374,9 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
  /*&--angleUp {
-    text-align: right;
-    padding-right: 200px;
-  }*/;
+   text-align: right;
+   padding-right: 200px;
+ }*/;
 }
 
 .dropdown__desing--name {
@@ -402,7 +395,7 @@
   padding-left: 10px;
   color: #54585a;
   font-size: 18px;
-  font-family: 'Open Sans';
+  font-family: ‘Open Sans’;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -510,7 +503,7 @@
   padding-left: 39px;
   color: #54585a;
   text-transform: uppercase;
-  font-family: 'Open Sans';
+  font-family: ‘Open Sans’;
 }
 
 .dropdown__title h3 {
@@ -570,20 +563,20 @@
 }
 
 .ubuntu {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: ‘Ubuntu’, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #54585a;
 }
 
 .comic {
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
+  font-family: ‘Comic Sans MS’, ‘Comic Sans’, ‘TSCu_Comic’;
   font-size: 16px;
   color: #54585a;
 }
 
 .montserrat {
-  font-family: 'Merriweather', serif;
+  font-family: ‘Merriweather’, serif;
   font-size: 16px;
   font-weight: 400;
   color: #54585a;
@@ -768,11 +761,6 @@
     -ms-flex-align: center;
     align-items: center;
     padding-left: 40px;
-  }
-
-  .main__2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
   .main__header {

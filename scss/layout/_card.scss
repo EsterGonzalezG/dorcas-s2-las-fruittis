@@ -1,246 +1,175 @@
+.viewfinder {
+ background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 475px;
 
+ &__card {
+   position: relative;
+   background-color: $backgroundHeader;
+   height: 367px;
+ }
 
-.viewfinder{
-  background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top:60px;
-  padding-bottom: 30px;
-  &__photo{
-    background-image: url('https://place-hold.it/240x200/red');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 240px;
-    height:200px;
-  }
-  &__card{
-    position: relative;
-    background-color: $backgroundHeader;
-    width: 240px;
-  }
-  &__button{
-    position: absolute;
-    top:-40px;
-    left: 0;
-    width: 75px;
-    height: 30px;
-    &-reset{
-      background-color: $colorBackgroundReset;
-      border-radius: 15px;
-      border: 1px solid $colorTextTagsCard;
-      text-transform: uppercase;
-      font-family: 'OpenSans',serif;
-      font-size: 12px;
-      color: $colorTextButtonReset;
-      padding:5px 10px;
-    }
-    &-icono{
-      margin-right: 5px;
-      width: 11px;
-      height: 20px;
-    }
-  }
-}
-.viewfinder__card-title{
-  display: flex;
+ &__card-title {
+   display: flex;
 
-  &-titlebox{
-    display: flex;
-    flex-direction: column;
+   &-titlebox {
+     display: flex;
+     flex-direction: column;
+   }
 
-  }
-  &-rectangule{
-    height: 42px;
-    width: 5px;
-    background-color: $colorBackgroundRectangule ;
-    margin:20px 15px 0 0;
-  }
-  &-name{
-    padding: 20px 14px 5px 0px;
-    font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;/*ojo mirar la fuente bien*/
-    font-size: 18px;
-    line-height:  20px;
-    color:$colorTextTitleName;
-  }
-  &-job{
-    padding: 0 14px 5px 0px;
-    font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;/*ojo mirar la fuente bien*/
-    font-size: 18px;
-    line-height:20px;
-    color:$colorTextTitleJob;
+   &-rectangule {
+     height: 42px;
+     width: 5px;
+     margin: 20px 15px 0 0;
+   }
 
-  }
+   &-name {
+     padding: 20px 14px 5px 0;
+     font-family: ‘Comic Sans MS’, ‘Comic Sans’, ‘TSCu_Comic’, sans-serif; /*ojo mirar la fuente bien*/
+     font-size: 18px;
+     line-height: 20px;
+   }
 
-  &__card-title {
-    display: flex;
+   &-job {
+     padding: 0 14px 5px 0;
+     font-family: ‘Comic Sans MS’; /*ojo mirar la fuente bien*/
+     font-size: 18px;
+     line-height: 20px;
+   }
+ }
 
-    &-titlebox {
-      display: flex;
-      flex-direction: column;
-    }
+ &__icons {
+   display: flex;
+   justify-content: flex-start;
+   margin: 10px 0 10px 10px;
 
-    &-rectangule {
-      height: 42px;
-      width: 5px;
-      margin: 20px 15px 0 0;
-    }
+   &-box {
+     margin-left: 10px;
+     border-radius: 22px;
+     width: 32px;
+     height: 32px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ }
 
-    &-name {
-      padding: 20px 14px 5px 0;
-      font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', sans-serif; /*ojo mirar la fuente bien*/
-      font-size: 18px;
-      line-height: 20px;
-    }
+ &__tags {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 5px 20px;
 
-    &-job {
-      padding: 0 14px 5px 0;
-      font-family: 'Comic Sans MS'; /*ojo mirar la fuente bien*/
-      font-size: 18px;
-      line-height: 20px;
-    }
-  }
+   &-text {
+     width: 36px;
+     height: 18px;
+     font-size: 13px;
+     border-radius: 4px;
+     margin-right: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-transform: uppercase;
+     padding: 0 5px;
+   }
+ }
 
-  &__icons {
-    display: flex;
-    justify-content: flex-start;
-    margin: 10px 0 10px 10px;
+ &__button {
+   position: absolute;
+   top: -40px;
+   left: 0;
+   width: 75px;
+   height: 30px;
 
-    &-box {
-      margin-left: 10px;
-      border-radius: 22px;
-      width: 32px;
-      height: 32px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+   &-reset {
+     background-color: $colorBackgroundReset;
+     border-radius: 15px;
+     border: 1px solid $colorTextTagsCard;
+     text-transform: uppercase;
+     font-family: ‘OpenSans’, serif;
+     font-size: 12px;
+     color: $colorTextButtonReset;
+     padding: 5px 10px;
+   }
 
+   &-icono {
+     margin-right: 5px;
+     width: 11px;
+     height: 20px;
+   }
+ }
 
-  &__tags {
+ &.viewfinder--blue {
+   .viewfinder__card-title-rectangule {
+     background-color: $colorBackgroundRectangule;
+   }
 
-}
-.viewfinder__tags{
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-  margin:5px 20px;
-  &-text{
-    height: 18px;
-    font-size: 13px;
-    border-radius: 4px;
-    background-color: $colorBackgroundTags;
-    margin-right: 10px;
+   .viewfinder__card-title-name {
+     color: $colorTextTitleName;
+   }
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 5px 20px;
-  }
+   .viewfinder__card-title-job {
+     color: $colorTextTitleJob;
+   }
 
-  &__button {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 75px;
-    height: 30px;
+   .viewfinder__icons-box {
+     border: 2px solid  $colorBorderIcons;
+     color: $colorBackgroundIcons;
+   }
 
-    &-reset {
-      background-color: $colorBackgroundReset;
-      border-radius: 15px;
-      border: 1px solid $colorTextTagsCard;
-      text-transform: uppercase;
-      font-family: 'OpenSans', serif;
-      font-size: 12px;
-      color: $colorTextButtonReset;
-      padding: 5px 10px;
-    }
+   .viewfinder__tags-text {
+     background-color: $colorBackgroundTags;
+     color: $colorTextTagsCard;
+   }
+ }
 
-    &-icono {
-      margin-right: 5px;
-      width: 11px;
-      height: 20px;
-    }
-  }
+ &.viewfinder--red {
+   .viewfinder__card-title-rectangule {
+     background-color: $colorSelectorRedThree;
+   }
 
-  &.viewfinder--blue {
-    .viewfinder__card-title-rectangule {
-      background-color: $colorBackgroundRectangule;
-    }
+   .viewfinder__card-title-name {
+     color: $colorSelectorRedOne;
+   }
 
-    .viewfinder__card-title-name {
-      color: $colorTextTitleName;
-    }
+   .viewfinder__card-title-job {
+     color: $colorTextTitleJob;
+   }
 
-    .viewfinder__card-title-job {
-      color: $colorTextTitleJob;
-    }
+   .viewfinder__icons-box {
+     border: 2px solid  $colorSelectorRedThree;
+     color: $colorSelectorRedOne;
+   }
 
-    .viewfinder__icons-box {
-      border: 2px solid  $colorBorderIcons;
-      color: $colorBackgroundIcons;
-    }
+   .viewfinder__tags-text {
+     background-color: $colorSelectorRedTwo;
+     color: $colorTextTagsCard;
+   }
+ }
 
-    .viewfinder__tags-text {
-      background-color: $colorBackgroundTags;
-      color: $colorTextTagsCard;
-    }
-  }
+ &.viewfinder--grey {
+   .viewfinder__card-title-rectangule {
+     background-color: $colorSelectorGreyThree;
+   }
 
-  &.viewfinder--red {
-    .viewfinder__card-title-rectangule {
-      background-color: $colorSelectorRedThree;
-    }
+   .viewfinder__card-title-name {
+     color: $colorSelectorGreyOne;
+   }
 
-    .viewfinder__card-title-name {
-      color: $colorSelectorRedOne;
-    }
+   .viewfinder__card-title-job {
+     color: $colorTextTitleJob;
+   }
 
-    .viewfinder__card-title-job {
-      color: $colorTextTitleJob;
-    }
+   .viewfinder__icons-box {
+     border: 2px solid  $colorSelectorGreyThree;
+     color: $colorSelectorGreyOne;
+   }
 
-    .viewfinder__icons-box {
-      border: 2px solid  $colorSelectorRedThree;
-      color: $colorSelectorRedOne;
-    }
-
-    .viewfinder__tags-text {
-      background-color: $colorSelectorRedTwo;
-      color: $colorTextTagsCard;
-    }
-  }
-
-  &.viewfinder--grey {
-    .viewfinder__card-title-rectangule {
-      background-color: $colorSelectorGreyThree;
-    }
-
-    .viewfinder__card-title-name {
-      color: $colorSelectorGreyOne;
-    }
-
-    .viewfinder__card-title-job {
-      color: $colorTextTitleJob;
-    }
-
-    .viewfinder__icons-box {
-      border: 2px solid  $colorSelectorGreyThree;
-      color: $colorSelectorGreyOne;
-    }
-
-    .viewfinder__tags-text {
-      background-color: $colorSelectorGreyTwo;
-      color: $colorTextTagsCard;
-    }
-  }
-}
-
-@media all and (min-width: 768px){
-  .main__2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+   .viewfinder__tags-text {
+     background-color: $colorSelectorGreyTwo;
+     color: $colorTextTagsCard;
+   }
+ }
 }
