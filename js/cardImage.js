@@ -1,16 +1,4 @@
 'use strict';
-var nameCard= document.querySelector('.fill__input-name');
-var nameInput=document.querySelector('.fill__input-job');
-
-function writeData(event) {
-  var guiltyElement = event.currentTarget;
-  var targetID = guiltyElement.getAttribute('data-info');
-  document.querySelector('#' + targetID).innerHTML = guiltyElement.value;
-}
-nameCard.addEventListener('keyup', writeData);
-nameInput.addEventListener('keyup', writeData);
-
-'use strict';
 var fr = new FileReader();
 var buttonImage=document.querySelector('.fill__input--addimgbutton');
 var inputHidden=document.querySelector('#img-selector');
@@ -30,9 +18,3 @@ function fakeFileClick() {
 }
 inputHidden.addEventListener('change', getImage);
 buttonImage.addEventListener('click', fakeFileClick);
-
-'use strict';
-
-console.log('>> Ready :)');
-
-//# sourceMappingURL=main.min.js.map

@@ -5,13 +5,17 @@
 	},
 	"js": {
 		"src": [
+
+			"js/card.js",
+			"js/cardImage.js",
 			"js/main.js"
+
 		],
 		"dest": "js/"
 	},
 	"images": "images/**/*.{gif,jpg,png,svg}",
 	"html": [
-    "**/*.html",
-    "!node_modules/**/*.*"
-  ]
+		"**/*.html",
+		"!node_modules/**/*.*"
+	]
 }

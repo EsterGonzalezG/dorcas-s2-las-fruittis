@@ -77,6 +77,10 @@
     width: 30px;
     border: solid 1px $colorFillInputBorder;
     margin-left: 20px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 }
 
@@ -94,6 +98,10 @@
   margin-left: 20px;
 
   .fa-minus {
-      color: $colorFillSelectAbbilitiesText;
+    color: $colorFillSelectAbbilitiesText;
   }
+}
+
+.action__hiddenField {
+  display: none;
 }

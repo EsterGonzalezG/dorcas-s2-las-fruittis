@@ -1,48 +1,55 @@
 
 .viewfinder{
-background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
-display: flex;
-justify-content: center;
-align-items: center;
-padding-top:60px;
-padding-bottom: 30px;
-
-&__card{
-  position: relative;
-  background-color: $backgroundHeader;
-  width: 240px;
-}
-&__button{
-  position: absolute;
-  top:-40px;
-  left: 0;
-  width: 75px;
-  height: 30px;
-  &-reset{
-    background-color: $colorBackgroundReset;
-  border-radius: 15px;
-  border: 1px solid $colorTextTagsCard;
-  text-transform: uppercase;
-  font-family: 'OpenSans',serif;
-  font-size: 12px;
-  color: $colorTextButtonReset;
-  padding:5px 10px;
-}
-&-icono{
-  margin-right: 5px;
-  width: 11px;
-  height: 20px;
-}
-}
+  background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:60px;
+  padding-bottom: 30px;
+  &__photo{
+    background-image: url('https://place-hold.it/240x200/red');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 240px;
+    height:200px;
+  }
+  &__card{
+    position: relative;
+    background-color: $backgroundHeader;
+    width: 240px;
+  }
+  &__button{
+    position: absolute;
+    top:-40px;
+    left: 0;
+    width: 75px;
+    height: 30px;
+    &-reset{
+      background-color: $colorBackgroundReset;
+      border-radius: 15px;
+      border: 1px solid $colorTextTagsCard;
+      text-transform: uppercase;
+      font-family: 'OpenSans',serif;
+      font-size: 12px;
+      color: $colorTextButtonReset;
+      padding:5px 10px;
+    }
+    &-icono{
+      margin-right: 5px;
+      width: 11px;
+      height: 20px;
+    }
+  }
 }
 .viewfinder__card-title{
-display: flex;
-
-&-titlebox{
   display: flex;
-  flex-direction: column;
 
-}
+  &-titlebox{
+    display: flex;
+    flex-direction: column;
+
+  }
   &-rectangule{
     height: 42px;
     width: 5px;
@@ -102,9 +109,9 @@ display: flex;
   }
 }
 
-  @media all and (min-width: 768px){
-    .main__2{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
+@media all and (min-width: 768px){
+  .main__2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+}
