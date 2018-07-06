@@ -1,4 +1,5 @@
 
+
 .viewfinder{
   background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
   display: flex;
@@ -69,25 +70,57 @@
     font-size: 18px;
     line-height:20px;
     color:$colorTextTitleJob;
+
   }
 
-}
-
-.viewfinder__icons{
-  display: flex;
-  justify-content:flex-start;
-  margin:10px 0 10px 10px;
-  &-box{
-    margin-left: 10px;
-    border-radius: 22px;
-    border: 2px solid  $colorBorderIcons;
-    width: 32px;
-    height: 32px;
+  &__card-title {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $colorBackgroundIcons;
+
+    &-titlebox {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-rectangule {
+      height: 42px;
+      width: 5px;
+      margin: 20px 15px 0 0;
+    }
+
+    &-name {
+      padding: 20px 14px 5px 0;
+      font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', sans-serif; /*ojo mirar la fuente bien*/
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &-job {
+      padding: 0 14px 5px 0;
+      font-family: 'Comic Sans MS'; /*ojo mirar la fuente bien*/
+      font-size: 18px;
+      line-height: 20px;
+    }
   }
+
+  &__icons {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0 10px 10px;
+
+    &-box {
+      margin-left: 10px;
+      border-radius: 22px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+  &__tags {
+
 }
 .viewfinder__tags{
   display: flex;
@@ -100,12 +133,108 @@
     border-radius: 4px;
     background-color: $colorBackgroundTags;
     margin-right: 10px;
+
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    color:$colorTextTagsCard;
-    text-transform: uppercase;
-    padding: 0 5px;
+    margin: 5px 20px;
+  }
+
+  &__button {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 75px;
+    height: 30px;
+
+    &-reset {
+      background-color: $colorBackgroundReset;
+      border-radius: 15px;
+      border: 1px solid $colorTextTagsCard;
+      text-transform: uppercase;
+      font-family: 'OpenSans', serif;
+      font-size: 12px;
+      color: $colorTextButtonReset;
+      padding: 5px 10px;
+    }
+
+    &-icono {
+      margin-right: 5px;
+      width: 11px;
+      height: 20px;
+    }
+  }
+
+  &.viewfinder--blue {
+    .viewfinder__card-title-rectangule {
+      background-color: $colorBackgroundRectangule;
+    }
+
+    .viewfinder__card-title-name {
+      color: $colorTextTitleName;
+    }
+
+    .viewfinder__card-title-job {
+      color: $colorTextTitleJob;
+    }
+
+    .viewfinder__icons-box {
+      border: 2px solid  $colorBorderIcons;
+      color: $colorBackgroundIcons;
+    }
+
+    .viewfinder__tags-text {
+      background-color: $colorBackgroundTags;
+      color: $colorTextTagsCard;
+    }
+  }
+
+  &.viewfinder--red {
+    .viewfinder__card-title-rectangule {
+      background-color: $colorSelectorRedThree;
+    }
+
+    .viewfinder__card-title-name {
+      color: $colorSelectorRedOne;
+    }
+
+    .viewfinder__card-title-job {
+      color: $colorTextTitleJob;
+    }
+
+    .viewfinder__icons-box {
+      border: 2px solid  $colorSelectorRedThree;
+      color: $colorSelectorRedOne;
+    }
+
+    .viewfinder__tags-text {
+      background-color: $colorSelectorRedTwo;
+      color: $colorTextTagsCard;
+    }
+  }
+
+  &.viewfinder--grey {
+    .viewfinder__card-title-rectangule {
+      background-color: $colorSelectorGreyThree;
+    }
+
+    .viewfinder__card-title-name {
+      color: $colorSelectorGreyOne;
+    }
+
+    .viewfinder__card-title-job {
+      color: $colorTextTitleJob;
+    }
+
+    .viewfinder__icons-box {
+      border: 2px solid  $colorSelectorGreyThree;
+      color: $colorSelectorGreyOne;
+    }
+
+    .viewfinder__tags-text {
+      background-color: $colorSelectorGreyTwo;
+      color: $colorTextTagsCard;
+    }
   }
 }
 
