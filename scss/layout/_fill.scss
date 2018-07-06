@@ -77,6 +77,10 @@
     width: 30px;
     border: solid 1px $colorFillInputBorder;
     margin-left: 20px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 }
 
@@ -86,23 +90,18 @@
   margin-top: 20px;
 }
 
-.fill__input--selectabilities {
-  width: 165px;
+.fill__input--addabilitiebutton {
+  border: 1px solid $colorFillSelectAbbilitiesBorder;
+  border-radius: 45px;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
 
-  .abilitiesdropdown {
-    font-family: 'Open Sans';
-    font-size: 18px;
+  .fa-minus {
+    color: $colorFillSelectAbbilitiesText;
   }
+}
 
-  .fill__input--addabilitiebutton {
-    border: 1px solid $colorFillSelectAbbilitiesBorder;
-    border-radius: 45px;
-    height: 30px;
-    width: 30px;
-    margin-left: 20px;
-
-    .fa-minus {
-      color: $colorFillSelectAbbilitiesText;
-    }
-  }
+.action__hiddenField {
+  display: none;
 }

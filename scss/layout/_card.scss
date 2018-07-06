@@ -1,14 +1,76 @@
-.viewfinder {
+
+
+.viewfinder{
   background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 475px;
-
-  &__card {
+  padding-top:60px;
+  padding-bottom: 30px;
+  &__photo{
+    background-image: url('https://place-hold.it/240x200/red');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 240px;
+    height:200px;
+  }
+  &__card{
     position: relative;
     background-color: $backgroundHeader;
-    height: 367px;
+    width: 240px;
+  }
+  &__button{
+    position: absolute;
+    top:-40px;
+    left: 0;
+    width: 75px;
+    height: 30px;
+    &-reset{
+      background-color: $colorBackgroundReset;
+      border-radius: 15px;
+      border: 1px solid $colorTextTagsCard;
+      text-transform: uppercase;
+      font-family: 'OpenSans',serif;
+      font-size: 12px;
+      color: $colorTextButtonReset;
+      padding:5px 10px;
+    }
+    &-icono{
+      margin-right: 5px;
+      width: 11px;
+      height: 20px;
+    }
+  }
+}
+.viewfinder__card-title{
+  display: flex;
+
+  &-titlebox{
+    display: flex;
+    flex-direction: column;
+
+  }
+  &-rectangule{
+    height: 42px;
+    width: 5px;
+    background-color: $colorBackgroundRectangule ;
+    margin:20px 15px 0 0;
+  }
+  &-name{
+    padding: 20px 14px 5px 0px;
+    font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;/*ojo mirar la fuente bien*/
+    font-size: 18px;
+    line-height:  20px;
+    color:$colorTextTitleName;
+  }
+  &-job{
+    padding: 0 14px 5px 0px;
+    font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;/*ojo mirar la fuente bien*/
+    font-size: 18px;
+    line-height:20px;
+    color:$colorTextTitleJob;
+
   }
 
   &__card-title {
@@ -56,24 +118,26 @@
     }
   }
 
+
   &__tags {
+
+}
+.viewfinder__tags{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin:5px 20px;
+  &-text{
+    height: 18px;
+    font-size: 13px;
+    border-radius: 4px;
+    background-color: $colorBackgroundTags;
+    margin-right: 10px;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 5px 20px;
-
-    &-text {
-      width: 36px;
-      height: 18px;
-      font-size: 13px;
-      border-radius: 4px;
-      margin-right: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase;
-      padding: 0 5px;
-    }
   }
 
   &__button {
@@ -171,5 +235,12 @@
       background-color: $colorSelectorGreyTwo;
       color: $colorTextTagsCard;
     }
+  }
+}
+
+@media all and (min-width: 768px){
+  .main__2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

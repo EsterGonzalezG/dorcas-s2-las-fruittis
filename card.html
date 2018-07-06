@@ -15,8 +15,9 @@
       <img class="header__logo--image" src="images/logo-awesome-profile-cards.svg" alt="">
     </div>
   </header>
-  <main>
+  <main class="main__2">
 <!-- Parten Diseño -->
+<section class="main__form">
     <section class="dropdown__first">
       <div class="dropdown__desing">
         <div class="dropdown__desing--name">
@@ -102,16 +103,17 @@
         <form class="fill__form--itemscontainer" action="index.html" method="post">
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="nombrecompleto">Nombre completo</label>
-            <input class="fill__input--items" type="text" id="nombrecompleto" name="completename" placeholder="Ej: Sally Jill">
+            <input class="fill__input--items fill__input-name " type="text" id="nombrecompleto" name="completename" placeholder="Ej: Sally Jill" data-info="element-name">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="puesto">Puesto</label>
-            <input class="fill__input--items" type="text" id="puesto" name="job" placeholder="Ej: Front-end unicorn">
+            <input class="fill__input--items fill__input-job" type="text" id="puesto" name="job" placeholder="Ej: Front-end unicorn" data-info="element-job">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="imagenperfil">Imagen de perfil</label>
             <div class="fill__input--buttonandminiimg">
-              <button class="fill__input--addimgbutton">Añadir imagen</button>
+              <button type="button" class="fill__input--addimgbutton">Añadir imagen</button>
+              <input type="file" name="" id="img-selector" class="action__hiddenField">
               <div class="fill__input--miniimg"></div>
             </div>
           </div>
@@ -147,18 +149,59 @@
         </form>
       </div>
     </section>
+
+
 <!-- Parte Rellena -->
+
     <section class="viewfinder viewfinder--blue view">
+
+  <div class="bookmark"></div>
+<!-- parte comparte -->
+<section class="dropdown__third">
+  <div class="dropdown__fill">
+    <div class="dropdown__fill--name">
+      <div class="">
+        <i class="fas fa-share-alt dropdown__fill--nameIcon"></i>
+      </div>
+      <h2 class="dropdown__fill--nameText">comparte</h2>
+    </div>
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <div class="shares__input--buttonandminiimg">
+    <button class="shares__input--addimgbutton">
+      <i class="far fa-address-card"></i> crear tarjeta</button>
+</div>
+
+</section>
+<!-- seguda parte -->
+<!-- <section class="share2">
+    <p class="share2__text">La tarjeta ha sido creada:</p>
+    <a class="share2__link"href="https://awesome-profile-card.com?id=A456DF0001">https://awesome-profile-card.com?id=A456DF0001</a>
+    <button type="button" class="share2__imput--twitter"name="button"><i class="fab fa-twitter"></i>Compartir en twitter</button>
+
+</section> -->
+
+<!-- parte comparte -->
+  <div class="bookmark"></div>
+</section>
+<section class="main__card">
+
+    <section class="viewfinder">
+
       <div class="viewfinder__card">
         <div class="viewfinder__card-title">
           <div class="viewfinder__card-title-rectangule"></div>
+
+
           <div class="viewfinder__card-titlebox">
-            <h2 class="viewfinder__card-title-name">Nombre Apellidos</h2>
-            <h3 class="viewfinder__card-title-job">Front-end developer</h3>
+
+
+            <h2 class="viewfinder__card-title-name" id="element-name">Nombre Apellidos</h2>
+            <h3 class="viewfinder__card-title-job" id="element-job">Front-end developer</h3>
           </div>
         </div>
         <div class="viewfinder__photo">
-          <img src="https://place-hold.it/240x200/red" alt="">
+
         </div>
         <div class="viewfinder__icons">
           <div class="viewfinder__icons-box">
@@ -191,7 +234,10 @@
         </div>
       </div>
     </section>
+    </section>
   </main>
+
+  <!-- footer -->
   <footer class="footer">
     <p class ="footer__copyright">Awesome profile-cards @ 2018</p>
     <div class ="footer__logo">
@@ -200,6 +246,12 @@
       </a>
     </div>
   </footer>
+
 <script src="js/design.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/main.min.js">
+
+</script>
+
 </body>
 </html>
