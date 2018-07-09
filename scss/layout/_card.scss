@@ -36,14 +36,14 @@
 
     &-name {
       padding: 20px 14px 5px 0;
-      font-family: ‘Comic Sans MS’, ‘Comic Sans’, ‘TSCu_Comic’, sans-serif; /*ojo mirar la fuente bien*/
+      font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
       font-size: 18px;
       line-height: 20px;
     }
 
     &-job {
       padding: 0 14px 5px 0;
-      font-family: ‘Comic Sans MS’; /*ojo mirar la fuente bien*/
+      font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
       font-size: 18px;
       line-height: 20px;
     }
@@ -190,7 +190,7 @@
   }
 
   .main__card {
-    padding: 20px 40px 21px 0px;
+    padding: 20px 40px 21px 0;
     grid-column:2;
   }
 
