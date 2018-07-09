@@ -158,7 +158,7 @@
   border-radius: 15px;
   border: 1px solid #ffffff;
   text-transform: uppercase;
-  font-family: 'OpenSans', serif;
+  font-family: "OpenSans-Regular", sans-serif;
   font-size: 12px;
   color: #54585a;
   padding: 5px 10px;
@@ -242,7 +242,7 @@
 
 .main__header {
   width: 250px;
-  margin: 0px auto 0 auto;
+  margin: 0 auto 0 auto;
   padding-top: 94px;
 }
 
@@ -256,15 +256,15 @@
   text-align: center;
   font-size: 19px;
   color: #e17334;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: 900;
   margin: 35.4px auto 4px auto;
 }
 
 .main__intro .main__paragraph {
-  font-family: 'OpenSans-Regular',serif;
-  font-size: 15px;
-  font-weight: 500;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 12.8px;
+  font-weight: 400;
   margin: 0 auto;
   text-align: center;
   color: #114e4e;
@@ -288,6 +288,7 @@
 }
 
 .main__intro .main__list-item {
+  font-family: "OpenSans-Regular", sans-serif;
   text-decoration: none;
   list-style: none;
   padding: 10px;
@@ -321,7 +322,7 @@
 
 .main__intro .main__button--start {
   font-size: 16px;
-  font-family: 'OpenSans', serif;
+  font-family: "OpenSans-Regular", sans-serif;
   width: 129px;
   height: 42px;
   background-color: #438792;
@@ -345,7 +346,7 @@
 }
 
 .footer__copyright {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans";
   font-size: 14px;
   color: #d8d8d8;
   margin-top: 20px;
@@ -394,7 +395,7 @@
   padding-left: 10px;
   color: #54585a;
   font-size: 18px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -502,7 +503,7 @@
   padding-left: 39px;
   color: #54585a;
   text-transform: uppercase;
-  font-family: 'Open Sans';
+  font-family: "OpenSans-Regular", sans-serif;
 }
 
 .dropdown__title h3 {
@@ -562,20 +563,15 @@
 }
 
 .ubuntu {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .comic {
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
-  font-size: 16px;
+  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic";
 }
 
 .montserrat {
-  font-family: 'Merriweather', serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-family: "Merriweather", serif;
 }
 
 .bookmark {
@@ -609,7 +605,7 @@
 .dropdown__fill--name .dropdown__fill--nameText {
   margin-left: 10px;
   font-size: 18px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 600;
   text-transform: uppercase;
   color: #54585a;
@@ -637,7 +633,7 @@
 
 .fill__label--items {
   margin-bottom: 5px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 400;
   color: #114e4e;
   font-size: 14px;
@@ -665,7 +661,7 @@
 .fill__input--buttonandminiimg .fill__input--addimgbutton {
   background-color: #e17334;
   color: #ffffff;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 14px;
   width: 140px;
   height: 30px;
@@ -728,7 +724,7 @@
 .shares__input--buttonandminiimg .shares__input--addimgbutton {
   background-color: #e17334;
   color: #ffffff;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   width: 199px;
   height: 50px;
