@@ -238,6 +238,21 @@
   color: #ffffff;
 }
 
+.collapsible__content {
+  display: none;
+}
+
+.collapsible--visible .collapsible__content {
+  display: block;
+}
+
+.rote {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  margin-right: 0;
+  margin-left: auto;
+}
+
 .main {
   background: #f5f5f5;
 }
