@@ -3,7 +3,8 @@
  display: flex;
  justify-content: center;
  align-items: center;
- height: 475px;
+ padding-top:60px;
+padding-bottom: 30px;
 
  &__photo{
     background-image: url('https://place-hold.it/240x200/red');
