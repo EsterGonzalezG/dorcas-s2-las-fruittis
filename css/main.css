@@ -37,8 +37,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  height: 475px;
 }
 
 .viewfinder__photo {
@@ -53,7 +52,7 @@
 .viewfinder__card {
   position: relative;
   background-color: #ffffff;
-  width: 240px;
+  height: 367px;
 }
 
 .viewfinder__card-title {
@@ -80,20 +79,16 @@
 
 .viewfinder__card-title-name {
   padding: 20px 14px 5px 0;
-  font-family: ‘Comic Sans MS’, ‘Comic Sans’, ‘TSCu_Comic’, sans-serif;
- /*ojo mirar la fuente bien*/
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
   font-size: 18px;
   line-height: 20px;
-  color: #114e4e;
 }
 
 .viewfinder__card-title-job {
   padding: 0 14px 5px 0;
-  font-family: ‘Comic Sans MS’;
- /*ojo mirar la fuente bien*/
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
   font-size: 18px;
   line-height: 20px;
-  color: #54585a;
 }
 
 .viewfinder__icons {
@@ -109,7 +104,6 @@
 .viewfinder__icons-box {
   margin-left: 10px;
   border-radius: 22px;
-  border: 2px solid #a2deaf;
   width: 32px;
   height: 32px;
   display: -webkit-box;
@@ -121,7 +115,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #114e4e;
 }
 
 .viewfinder__tags {
@@ -783,16 +776,13 @@
   }
 
   .main__card {
-    padding: 20px 40px 21px 0px;
+    padding: 20px 40px 21px 0;
+    grid-column: 2;
   }
 
   .main__form {
     grid-column-start: 1;
     grid-row: 1;
-  }
-
-  .main__card {
-    grid-column: 2;
   }
 
   .viewfinder {
