@@ -77,14 +77,12 @@
 
 .viewfinder__card-title-name {
   padding: 20px 14px 5px 0;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
   font-size: 18px;
   line-height: 20px;
 }
 
 .viewfinder__card-title-job {
   padding: 0 14px 5px 0;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
   font-size: 18px;
   line-height: 20px;
 }
@@ -567,20 +565,17 @@
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #54585a;
 }
 
 .comic {
   font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic';
   font-size: 16px;
-  color: #54585a;
 }
 
 .montserrat {
   font-family: 'Merriweather', serif;
   font-size: 16px;
   font-weight: 400;
-  color: #54585a;
 }
 
 .bookmark {
