@@ -15,171 +15,197 @@ padding-bottom: 30px;
     height:200px;
   }
 
- &__card {
-   position: relative;
-   background-color: $backgroundHeader;
-   height: 367px;
- }
+  &__card {
+    position: relative;
+    background-color: $backgroundHeader;
+    width: 240px;
+  }
 
- &__card-title {
-   display: flex;
+  &__card-title {
+    display: flex;
 
-   &-titlebox {
-     display: flex;
-     flex-direction: column;
-   }
+    &-titlebox {
+      display: flex;
+      flex-direction: column;
+    }
 
-   &-rectangule {
-     height: 42px;
-     width: 5px;
-     margin: 20px 15px 0 0;
-   }
+    &-rectangule {
+      height: 42px;
+      width: 5px;
+      margin: 20px 15px 0 0;
+    }
 
-   &-name {
-     padding: 20px 14px 5px 0;
-     font-family: ‘Comic Sans MS’, ‘Comic Sans’, ‘TSCu_Comic’, sans-serif; /*ojo mirar la fuente bien*/
-     font-size: 18px;
-     line-height: 20px;
-   }
+    &-name {
+      padding: 20px 14px 5px 0;
+      font-family: ‘Comic Sans MS’, ‘Comic Sans’, ‘TSCu_Comic’, sans-serif; /*ojo mirar la fuente bien*/
+      font-size: 18px;
+      line-height: 20px;
+      color:$colorTextTitleName;
+    }
 
-   &-job {
-     padding: 0 14px 5px 0;
-     font-family: ‘Comic Sans MS’; /*ojo mirar la fuente bien*/
-     font-size: 18px;
-     line-height: 20px;
-   }
- }
+    &-job {
+      padding: 0 14px 5px 0;
+      font-family: ‘Comic Sans MS’; /*ojo mirar la fuente bien*/
+      font-size: 18px;
+      line-height: 20px;
+      color:$colorTextTitleJob;
+    }
+  }
 
- &__icons {
-   display: flex;
-   justify-content: flex-start;
-   margin: 10px 0 10px 10px;
+  &__icons {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0 10px 10px;
 
-   &-box {
-     margin-left: 10px;
-     border-radius: 22px;
-     width: 32px;
-     height: 32px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
- }
+    &-box {
+      margin-left: 10px;
+      border-radius: 22px;
+      border: 2px solid  $colorBorderIcons;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $colorBackgroundIcons;
+    }
+  }
 
- &__tags {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   margin: 5px 20px;
+  &__tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 20px;
 
-   &-text {
-     width: 36px;
-     height: 18px;
-     font-size: 13px;
-     border-radius: 4px;
-     margin-right: 10px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-transform: uppercase;
-     padding: 0 5px;
-   }
- }
+    &-text {
+      width: 36px;
+      height: 18px;
+      font-size: 13px;
+      border-radius: 4px;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      padding: 0 5px;
+    }
+  }
 
- &__button {
-   position: absolute;
-   top: -40px;
-   left: 0;
-   width: 75px;
-   height: 30px;
+  &__button {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 75px;
+    height: 30px;
 
-   &-reset {
-     background-color: $colorBackgroundReset;
-     border-radius: 15px;
-     border: 1px solid $colorTextTagsCard;
-     text-transform: uppercase;
-     font-family: ‘OpenSans’, serif;
-     font-size: 12px;
-     color: $colorTextButtonReset;
-     padding: 5px 10px;
-   }
+    &-reset {
+      background-color: $colorBackgroundReset;
+      border-radius: 15px;
+      border: 1px solid $colorTextTagsCard;
+      text-transform: uppercase;
+      font-family: ‘OpenSans’, serif;
+      font-size: 12px;
+      color: $colorTextButtonReset;
+      padding: 5px 10px;
+    }
 
-   &-icono {
-     margin-right: 5px;
-     width: 11px;
-     height: 20px;
-   }
- }
+    &-icono {
+      margin-right: 5px;
+      width: 11px;
+      height: 20px;
+    }
+  }
 
- &.viewfinder--blue {
-   .viewfinder__card-title-rectangule {
-     background-color: $colorBackgroundRectangule;
-   }
+  &.viewfinder--blue {
+    .viewfinder__card-title-rectangule {
+      background-color: $colorBackgroundRectangule;
+    }
 
-   .viewfinder__card-title-name {
-     color: $colorTextTitleName;
-   }
+    .viewfinder__card-title-name {
+      color: $colorTextTitleName;
+    }
 
-   .viewfinder__card-title-job {
-     color: $colorTextTitleJob;
-   }
+    .viewfinder__card-title-job {
+      color: $colorTextTitleJob;
+    }
 
-   .viewfinder__icons-box {
-     border: 2px solid  $colorBorderIcons;
-     color: $colorBackgroundIcons;
-   }
+    .viewfinder__icons-box {
+      border: 2px solid  $colorBorderIcons;
+      color: $colorBackgroundIcons;
+    }
 
-   .viewfinder__tags-text {
-     background-color: $colorBackgroundTags;
-     color: $colorTextTagsCard;
-   }
- }
+    .viewfinder__tags-text {
+      background-color: $colorBackgroundTags;
+      color: $colorTextTagsCard;
+    }
+  }
 
- &.viewfinder--red {
-   .viewfinder__card-title-rectangule {
-     background-color: $colorSelectorRedThree;
-   }
+  &.viewfinder--red {
+    .viewfinder__card-title-rectangule {
+      background-color: $colorSelectorRedThree;
+    }
 
-   .viewfinder__card-title-name {
-     color: $colorSelectorRedOne;
-   }
+    .viewfinder__card-title-name {
+      color: $colorSelectorRedOne;
+    }
 
-   .viewfinder__card-title-job {
-     color: $colorTextTitleJob;
-   }
+    .viewfinder__card-title-job {
+      color: $colorTextTitleJob;
+    }
 
-   .viewfinder__icons-box {
-     border: 2px solid  $colorSelectorRedThree;
-     color: $colorSelectorRedOne;
-   }
+    .viewfinder__icons-box {
+      border: 2px solid  $colorSelectorRedThree;
+      color: $colorSelectorRedOne;
+    }
 
-   .viewfinder__tags-text {
-     background-color: $colorSelectorRedTwo;
-     color: $colorTextTagsCard;
-   }
- }
+    .viewfinder__tags-text {
+      background-color: $colorSelectorRedTwo;
+      color: $colorTextTagsCard;
+    }
+  }
 
- &.viewfinder--grey {
-   .viewfinder__card-title-rectangule {
-     background-color: $colorSelectorGreyThree;
-   }
+  &.viewfinder--grey {
+    .viewfinder__card-title-rectangule {
+      background-color: $colorSelectorGreyThree;
+    }
 
-   .viewfinder__card-title-name {
-     color: $colorSelectorGreyOne;
-   }
+    .viewfinder__card-title-name {
+      color: $colorSelectorGreyOne;
+    }
 
-   .viewfinder__card-title-job {
-     color: $colorTextTitleJob;
-   }
+    .viewfinder__card-title-job {
+      color: $colorTextTitleJob;
+    }
 
-   .viewfinder__icons-box {
-     border: 2px solid  $colorSelectorGreyThree;
-     color: $colorSelectorGreyOne;
-   }
+    .viewfinder__icons-box {
+      border: 2px solid  $colorSelectorGreyThree;
+      color: $colorSelectorGreyOne;
+    }
 
-   .viewfinder__tags-text {
-     background-color: $colorSelectorGreyTwo;
-     color: $colorTextTagsCard;
-   }
- }
+    .viewfinder__tags-text {
+      background-color: $colorSelectorGreyTwo;
+      color: $colorTextTagsCard;
+    }
+  }
+}
+@media all and (min-width: 768px){
+  .main__2{
+    display: grid;
+    grid-template-columns: 1fr 369px;
+  }
+  .main__card{
+    padding: 20px 40px 21px 0px;
+  }
+  .main__form{
+    grid-column-start:1;
+    grid-row: 1;
+  }
+  .main__card{
+    grid-column:2;
+  }
+  .viewfinder{
+    height: 100%;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+  }
 }
