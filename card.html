@@ -32,17 +32,17 @@
         </div>
 
         <div class="viewfinder__icons">
-          <div class="viewfinder__icons-box">
-            <i class="fas fa-mobile-alt"></i>
+          <div class="viewfinder__icons-box mobileicon">
+            <a id="element-phone" href="tel:" class="viewfinder__icons--links mobilelink"><i class="fas fa-mobile-alt"></i></a>
           </div>
-          <div class="viewfinder__icons-box">
-            <i class="far fa-envelope"></i>
+          <div class="viewfinder__icons-box emailicon">
+            <a id="element-mail" href="mailto:" class="viewfinder__icons--links emaillink"><i class="far fa-envelope"></i></a>
           </div>
-          <div class="viewfinder__icons-box">
-            <i class="fab fa-linkedin-in"></i>
+          <div class="viewfinder__icons-box linkedinicon">
+            <a id="element-linkedin" href="https://" class="viewfinder__icons--links linkedinlink"><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <div class="viewfinder__icons-box">
-            <i class="fab fa-github-alt"></i>
+          <div class="viewfinder__icons-box githubicon">
+            <a id="element-github" href="https://" class="viewfinder__icons--links githublink"><i class="fab fa-github-alt"></i></a>
           </div>
         </div>
         <hr>
@@ -170,19 +170,19 @@
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="email">Email</label>
-            <input class="fill__input--items" type="email" id="email" name="mail" placeholder="Ej: sally-jill@gmail.com">
+            <input class="fill__input--items fill__input-mail" type="email" id="email" name="mail" placeholder="Ej: sally-jill@gmail.com" data-donde="element-mail">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="tlf">Teléfono</label>
-            <input class="fill__input--items" type="tel" id="tlf" name="phone" placeholder="Ej: 555-55-55-55">
+            <input class="fill__input--items fill__input-phone" type="tel" id="tlf" name="phone" placeholder="Ej: +34555555555" data-donde="element-phone">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="linkedin">Linkedin</label>
-            <input class="fill__input--items" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.jill">
+            <input class="fill__input--items fill__input-linkedin" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.jill" data-donde="element-linkedin">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="github">Github</label>
-            <input class="fill__input--items" type="text" id="github" name="github" placeholder="Ej: @sally-jill">
+            <input class="fill__input--items fill__input-github" type="text" id="github" name="github" placeholder="Ej: github.com/sallyjill" data-donde="element-github">
           </div>
           <div class="fill__form--abilitieslabelinput">
             <label class="fill__label--items" for="habilidades">Habilidades (máximo 3)</label>

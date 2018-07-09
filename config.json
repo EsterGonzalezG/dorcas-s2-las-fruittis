@@ -9,8 +9,8 @@
 			"js/card.js",
 			"js/cardImage.js",
 			"js/main.js",
-			"js/design.js"
-
+			"js/design.js",
+			"js/cardicons.js"
 		],
 		"dest": "js/"
 	},
