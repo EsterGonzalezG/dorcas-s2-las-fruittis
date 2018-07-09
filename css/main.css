@@ -37,7 +37,8 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 475px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .viewfinder__photo {
@@ -52,7 +53,7 @@
 .viewfinder__card {
   position: relative;
   background-color: #ffffff;
-  height: 367px;
+  width: 240px;
 }
 
 .viewfinder__card-title {
@@ -83,6 +84,7 @@
  /*ojo mirar la fuente bien*/
   font-size: 18px;
   line-height: 20px;
+  color: #114e4e;
 }
 
 .viewfinder__card-title-job {
@@ -91,6 +93,7 @@
  /*ojo mirar la fuente bien*/
   font-size: 18px;
   line-height: 20px;
+  color: #54585a;
 }
 
 .viewfinder__icons {
@@ -106,6 +109,7 @@
 .viewfinder__icons-box {
   margin-left: 10px;
   border-radius: 22px;
+  border: 2px solid #a2deaf;
   width: 32px;
   height: 32px;
   display: -webkit-box;
@@ -117,6 +121,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #114e4e;
 }
 
 .viewfinder__tags {
