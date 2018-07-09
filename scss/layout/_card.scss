@@ -1,12 +1,11 @@
 .viewfinder {
- background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
- display: flex;
- justify-content: center;
- align-items: center;
- padding-top:60px;
-padding-bottom: 30px;
+  background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 475px;
 
- &__photo{
+  &__photo {
     background-image: url('https://place-hold.it/240x200/red');
     background-repeat: no-repeat;
     background-position: center center;
@@ -18,7 +17,7 @@ padding-bottom: 30px;
   &__card {
     position: relative;
     background-color: $backgroundHeader;
-    width: 240px;
+    height: 367px;
   }
 
   &__card-title {
@@ -40,7 +39,6 @@ padding-bottom: 30px;
       font-family: ‘Comic Sans MS’, ‘Comic Sans’, ‘TSCu_Comic’, sans-serif; /*ojo mirar la fuente bien*/
       font-size: 18px;
       line-height: 20px;
-      color:$colorTextTitleName;
     }
 
     &-job {
@@ -48,7 +46,6 @@ padding-bottom: 30px;
       font-family: ‘Comic Sans MS’; /*ojo mirar la fuente bien*/
       font-size: 18px;
       line-height: 20px;
-      color:$colorTextTitleJob;
     }
   }
 
@@ -60,13 +57,11 @@ padding-bottom: 30px;
     &-box {
       margin-left: 10px;
       border-radius: 22px;
-      border: 2px solid  $colorBorderIcons;
       width: 32px;
       height: 32px;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: $colorBackgroundIcons;
     }
   }
 
@@ -187,25 +182,26 @@ padding-bottom: 30px;
     }
   }
 }
-@media all and (min-width: 768px){
-  .main__2{
+
+@media all and (min-width: 768px) {
+  .main__2 {
     display: grid;
     grid-template-columns: 1fr 369px;
   }
-  .main__card{
+
+  .main__card {
     padding: 20px 40px 21px 0px;
+    grid-column:2;
   }
-  .main__form{
+
+  .main__form {
     grid-column-start:1;
     grid-row: 1;
   }
-  .main__card{
-    grid-column:2;
-  }
-  .viewfinder{
+
+  .viewfinder {
     height: 100%;
     border-radius: 6px;
     box-sizing: border-box;
-
   }
 }
