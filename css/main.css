@@ -772,6 +772,31 @@
     padding-left: 40px;
   }
 
+  .main__2 {
+    display: grid;
+    grid-template-columns: 1fr 369px;
+  }
+
+  .main__card {
+    padding: 20px 40px 21px 0px;
+  }
+
+  .main__form {
+    grid-column-start: 1;
+    grid-row: 1;
+  }
+
+  .main__card {
+    grid-column: 2;
+  }
+
+  .viewfinder {
+    height: 100%;
+    border-radius: 6px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   .main__header {
     width: 419px;
     padding-top: 50px;
