@@ -1,0 +1,15 @@
+
+.collapsible__content {
+  display: none;
+}
+
+.collapsible--visible {
+  .collapsible__content {
+    display: block;
+  }
+  .arrow{
+    transform: rotate(-180deg);
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

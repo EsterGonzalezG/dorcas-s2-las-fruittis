@@ -19,7 +19,7 @@
 <section class="main__card">
 
 
-    <section class="viewfinder viewfinder--blue view">
+    <section class="viewfinder viewfinder--blue comic view">
       <div class="viewfinder__card">
         <div class="viewfinder__card-title">
           <div class="viewfinder__card-title-rectangule"></div>
@@ -69,31 +69,38 @@
   <!-- Parten Diseño -->
 
   <section class="main__form">
-    <section class="dropdown__first">
-      <div class="dropdown__desing">
+    <section class="dropdown__first collapsible collapsible--visible">
+
+      <div class="dropdown__desing collapsible__label">
         <div class="dropdown__desing--name">
           <div class="">
             <i class="far fa-object-ungroup dropdown__desing--nameIcon"></i>
           </div>
+
           <h2 class="dropdown__desing--nameText">Diseña</h2>
         </div>
+        <span class="arrow">
         <i class="fas fa-angle-up"></i>
+</span>
       </div>
+<div class="collapsible__content">
+
+
       <div class="dropdown__colors">
         <div class="dropdown__title">
           <h3>Colores</h3>
         </div>
         <div class="">
           <form class="dropdown__colors--selectors" action="index.html" method="post">
-            <div class="dropdown__colorsgroups">
+            <div class="dropdown__colorsgroups radiosGroup">
               <label class="colors-container" for="blue">
                 <div class="colors__darkCyan colors"></div>
                 <div class="colors__dirtyblue colors"></div>
                 <div class="colors__hospitalGreen colors"></div>
               </label>
-              <input class="radio radio--blue" id="blue" type="radio" name="colors">
+              <input class="radio radio--blue" id="blue" type="radio" name="colors" checked>
             </div>
-            <div class="dropdown__colorsgroups">
+            <div class="dropdown__colorsgroups radiosGroup">
               <label class="colors-container" for="red">
                 <div class="colors__darkRed colors"></div>
                 <div class="colors__strongRed colors"></div>
@@ -101,7 +108,7 @@
               </label>
               <input class="radio radio--red" id="red" type="radio" name="colors">
             </div>
-            <div class="dropdown__colorsgroups">
+            <div class="dropdown__colorsgroups radiosGroup">
               <label class="colors-container" for="grey">
                 <div class="colors__darkBlue colors"></div>
                 <div class="colors__lightBlue colors"></div>
@@ -118,39 +125,45 @@
         </div>
         <div class="">
           <form class="dropdown__fonts--selectors" action="index.html" method="post">
-            <div class="dropdown__fontsgroups">
+            <div class="dropdown__fontsgroups radiosGroup">
               <label class="fonts ubuntu" for="ubuntu">Ubuntu
               </label>
-              <input class="radio" id="ubuntu" type="radio" name="fonts">
+              <input class="radio radio--ubuntu" id="ubuntu" type="radio" name="fonts">
             </div>
-            <div class="dropdown__fontsgroups">
+            <div class="dropdown__fontsgroups radiosGroup">
               <label class="fonts comic"  for="comic">Comic Sans
               </label>
-              <input class="radio" id="comic" type="radio" name="fonts">
+              <input class="radio radio--comic" id="comic" type="radio" name="fonts" checked>
             </div>
-            <div class="dropdown__fontsgroups">
+            <div class="dropdown__fontsgroups radiosGroup">
               <label class="fonts montserrat" for="monstserrat">Montserrat
               </label>
-              <input class="radio" id="montserrat" type="radio" name="fonts">
+              <input class="radio radio--montserrat" id="montserrat" type="radio" name="fonts">
             </div>
           </form>
         </div>
       </div>
+</div>
+
     </section>
     <!-- Parte Diseño -->
     <div class="bookmark"></div>
     <!-- Parte Rellena -->
-    <section class="dropdown__second">
-      <div class="dropdown__fill">
+    <section class="dropdown__second collapsible">
+
+      <div class="dropdown__fill collapsible__label">
         <div class="dropdown__fill--name">
           <div class="">
             <i class="far fa-keyboard dropdown__fill--nameIcon"></i>
           </div>
+
           <h2 class="dropdown__fill--nameText">Rellena</h2>
         </div>
+<span class="arrow">
         <i class="fas fa-angle-up"></i>
+</span>
       </div>
-      <div class="fill_form--container">
+      <div class="fill_form--container collapsible__content">
         <form class="fill__form--itemscontainer" action="index.html" method="post">
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="nombrecompleto">Nombre completo</label>
@@ -199,23 +212,28 @@
           </div>
         </form>
       </div>
+
     </section>
     <!-- Parte Rellena -->
     <div class="bookmark"></div>
-    <section class="dropdown__third">
-      <div class="dropdown__fill">
+    <section class="dropdown__third collapsible">
+
+      <div class="dropdown__fill collapsible__label">
         <div class="dropdown__fill--name">
           <div class="">
             <i class="fas fa-share-alt dropdown__fill--nameIcon"></i>
           </div>
-          <h2 class="dropdown__fill--nameText">comparte</h2>
+          <h2 class="dropdown__fill--nameText ">Comparte</h2>
         </div>
+<span class="arrow">
         <i class="fas fa-angle-up"></i>
+</span>
       </div>
-      <div class="shares__input--buttonandminiimg">
-        <button class="shares__input--addimgbutton">
-          <i class="far fa-address-card"></i> crear tarjeta</button>
+      <div class="shares__input--buttonandminiimg ">
+        <button class="shares__input--addimgbutton collapsible__content">
+          <i class="far fa-address-card"></i> Crear tarjeta</button>
         </div>
+
       </section>
       <!-- parte comparte -->
 
