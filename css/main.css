@@ -116,6 +116,7 @@
 }
 
 .viewfinder__tags {
+  font-family: "Open Sans";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
