@@ -3,7 +3,7 @@ var i;
 var j;
 var collapsible=document.querySelectorAll('.collapsible');
 var collapsibleTriggers=document.querySelectorAll('.collapsible__label');
-var arrow=document.querySelectorAll('.arrow');
+
 
 
 function updateCollapsibles(e) {
