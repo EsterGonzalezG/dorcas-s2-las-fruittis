@@ -10,8 +10,8 @@
 			"js/cardImage.js",
 			"js/colapsable.js",
 			"js/main.js",
-			"js/design.js"
-
+			"js/design.js",
+			"js/cardicons.js"
 		],
 		"dest": "js/"
 	},

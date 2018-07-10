@@ -126,6 +126,10 @@
       color: $colorBackgroundIcons;
     }
 
+    .viewfinder__icons--links {
+      color: $colorBackgroundIcons;
+    }
+
     .viewfinder__tags-text {
       background-color: $colorBackgroundTags;
       color: $colorTextTagsCard;
@@ -150,6 +154,10 @@
       color: $colorSelectorRedOne;
     }
 
+    .viewfinder__icons--links {
+      color: $colorSelectorRedOne;
+    }
+
     .viewfinder__tags-text {
       background-color: $colorSelectorRedTwo;
       color: $colorTextTagsCard;
@@ -171,6 +179,10 @@
 
     .viewfinder__icons-box {
       border: 2px solid  $colorSelectorGreyThree;
+      color: $colorSelectorGreyOne;
+    }
+
+    .viewfinder__icons--links {
       color: $colorSelectorGreyOne;
     }
 
