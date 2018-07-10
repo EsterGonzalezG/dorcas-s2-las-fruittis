@@ -18,7 +18,7 @@
   .dropdown__fill--nameText {
     margin-left: 10px;
     font-size: 18px;
-    font-family: 'Open Sans';
+    font-family: $fontOpenSans;
     font-weight: 600;
     text-transform: uppercase;
     color: $colorGreySmoke;
@@ -42,7 +42,7 @@
 
 .fill__label--items {
   margin-bottom: 5px;
-  font-family: 'Open Sans';
+  font-family: $fontOpenSans;
   font-weight: 400;
   color: $colorFillLabelText;
   font-size: 14px;
@@ -64,7 +64,7 @@
   .fill__input--addimgbutton {
     background-color: $colorFillAddImgButtonBackg;
     color: $colorFillAddImgButtonText;
-    font-family: 'Open Sans';
+    font-family: $fontOpenSans;
     font-size: 14px;
     width: 140px;
     height: 30px;
