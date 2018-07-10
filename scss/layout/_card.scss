@@ -1,5 +1,9 @@
 .viewfinder {
-  background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+  //background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+  background-image: url('/images/fruit-13.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
