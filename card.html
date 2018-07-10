@@ -19,7 +19,7 @@
 <section class="main__card">
 
 
-    <section class="viewfinder viewfinder--blue view">
+    <section class="viewfinder viewfinder--blue comic view">
       <div class="viewfinder__card">
         <div class="viewfinder__card-title">
           <div class="viewfinder__card-title-rectangule"></div>
@@ -92,15 +92,15 @@
         </div>
         <div class="">
           <form class="dropdown__colors--selectors" action="index.html" method="post">
-            <div class="dropdown__colorsgroups">
+            <div class="dropdown__colorsgroups radiosGroup">
               <label class="colors-container" for="blue">
                 <div class="colors__darkCyan colors"></div>
                 <div class="colors__dirtyblue colors"></div>
                 <div class="colors__hospitalGreen colors"></div>
               </label>
-              <input class="radio radio--blue" id="blue" type="radio" name="colors">
+              <input class="radio radio--blue" id="blue" type="radio" name="colors" checked>
             </div>
-            <div class="dropdown__colorsgroups">
+            <div class="dropdown__colorsgroups radiosGroup">
               <label class="colors-container" for="red">
                 <div class="colors__darkRed colors"></div>
                 <div class="colors__strongRed colors"></div>
@@ -108,7 +108,7 @@
               </label>
               <input class="radio radio--red" id="red" type="radio" name="colors">
             </div>
-            <div class="dropdown__colorsgroups">
+            <div class="dropdown__colorsgroups radiosGroup">
               <label class="colors-container" for="grey">
                 <div class="colors__darkBlue colors"></div>
                 <div class="colors__lightBlue colors"></div>
@@ -125,20 +125,20 @@
         </div>
         <div class="">
           <form class="dropdown__fonts--selectors" action="index.html" method="post">
-            <div class="dropdown__fontsgroups">
+            <div class="dropdown__fontsgroups radiosGroup">
               <label class="fonts ubuntu" for="ubuntu">Ubuntu
               </label>
-              <input class="radio" id="ubuntu" type="radio" name="fonts">
+              <input class="radio radio--ubuntu" id="ubuntu" type="radio" name="fonts">
             </div>
-            <div class="dropdown__fontsgroups">
+            <div class="dropdown__fontsgroups radiosGroup">
               <label class="fonts comic"  for="comic">Comic Sans
               </label>
-              <input class="radio" id="comic" type="radio" name="fonts">
+              <input class="radio radio--comic" id="comic" type="radio" name="fonts" checked>
             </div>
-            <div class="dropdown__fontsgroups">
+            <div class="dropdown__fontsgroups radiosGroup">
               <label class="fonts montserrat" for="monstserrat">Montserrat
               </label>
-              <input class="radio" id="montserrat" type="radio" name="fonts">
+              <input class="radio radio--montserrat" id="montserrat" type="radio" name="fonts">
             </div>
           </form>
         </div>

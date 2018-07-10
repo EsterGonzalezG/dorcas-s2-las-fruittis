@@ -1,39 +1,41 @@
-.main{
+.main {
   background: $colorMain;
 }
 // esto es lo que he modificado de color, hy que añadir variable
 
 .main__header {
   width: 250px;
-  margin: 0px auto 0 auto;
+  margin: 0 auto 0 auto;
   padding-top: 94px;
 
-
-  &--logo{
-    background-image:  url("../images/logo-awesome-profile-cards.png");
+  &--logo {
+    background-image: url("../images/logo-awesome-profile-cards.png");
     width: 250px;
     height: 64px;
   }
 }
-.main__intro{
-  .main__title{
+
+.main__intro {
+  .main__title {
     text-align: center;
     font-size: 19px;
-    color:$colorMainTitle;
-    font-family: 'Merriweather', serif;
+    color: $colorMainTitle;
+    font-family: $fomtMerriweather;
     font-weight: 900;
-    margin:35.4px auto 4px auto;
+    margin: 35.4px auto 4px auto;
   }
-  .main__paragraph{
-    font-family:  'OpenSans-Regular',serif;
-    font-size: 15px;
-    font-weight: 500;
+
+  .main__paragraph {
+    font-family: $fontOpenSansRegular;
+    font-size: 12.8px;
+    font-weight: 400;
     margin: 0 auto;
     text-align: center;
-    color:$colorMainParagraph;
+    color: $colorMainParagraph;
     width: 265px;
   }
-  .main__list{
+
+  .main__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -43,24 +45,25 @@
     margin: 10px auto;
     border-radius: 4px;
 
-    &-item{
+    &-item {
+      font-family: $fontOpenSansRegular;
       text-decoration: none;
       list-style: none;
       padding: 10px;
       text-align: center;
       color: $colorMainTitle;
-
     }
-    .main__list--text{
-      color:$colorTextTitleJob;
+
+    .main__list--text {
+      color: $colorTextTitleJob;
       font-size: 16px;
       padding-top: 10px;
     }
-    .icon{
-      color:$colorMainTitle;
+
+    .icon {
+      color: $colorMainTitle;
       font-size: 28px;
     }
-
   }
 
   .main__button {
@@ -71,7 +74,7 @@
 
     &--start {
       font-size: 16px;
-      font-family: 'OpenSans', serif;
+      font-family: $fontOpenSansRegular;
       width: 129px;
       height: 42px;
       background-color: $colorBackgroundTags;
@@ -83,47 +86,47 @@
     }
   }
 }
-@media all and (min-width:768px){
+
+@media all and (min-width: 768px) {
   .main__header {
     width: 419px;
-    padding-top: 50px ;
+    padding-top: 50px;
 
-    &--logo{
-      background-image:  url("../images/logo-awesome-profile-cards-tablet.png");
+    &--logo {
+      background-image: url("../images/logo-awesome-profile-cards-tablet.png");
       width: 419px;
       height: 107px;
     }
   }
 
-  .main__intro{
-    .main__title{
+  .main__intro {
+    .main__title {
       font-size: 24px;
-      margin:31px auto 4px auto;
-
+      margin: 31px auto 4px auto;
     }
-    .main__paragraph{
+
+    .main__paragraph {
       font-size: 16px;
       margin: 4px auto;
       width: 278px;
     }
-    .main__list{
 
+    .main__list {
       border: 1px solid $colorMainList;
       width: 325px;
       height: 86px;
       margin: 21px auto;
 
-      &-item{
+      &-item {
         text-decoration: none;
         list-style: none;
         padding: 10px;
         text-align: center;
-
       }
     }
+
     .main__button {
       padding: 100px 0 59px;
     }
   }
-
 }
