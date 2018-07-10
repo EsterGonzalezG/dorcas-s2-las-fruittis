@@ -7,9 +7,9 @@
   .collapsible__content {
     display: block;
   }
-}
-.rote{
-  transform: rotate(-180deg);
-  margin-right: 0;
-  margin-left: auto;
+  .arrow{
+    transform: rotate(-180deg);
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
