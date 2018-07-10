@@ -11,6 +11,7 @@
 			"js/colapsable.js",
 			"js/main.js",
 			"js/design.js",
+			"js/linkCard.js",
 			"js/cardicons.js"
 		],
 		"dest": "js/"
