@@ -5,7 +5,7 @@
 	},
 	"js": {
 		"src": [
-
+			"js/abilities.js",
 			"js/card.js",
 			"js/cardImage.js",
 			"js/colapsable.js",
