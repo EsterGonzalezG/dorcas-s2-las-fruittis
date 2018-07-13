@@ -1,5 +1,9 @@
 .viewfinder {
-  background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+  //background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+  background-image: url('/images/fruit-13.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +68,7 @@
   }
 
   &__tags {
+    font-family: $fontOpenSans;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -126,6 +131,10 @@
       color: $colorBackgroundIcons;
     }
 
+    .viewfinder__icons--links {
+      color: $colorBackgroundIcons;
+    }
+
     .viewfinder__tags-text {
       background-color: $colorBackgroundTags;
       color: $colorTextTagsCard;
@@ -150,6 +159,10 @@
       color: $colorSelectorRedOne;
     }
 
+    .viewfinder__icons--links {
+      color: $colorSelectorRedOne;
+    }
+
     .viewfinder__tags-text {
       background-color: $colorSelectorRedTwo;
       color: $colorTextTagsCard;
@@ -171,6 +184,10 @@
 
     .viewfinder__icons-box {
       border: 2px solid  $colorSelectorGreyThree;
+      color: $colorSelectorGreyOne;
+    }
+
+    .viewfinder__icons--links {
       color: $colorSelectorGreyOne;
     }
 

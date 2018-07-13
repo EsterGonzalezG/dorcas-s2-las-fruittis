@@ -24,8 +24,10 @@
 }
 
 .viewfinder {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
-  background: linear-gradient(#bfcdd0, #dde9ed);
+  background-image: url("/images/fruit-13.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +116,7 @@
 }
 
 .viewfinder__tags {
+  font-family: "Open Sans";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,6 +190,10 @@
   color: #114e4e;
 }
 
+.viewfinder.viewfinder--blue .viewfinder__icons--links {
+  color: #114e4e;
+}
+
 .viewfinder.viewfinder--blue .viewfinder__tags-text {
   background-color: #438792;
   color: #ffffff;
@@ -209,6 +216,10 @@
   color: #420101;
 }
 
+.viewfinder.viewfinder--red .viewfinder__icons--links {
+  color: #420101;
+}
+
 .viewfinder.viewfinder--red .viewfinder__tags-text {
   background-color: #bd1010;
   color: #ffffff;
@@ -228,6 +239,10 @@
 
 .viewfinder.viewfinder--grey .viewfinder__icons-box {
   border: 2px solid #a0c0cf;
+  color: #3e5b65;
+}
+
+.viewfinder.viewfinder--grey .viewfinder__icons--links {
   color: #3e5b65;
 }
 
