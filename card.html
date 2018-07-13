@@ -19,11 +19,11 @@
 <section class="main__card">
 
 
-    <section class="viewfinder viewfinder--blue comic view">
+    <section id="viewfinder" class="viewfinder viewfinder--blue comic view">
       <div class="viewfinder__card">
         <div class="viewfinder__card-title">
           <div class="viewfinder__card-title-rectangule"></div>
-          <div class="viewfinder__card-titlebox">
+          <div  class="viewfinder__card-titlebox">
             <h2 class="viewfinder__card-title-name" id="element-name">Nombre Apellidos</h2>
             <h3 class="viewfinder__card-title-job" id="element-job">Front-end developer</h3>
           </div>
@@ -32,17 +32,17 @@
         </div>
 
         <div class="viewfinder__icons">
-          <div class="viewfinder__icons-box">
-            <i class="fas fa-mobile-alt"></i>
+          <div class="viewfinder__icons-box mobileicon">
+            <a id="element-phone" href="" class="viewfinder__icons--links mobilelink" target="_blank"><i class="fas fa-mobile-alt"></i></a>
           </div>
-          <div class="viewfinder__icons-box">
-            <i class="far fa-envelope"></i>
+          <div class="viewfinder__icons-box emailicon">
+            <a id="element-mail" href="" class="viewfinder__icons--links emaillink" target="_blank"><i class="far fa-envelope"></i></a>
           </div>
-          <div class="viewfinder__icons-box">
-            <i class="fab fa-linkedin-in"></i>
+          <div class="viewfinder__icons-box linkedinicon">
+            <a id="element-linkedin" href="" class="viewfinder__icons--links linkedinlink" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <div class="viewfinder__icons-box">
-            <i class="fab fa-github-alt"></i>
+          <div class="viewfinder__icons-box githubicon">
+            <a id="element-github" href="" class="viewfinder__icons--links githublink" target="_blank"><i class="fab fa-github-alt"></i></a>
           </div>
         </div>
         <hr>
@@ -58,27 +58,32 @@
           </div>
         </div>
         <div class="viewfinder__button">
-          <button  class="viewfinder__button-reset" type="reset" name="button"><span class="viewfinder__button-icono"><i class="fas fa-trash-alt"></i></span>Reset</button>
+          <button   class="viewfinder__button-reset" type="reset" name="button"><span class="viewfinder__button-icono"><i class="fas fa-trash-alt"></i></span>Reset</button>
         </div>
       </div>
     </section>
   </section>
   </section>
-
-
   <!-- Parten Diseño -->
 
   <section class="main__form">
-    <section class="dropdown__first">
-      <div class="dropdown__desing">
+    <section class="dropdown__first collapsible collapsible--visible">
+
+      <div class="dropdown__desing collapsible__label">
         <div class="dropdown__desing--name">
           <div class="">
             <i class="far fa-object-ungroup dropdown__desing--nameIcon"></i>
           </div>
+
           <h2 class="dropdown__desing--nameText">Diseña</h2>
         </div>
+        <span class="arrow">
         <i class="fas fa-angle-up"></i>
+</span>
       </div>
+<div class="collapsible__content">
+
+
       <div class="dropdown__colors">
         <div class="dropdown__title">
           <h3>Colores</h3>
@@ -136,22 +141,28 @@
           </form>
         </div>
       </div>
+</div>
+
     </section>
     <!-- Parte Diseño -->
     <div class="bookmark"></div>
     <!-- Parte Rellena -->
-    <section class="dropdown__second">
-      <div class="dropdown__fill">
+    <section class="dropdown__second collapsible">
+
+      <div class="dropdown__fill collapsible__label">
         <div class="dropdown__fill--name">
           <div class="">
             <i class="far fa-keyboard dropdown__fill--nameIcon"></i>
           </div>
+
           <h2 class="dropdown__fill--nameText">Rellena</h2>
         </div>
+<span class="arrow">
         <i class="fas fa-angle-up"></i>
+</span>
       </div>
       <div class="fill_form--container">
-        <form class="fill__form--itemscontainer" action="index.html" method="post">
+        <form id="fill__form--itemscontainer" class="fill__form--itemscontainer" action="index.html" method="post">
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="nombrecompleto">Nombre completo</label>
             <input class="fill__input--items fill__input-name" type="text" id="nombrecompleto" name="completename" placeholder="Ej: Sally Jill" data-info="element-name">
@@ -170,19 +181,19 @@
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="email">Email</label>
-            <input class="fill__input--items" type="email" id="email" name="mail" placeholder="Ej: sally-jill@gmail.com">
+            <input class="fill__input--items fill__input-mail" type="email" id="email" name="mail" placeholder="Ej: sally-jill@gmail.com" data-donde="element-mail">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="tlf">Teléfono</label>
-            <input class="fill__input--items" type="tel" id="tlf" name="phone" placeholder="Ej: 555-55-55-55">
+            <input class="fill__input--items fill__input-phone" type="tel" id="tlf" name="phone" placeholder="Ej: 555 55 55 55" data-donde="element-phone">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="linkedin">Linkedin</label>
-            <input class="fill__input--items" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.jill">
+            <input class="fill__input--items fill__input-linkedin" type="text" id="linkedin" name="linkedin" placeholder="Ej: sally.jill" data-donde="element-linkedin">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="github">Github</label>
-            <input class="fill__input--items" type="text" id="github" name="github" placeholder="Ej: @sally-jill">
+            <input class="fill__input--items fill__input-github" type="text" id="github" name="github" placeholder="Ej: sallyjill" data-donde="element-github">
           </div>
           <div class="fill__form--abilitieslabelinput">
             <label class="fill__label--items" for="habilidades">Habilidades (máximo 3)</label>
@@ -199,23 +210,28 @@
           </div>
         </form>
       </div>
+
     </section>
     <!-- Parte Rellena -->
     <div class="bookmark"></div>
-    <section class="dropdown__third">
-      <div class="dropdown__fill">
+    <section class="dropdown__third collapsible">
+
+      <div class="dropdown__fill collapsible__label">
         <div class="dropdown__fill--name">
           <div class="">
             <i class="fas fa-share-alt dropdown__fill--nameIcon"></i>
           </div>
-          <h2 class="dropdown__fill--nameText">comparte</h2>
+          <h2 class="dropdown__fill--nameText ">Comparte</h2>
         </div>
+<span class="arrow">
         <i class="fas fa-angle-up"></i>
+</span>
       </div>
-      <div class="shares__input--buttonandminiimg">
-        <button class="shares__input--addimgbutton">
-          <i class="far fa-address-card"></i> crear tarjeta</button>
+      <div class="shares__input--buttonandminiimg ">
+        <button class="shares__input--addimgbutton collapsible__content">
+          <i class="far fa-address-card"></i> Crear tarjeta</button>
         </div>
+
       </section>
       <!-- parte comparte -->
 

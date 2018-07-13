@@ -8,8 +8,11 @@
 
 			"js/card.js",
 			"js/cardImage.js",
+			"js/colapsable.js",
 			"js/main.js",
-			"js/design.js"
+			"js/design.js",
+			"js/reset.js",
+			"js/cardicons.js"
 
 		],
 		"dest": "js/"

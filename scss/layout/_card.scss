@@ -1,5 +1,9 @@
 .viewfinder {
-  background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+  //background: linear-gradient($colorDegradadoAzul, $colorDegradadoAzulFin);
+  background-image: url('/images/fruit-13.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +68,7 @@
   }
 
   &__tags {
+    font-family: $fontOpenSans;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -87,7 +92,7 @@
     position: absolute;
     top: -40px;
     left: 0;
-    width: 75px;
+    width: 80px;
     height: 30px;
 
     &-reset {
@@ -126,6 +131,10 @@
       color: $colorBackgroundIcons;
     }
 
+    .viewfinder__icons--links {
+      color: $colorBackgroundIcons;
+    }
+
     .viewfinder__tags-text {
       background-color: $colorBackgroundTags;
       color: $colorTextTagsCard;
@@ -147,6 +156,10 @@
 
     .viewfinder__icons-box {
       border: 2px solid  $colorSelectorRedThree;
+      color: $colorSelectorRedOne;
+    }
+
+    .viewfinder__icons--links {
       color: $colorSelectorRedOne;
     }
 
@@ -174,6 +187,10 @@
       color: $colorSelectorGreyOne;
     }
 
+    .viewfinder__icons--links {
+      color: $colorSelectorGreyOne;
+    }
+
     .viewfinder__tags-text {
       background-color: $colorSelectorGreyTwo;
       color: $colorTextTagsCard;
@@ -184,7 +201,7 @@
 @media all and (min-width: 768px) {
   .main__2 {
     display: grid;
-    grid-template-columns: 1fr 369px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .main__card {
@@ -198,7 +215,7 @@
   }
 
   .viewfinder {
-    height: 100%;
+    height: 100vh;
     border-radius: 6px;
     box-sizing: border-box;
   }
