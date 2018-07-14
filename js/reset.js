@@ -7,6 +7,10 @@ var resetPhoto =document.querySelector('.viewfinder__photo');
 var resetMiniPhoto = document.querySelector('.fill__input--miniimg');
 var resetColor2=document.getElementById('viewfinder');
 var resetFont = document.getElementById('viewfinder');
+var resetTelefon= document.getElementById('element-phone');
+var resetMail= document.getElementById('element-mail');
+var resetLinkedin = document.getElementById('element-linkedin');
+var resetGithub = document.getElementById('element-linkedin');
 
 
 function resetForm (){
@@ -25,6 +29,11 @@ function resetCard (){
   // cambiar las Fuentes
   resetFont.classList.remove('comic', 'ubuntu', 'montserrat');
   resetFont.classList.add('comic');
+  // cambiar iconos
+  resetTelefon.href= '';
+  resetMail.href = '';
+  resetLinkedin.href= '';
+  resetGithub.href= '';
 
 }
 buttonReset.addEventListener('click', resetForm);
