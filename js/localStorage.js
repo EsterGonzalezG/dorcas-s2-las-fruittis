@@ -1,4 +1,5 @@
 'use strict';
+
 //localStorage.removeItem('Card');
 var localCard ={
   palette:1,
@@ -26,6 +27,9 @@ var githubInputCard = document.querySelector('.fill__input-github');
 var nameInputLocal=document.querySelector('.fill__input-name');
 var jobInputLocal=document.querySelector('.fill__input-job');
 var imageCard= document.querySelector('.viewfinder__photo');
+var buttonImage=document.querySelector('.fill__input--addimgbutton');
+//var stylo=imageCard.getPropertyValue('url');
+var urlPhoto=(window.getComputedStyle(imageCard).getPropertyValue('background-image'));
 var miniImage=document.querySelector('.fill__input--miniimg');
 var emailInputLocal=document.querySelector('.fill__input-mail');
 var telInputLocal=document.querySelector('.fill__input-phone');
@@ -39,6 +43,7 @@ emailInputLocal.addEventListener('keyup',guardarCardLocal);
 telInputLocal.addEventListener('keyup',guardarCardLocal);
 linkdinInputLocal.addEventListener('keyup',guardarCardLocal);
 githubInputLocal.addEventListener('keyup',guardarCardLocal);
+buttonImage.addEventListener('click',guardarCardLocal);
 //Faltan por poner las Habilidades y la fotos
 
 function guardarCardLocal() {
@@ -58,17 +63,20 @@ if (!localStorage.getItem('Card')) {
   }else{
     localCard = JSON.parse(localStorage.getItem('Card'));
   }
+
+  urlPhoto=(window.getComputedStyle(imageCard).getPropertyValue('background-image'));
+  console.log(urlPhoto);
   localCard.palette=buttonsColors.value;/*ojo que hay que hacer el for para saber el value*/
   localCard.typography=buttonsText.value;/*ojo que hay que hacer el for para saber el value*/
-  localCard.nombre = nameInputLocal.value;
-  localCard.puesto = jobInputLocal.value;
+  localCard.name = nameInputLocal.value;
+  localCard.job = jobInputLocal.value;
   localCard.email=emailInputLocal.value;
-  localCard.telefono=telInputLocal.value;
+  localCard.phone=telInputLocal.value;
   localCard.linkedin=linkdinInputLocal.value;
   localCard.github =githubInputLocal.value;
-  localCard.foto = imgInput.value;
+  localCard.photo = urlPhoto;/*mirar como conseguir la url*/
   localCard.email = emailInputLocal.value;
-  localCard.telefono = telInputLocal.value;
+  localCard.phone = telInputLocal.value;
   localCard.linkedin = linkdinInputLocal.value;
   localCard.github = githubInputLocal.value;
   localStorage.setItem('Card', JSON.stringify(localCard));
@@ -76,16 +84,16 @@ if (!localStorage.getItem('Card')) {
 }
 function recuperarLocalCard() {
   localCard = JSON.parse(localStorage.getItem('Card'));
-  nameCard.innerHTML=localCard.nombre;
-  jobCard.innerHTML=localCard.puesto;
-  nameInputLocal.value = localCard.nombre;
-  jobInputLocal.value = localCard.puesto;
+  nameCard.innerHTML=localCard.name;
+  jobCard.innerHTML=localCard.job;
+  nameInputLocal.value = localCard.name;
+  jobInputLocal.value = localCard.job;
   imageCard.style.backgroundImage = "'url("+localCard.foto+")'";
   emailInputLocal.value=localCard.email;
   mailInputCard.href='mailto:'+localCard.email;
   emailInputLocal.value = localCard.email;
-  phoneInputCard.href='tel: +34' +localCard.telefono;
-  telInputLocal.value = localCard.telefono;
+  phoneInputCard.href='tel: +34' +localCard.phone;
+  telInputLocal.value = localCard.phone;
   linkedinInputCard.href='https://www.linkedin.com/in/' +localCard.linkedin;
   linkdinInputLocal.value = localCard.linkedin;
   githubInputCard.href='https://github.com/' +localCard.github;
