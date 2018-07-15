@@ -771,6 +771,53 @@
   margin-bottom: 30px;
 }
 
+.shares {
+  text-align: center;
+}
+
+.shares__text {
+  font-family: "Open Sans";
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.shares__url {
+  font-size: 12px;
+  color: #e17334;
+  font-family: "OpenSans-Regular", sans-serif;
+}
+
+.shares__twitter {
+  background-color: #00a0f5;
+  width: 181px;
+  height: 30px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-top: 15px;
+  border-radius: 3px;
+}
+
+.shares__twitter-logo {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.shares__twitter-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "OpenSans-Regular", sans-serif;
+}
+
 @media all and (min-width: 768px) {
   .header__logo {
     display: -webkit-box;
