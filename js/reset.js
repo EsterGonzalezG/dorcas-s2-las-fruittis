@@ -5,8 +5,8 @@ var resetName = document.getElementById('element-name');
 var resetJob = document.getElementById('element-job');
 var resetPhoto =document.querySelector('.viewfinder__photo');
 var resetMiniPhoto = document.querySelector('.fill__input--miniimg');
-var resetColor2=document.getElementById('viewfinder');
-var resetFont = document.getElementById('viewfinder');
+var resetColor2=document.getElementById('viewfinder-id');
+var resetFont = document.getElementById('viewfinder-id');
 var resetTelefon= document.getElementById('element-phone');
 var resetMail= document.getElementById('element-mail');
 var resetLinkedin = document.getElementById('element-linkedin');
@@ -22,7 +22,7 @@ function resetCard (){
   resetJob.innerHTML='Front-end developer';
   // las imagenes de la card y la pequeña del formulario
   resetPhoto.style.backgroundImage = 'url("https://place-hold.it/240x200/red")';
-  resetMiniPhoto.innerHTML = ' ';
+  resetMiniPhoto.style.backgroundImage= 'url("http://placehold.it/29x29/ffffff/ffffff") ';
   //  cambiar los colores
   resetColor2.classList.remove('viewfinder--blue', 'viewfinder--red', 'viewfinder--grey');
   resetColor2.classList.add('viewfinder--blue');
