@@ -17,8 +17,6 @@
   </header>
   <main class="main__2">
     <section class="main__card">
-
-
       <section id="viewfinder" class="viewfinder viewfinder--blue comic view">
         <div class="viewfinder__card">
           <div class="viewfinder__card-title">
@@ -30,7 +28,6 @@
           </div>
           <div class="viewfinder__photo">
           </div>
-
           <div class="viewfinder__icons">
             <div class="viewfinder__icons-box mobileicon">
               <a id="element-phone" href="" class="viewfinder__icons--links mobilelink" target="_blank"><i class="fas fa-mobile-alt"></i></a>
@@ -64,17 +61,13 @@
       </section>
     </section>
   </section>
-  <!-- Parten Diseño -->
-
-  <section class="main__form">
+  <form class="main__form" action="javascript:void(0);">
     <section class="dropdown__first collapsible collapsible--visible">
-
       <div class="dropdown__desing collapsible__label">
         <div class="dropdown__desing--name">
           <div class="">
             <i class="far fa-object-ungroup dropdown__desing--nameIcon"></i>
           </div>
-
           <h2 class="dropdown__desing--nameText">Diseña</h2>
         </div>
         <span class="arrow">
@@ -82,21 +75,19 @@
         </span>
       </div>
       <div class="collapsible__content">
-
-
         <div class="dropdown__colors">
           <div class="dropdown__title">
             <h3>Colores</h3>
           </div>
           <div class="">
-            <form class="dropdown__colors--selectors" action="index.html" method="post">
+            <div class="dropdown__colors--selectors" action="index.html" method="post">
               <div class="dropdown__colorsgroups radiosGroup">
                 <label class="colors-container" for="blue">
                   <div class="colors__darkCyan colors"></div>
                   <div class="colors__dirtyblue colors"></div>
                   <div class="colors__hospitalGreen colors"></div>
                 </label>
-                <input class="radio radio--blue" id="blue" type="radio" name="colors" checked>
+                <input class="radio radio--blue" id="blue" type="radio" name="palette" value="1" checked>
               </div>
               <div class="dropdown__colorsgroups radiosGroup">
                 <label class="colors-container" for="red">
@@ -104,7 +95,7 @@
                   <div class="colors__strongRed colors"></div>
                   <div class="colors__brightRed colors"></div>
                 </label>
-                <input class="radio radio--red" id="red" type="radio" name="colors">
+                <input class="radio radio--red" id="red" type="radio" name="palette" value="2">
               </div>
               <div class="dropdown__colorsgroups radiosGroup">
                 <label class="colors-container" for="grey">
@@ -112,9 +103,9 @@
                   <div class="colors__lightBlue colors"></div>
                   <div class="colors__brightBlue colors"></div>
                 </label>
-                <input class="radio radio--grey" id="grey" type="radio" name="colors">
+                <input class="radio radio--grey" id="grey" type="radio" name="palette" value="3">
               </div>
-            </form>
+            </div>
           </div>
         </div>
         <div class="dropdown__fonts">
@@ -122,33 +113,29 @@
             <h3>Fuentes</h3>
           </div>
           <div class="">
-            <form class="dropdown__fonts--selectors" action="index.html" method="post">
+            <div class="dropdown__fonts--selectors" action="index.html" method="post">
               <div class="dropdown__fontsgroups radiosGroup">
                 <label class="fonts ubuntu" for="ubuntu">Ubuntu
                 </label>
-                <input class="radio radio--ubuntu" id="ubuntu" type="radio" name="fonts">
+                <input class="radio radio--ubuntu" id="ubuntu" type="radio" name="typography" value="1">
               </div>
               <div class="dropdown__fontsgroups radiosGroup">
                 <label class="fonts comic"  for="comic">Comic Sans
                 </label>
-                <input class="radio radio--comic" id="comic" type="radio" name="fonts" checked>
+                <input class="radio radio--comic" id="comic" type="radio" name="typography" value="2" checked>
               </div>
               <div class="dropdown__fontsgroups radiosGroup">
                 <label class="fonts montserrat" for="monstserrat">Montserrat
                 </label>
-                <input class="radio radio--montserrat" id="montserrat" type="radio" name="fonts">
+                <input class="radio radio--montserrat" id="montserrat" type="radio" name="typography" value="3">
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
-
     </section>
-    <!-- Parte Diseño -->
     <div class="bookmark"></div>
-    <!-- Parte Rellena -->
     <section class="dropdown__second collapsible">
-
       <div class="dropdown__fill collapsible__label">
         <div class="dropdown__fill--name">
           <div class="">
@@ -162,10 +149,10 @@
         </span>
       </div>
       <div class="fill_form--container collapsible__content">
-        <form id="fill__form--itemscontainer" class="fill__form--itemscontainer" action="index.html" method="post">
+        <div id="fill__form--itemscontainer" class="fill__form--itemscontainer" action="index.html" method="post">
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="nombrecompleto">Nombre completo</label>
-            <input class="fill__input--items fill__input-name" type="text" id="nombrecompleto" name="completename" placeholder="Ej: Sally Jill" data-info="element-name">
+            <input class="fill__input--items fill__input-name" type="text" id="nombrecompleto" name="name" placeholder="Ej: Sally Jill" data-info="element-name">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="puesto">Puesto</label>
@@ -175,13 +162,13 @@
             <label class="fill__label--items" for="imagenperfil">Imagen de perfil</label>
             <div class="fill__input--buttonandminiimg">
               <button type="button" class="fill__input--addimgbutton">Añadir imagen</button>
-              <input type="file" name="" id="img-selector" class="action__hiddenField">
+              <input type="file" name="photo" id="img-selector" class="action__hiddenField">
               <div class="fill__input--miniimg"></div>
             </div>
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="email">Email</label>
-            <input class="fill__input--items fill__input-mail" type="email" id="email" name="mail" placeholder="Ej: sally-jill@gmail.com" data-donde="element-mail">
+            <input class="fill__input--items fill__input-mail" type="email" id="email" name="email" placeholder="Ej: sally-jill@gmail.com" data-donde="element-mail">
           </div>
           <div class="fill__form--labelinput">
             <label class="fill__label--items" for="tlf">Teléfono</label>
@@ -198,7 +185,7 @@
           <div class="fill__form--abilitieslabelinput">
             <label class="fill__label--items" for="habilidades">Habilidades (máximo 3)</label>
             <div class="fill__input--selectabilities">
-              <select class"abilitiesdropdown" name="abilities" id="habilidades">
+              <select class"abilitiesdropdown" name="skills" id="habilidades">
                 <option value="HTML">HTML</option>
                 <option value="CSS">CSS</option>
                 <option value="others">OTHER</option>
@@ -208,7 +195,7 @@
               </button>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </section>
     <div class="bookmark"></div>
@@ -228,19 +215,19 @@
         <button class="shares__input--addimgbutton collapsible__content">
           <i class="far fa-address-card"></i>Crear tarjeta</button>
         </div>
-        <div class="loader collapsible__content">Loading...</div>
-        <section class="shares collapsible__content">
+        <div class="loader collapsible__content hidden">Loading...</div>
+        <section class="shares collapsible__content hidden">
           <div class="bookmark"></div>
           <p class="shares__text">La tarjeta ha sido creada:</p>
           <a class="shares__url" href="#" target="_blank">https://awesome-profile-card.com?id=A456DF0001</a>
-          <button class="shares__twitter" type="button" name="button">
+          <a class="shares__twitter" type="button" name="button" target="_blank">
             <i class="fab fa-twitter shares__twitter-logo"></i>
             <p class="shares__twitter-text">Compartir en Twitter</p>
-          </button>
+          </a>
           <div class="bookmark"></div>
         </section>
       </section>
-    </section>
+    </form>
   </main>
   <footer class="footer">
     <p class ="footer__copyright">Awesome profile-cards @ 2018</p>
