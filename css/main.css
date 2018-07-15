@@ -779,6 +779,7 @@
   font-family: "Open Sans";
   font-size: 18px;
   padding-bottom: 5px;
+  padding-top: 20px;
 }
 
 .shares__url {
@@ -804,6 +805,7 @@
   padding-left: 9px;
   padding-right: 9px;
   margin-top: 15px;
+  margin-bottom: 30px;
   border-radius: 3px;
 }
 
