@@ -1,10 +1,9 @@
 'use strict';
+
 var i;
 var j;
 var collapsible=document.querySelectorAll('.collapsible');
 var collapsibleTriggers=document.querySelectorAll('.collapsible__label');
-
-
 
 function updateCollapsibles(e) {
   var parent = e.currentTarget.parentElement;
