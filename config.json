@@ -12,7 +12,8 @@
 			"js/main.js",
 			"js/design.js",
 			"js/reset.js",
-			"js/cardicons.js"
+			"js/cardicons.js",
+			"js/skills.js"
 
 		],
 		"dest": "js/"
