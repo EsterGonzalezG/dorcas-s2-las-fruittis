@@ -47,14 +47,14 @@
         </div>
         <hr>
         <div class="viewfinder__tags">
-          <div class="viewfinder__tags-text">
-            <p>html</p>
+          <div class="viewfinder__tags-text skill1 skill1hidden">
+            <p class="skill1text"></p>
           </div>
-          <div class="viewfinder__tags-text">
-            <p>css</p>
+          <div class="viewfinder__tags-text skill2 skill2hidden">
+            <p class="skill2text"></p>
           </div>
-          <div class="viewfinder__tags-text">
-            <p>gulp</p>
+          <div class="viewfinder__tags-text skill3 skill2hidden">
+            <p class="skill3text"></p>
           </div>
         </div>
         <div class="viewfinder__button">
@@ -195,19 +195,34 @@
             <label class="fill__label--items" for="github">Github</label>
             <input class="fill__input--items fill__input-github" type="text" id="github" name="github" placeholder="Ej: sallyjill" data-donde="element-github">
           </div>
+
           <div class="fill__form--abilitieslabelinput">
+
             <label class="fill__label--items" for="habilidades">Habilidades (máximo 3)</label>
-            <div class="fill__input--selectabilities">
-              <select class"abilitiesdropdown" name="abilities" id="habilidades">
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <option value="others">OTHER</option>
-              </select>
-              <button class="fill__input--addabilitiebutton">
+
+            <div class="fill__ability fill__ability--js">
+              <select class="abilitiesdropdown abilitiesdropdown--js" name="abilities" id="habilidades"></select>
+              <button class="abilitiesbutton abilitiesbutton--plusjs" type="button" name="button">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+
+            <div class="fill__ability fill__ability--js fill__ability--jshidden">
+              <select class="abilitiesdropdown abilitiesdropdown--js" name="abilities" id="habilidades"></select>
+              <button class="abilitiesbutton abilitiesbutton--minusjs" type="button" name="button">
                 <i class="fas fa-minus"></i>
               </button>
             </div>
+
+            <div class="fill__ability fill__ability--js fill__ability--jshidden">
+              <select class="abilitiesdropdown abilitiesdropdown--js" name="abilities" id="habilidades"></select>
+              <button class="abilitiesbutton abilitiesbutton--minusjs" type="button" name="button">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+
           </div>
+
         </form>
       </div>
 

@@ -90,16 +90,30 @@
   margin-top: 20px;
 }
 
-.fill__input--addabilitiebutton {
+.fill__ability {
+  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.abilitiesbutton {
   border: 1px solid $colorFillSelectAbbilitiesBorder;
   border-radius: 45px;
   height: 30px;
   width: 30px;
   margin-left: 20px;
 
+  .fa-plus {
+    color: $colorFillSelectAbbilitiesText;
+  }
+
   .fa-minus {
     color: $colorFillSelectAbbilitiesText;
   }
+}
+
+.fill__ability--jshidden {
+  display: none;
 }
 
 .action__hiddenField {
