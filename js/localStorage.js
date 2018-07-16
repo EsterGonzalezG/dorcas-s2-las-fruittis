@@ -2,12 +2,12 @@
 
 //localStorage.removeItem('Card');
 var localCard ={
-  palette:1,
-  typography:2,
+  palette:'',
+  typography:'',
   name:'',
   job:'',
   email:'',
-  telefono:'',
+  phone:'',
   linkedin:'',
   github:'',
   photo:'',
@@ -26,10 +26,7 @@ var linkedinInputCard = document.querySelector('.fill__input-linkedin');
 var githubInputCard = document.querySelector('.fill__input-github');
 var nameInputLocal=document.querySelector('.fill__input-name');
 var jobInputLocal=document.querySelector('.fill__input-job');
-var imageCard= document.querySelector('.viewfinder__photo');
-var buttonImage=document.querySelector('.fill__input--addimgbutton');
-//var stylo=imageCard.getPropertyValue('url');
-var urlPhoto=(window.getComputedStyle(imageCard).getPropertyValue('background-image'));
+
 var miniImage=document.querySelector('.fill__input--miniimg');
 var emailInputLocal=document.querySelector('.fill__input-mail');
 var telInputLocal=document.querySelector('.fill__input-phone');
@@ -37,24 +34,25 @@ var linkdinInputLocal=document.querySelector('.fill__input-linkedin');
 var githubInputLocal=document.querySelector('.fill__input-github');
 //buttonsColors.addEventListener('change',guardarRadios);
 //buttonsText.addEventListener('change',guardarRadios);
+
 nameInputLocal.addEventListener('keyup',guardarCardLocal);
 jobInputLocal.addEventListener('keyup',guardarCardLocal);
 emailInputLocal.addEventListener('keyup',guardarCardLocal);
 telInputLocal.addEventListener('keyup',guardarCardLocal);
 linkdinInputLocal.addEventListener('keyup',guardarCardLocal);
 githubInputLocal.addEventListener('keyup',guardarCardLocal);
-buttonImage.addEventListener('click',guardarCardLocal);
+
 //Faltan por poner las Habilidades y la fotos
 
 function guardarCardLocal() {
 if (!localStorage.getItem('Card')) {
     localCard ={
-      palette:1,
-      typography:2,
+      palette:'',
+      typography:'',
       name:'',
       job:'',
       email:'',
-      telefono:'',
+      phone:'',
       linkedin:'',
       github:'',
       photo:'',
@@ -64,8 +62,6 @@ if (!localStorage.getItem('Card')) {
     localCard = JSON.parse(localStorage.getItem('Card'));
   }
 
-  urlPhoto=(window.getComputedStyle(imageCard).getPropertyValue('background-image'));
-  console.log(urlPhoto);
   localCard.palette=buttonsColors.value;/*ojo que hay que hacer el for para saber el value*/
   localCard.typography=buttonsText.value;/*ojo que hay que hacer el for para saber el value*/
   localCard.name = nameInputLocal.value;
@@ -75,6 +71,7 @@ if (!localStorage.getItem('Card')) {
   localCard.linkedin=linkdinInputLocal.value;
   localCard.github =githubInputLocal.value;
   localCard.photo = urlPhoto;/*mirar como conseguir la url*/
+  localCard.phonoMini=miniPhoto;
   localCard.email = emailInputLocal.value;
   localCard.phone = telInputLocal.value;
   localCard.linkedin = linkdinInputLocal.value;
@@ -88,7 +85,8 @@ function recuperarLocalCard() {
   jobCard.innerHTML=localCard.job;
   nameInputLocal.value = localCard.name;
   jobInputLocal.value = localCard.job;
-  imageCard.style.backgroundImage = "'url("+localCard.foto+")'";
+  imageCard.style.backgroundImage =localCard.photo;
+  miniImage.style.backgroundImage=localCard.phonoMini;
   emailInputLocal.value=localCard.email;
   mailInputCard.href='mailto:'+localCard.email;
   emailInputLocal.value = localCard.email;
@@ -98,7 +96,7 @@ function recuperarLocalCard() {
   linkdinInputLocal.value = localCard.linkedin;
   githubInputCard.href='https://github.com/' +localCard.github;
   githubInputLocal.value = localCard.github;
-  //profileImage.style.backgroundImage = localCard.foto;
+
   //miniBox.style.backgroundImage = localCard.foto;
   //profileImage.value = localCard.foto;
 
