@@ -34,7 +34,7 @@ function createUrlCard () {
       linkedin: linkedinForm.value,
       github: githubForm.value,
       photo: photoFileReader.result,
-      skills: ['HTML', 'Sass', 'JavaScript'],
+      skills: getSkillsValue(),
     })
   })
     .then(function(response){
@@ -67,6 +67,15 @@ function getTypographyValue() {
     }
   }
   return parseInt(value);
+}
+
+function getSkillsValue() {
+  var value = [];
+  var skills = document.querySelectorAll('.fill__ability--js:not(.fill__ability--jshidden) select');
+  for(var i = 0; i < skills.length; i++) {
+    value.push(skills[i].value);
+  }
+  return value;
 }
 
 function setCardUrl(url) {
