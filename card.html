@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Proyecto Fruittis</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/3307thefruittis.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,600|Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
@@ -16,46 +17,47 @@
     </div>
   </header>
   <main class="main__2">
-    <section class="main__card">
-      <section id="viewfinder" class="viewfinder viewfinder--blue comic view">
-        <div class="viewfinder__card">
-          <div class="viewfinder__card-title">
-            <div class="viewfinder__card-title-rectangule"></div>
-            <div  class="viewfinder__card-titlebox">
-              <h2 class="viewfinder__card-title-name" id="element-name">Nombre Apellidos</h2>
-              <h3 class="viewfinder__card-title-job" id="element-job">Front-end developer</h3>
-            </div>
+<section class="main__card">
+    <section id="viewfinder-id" class="viewfinder viewfinder--blue comic view">
+      <div class="viewfinder__card">
+        <div class="viewfinder__card-title">
+          <div class="viewfinder__card-title-rectangule"></div>
+          <div  class="viewfinder__card-titlebox">
+            <h2 class="viewfinder__card-title-name" id="element-name">Nombre Apellidos</h2>
+            <h3 class="viewfinder__card-title-job" id="element-job">Front-end developer</h3>
           </div>
-          <div class="viewfinder__photo">
+        </div>
+        <div class="viewfinder__photo">
+        </div>
+        <div class="viewfinder__icons">
+          <div class="viewfinder__icons-box mobileicon">
+            <a id="element-phone" href="" class="viewfinder__icons--links mobilelink" target="_blank"><i class="fas fa-mobile-alt"></i></a>
           </div>
-          <div class="viewfinder__icons">
-            <div class="viewfinder__icons-box mobileicon">
-              <a id="element-phone" href="" class="viewfinder__icons--links mobilelink" target="_blank"><i class="fas fa-mobile-alt"></i></a>
-            </div>
-            <div class="viewfinder__icons-box emailicon">
-              <a id="element-mail" href="" class="viewfinder__icons--links emaillink" target="_blank"><i class="far fa-envelope"></i></a>
-            </div>
-            <div class="viewfinder__icons-box linkedinicon">
-              <a id="element-linkedin" href="" class="viewfinder__icons--links linkedinlink" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+          <div class="viewfinder__icons-box emailicon">
+            <a id="element-mail" href="" class="viewfinder__icons--links emaillink" target="_blank"><i class="far fa-envelope"></i></a>
+          </div>
+          <div class="viewfinder__icons-box linkedinicon">
+            <a id="element-linkedin" href="" class="viewfinder__icons--links linkedinlink" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+          </div>
             <div class="viewfinder__icons-box githubicon">
               <a id="element-github" href="" class="viewfinder__icons--links githublink" target="_blank"><i class="fab fa-github-alt"></i></a>
             </div>
           </div>
           <hr>
           <div class="viewfinder__tags">
-            <div class="viewfinder__tags-text">
-              <p>html</p>
+            <div class="viewfinder__tags-text skill1 skill1hidden">
+              <p class="skill1text"></p>
             </div>
-            <div class="viewfinder__tags-text">
-              <p>css</p>
+            <div class="viewfinder__tags-text skill2 skill2hidden">
+              <p class="skill2text"></p>
             </div>
-            <div class="viewfinder__tags-text">
-              <p>gulp</p>
+            <div class="viewfinder__tags-text skill3 skill2hidden">
+              <p class="skill3text"></p>
             </div>
           </div>
           <div class="viewfinder__button">
-            <button   class="viewfinder__button-reset" type="reset" name="button"><span class="viewfinder__button-icono"><i class="fas fa-trash-alt"></i></span>Reset</button>
+            <button class="viewfinder__button-reset" type="reset" name="button"><span class="viewfinder__button-icono"><i class="fas fa-trash-alt"></i></span>Reset</button>
           </div>
         </div>
       </section>
@@ -185,13 +187,21 @@
 
           <div class="fill__form--abilitieslabelinput">
             <label class="fill__label--items" for="habilidades">Habilidades (máximo 3)</label>
-            <div class="fill__input--selectabilities">
-              <select class"abilitiesdropdown" name="skills" id="habilidades">
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <option value="others">OTHER</option>
-              </select>
-              <button class="fill__input--addabilitiebutton">
+            <div class="fill__ability fill__ability--js">
+              <select class="abilitiesdropdown abilitiesdropdown--js" name="abilities" id="habilidades"></select>
+              <button class="abilitiesbutton abilitiesbutton--plusjs" type="button" name="button">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <div class="fill__ability fill__ability--js fill__ability--jshidden">
+              <select class="abilitiesdropdown abilitiesdropdown--js" name="abilities" id="habilidades"></select>
+              <button class="abilitiesbutton abilitiesbutton--minusjs" type="button" name="button">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+            <div class="fill__ability fill__ability--js fill__ability--jshidden">
+              <select class="abilitiesdropdown abilitiesdropdown--js" name="abilities" id="habilidades"></select>
+              <button class="abilitiesbutton abilitiesbutton--minusjs" type="button" name="button">
                 <i class="fas fa-minus"></i>
               </button>
             </div>

@@ -726,7 +726,17 @@
   margin-top: 20px;
 }
 
-.fill__input--addabilitiebutton {
+.fill__ability {
+  margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.abilitiesbutton {
   border: 1px solid #e17334;
   border-radius: 45px;
   height: 30px;
@@ -734,8 +744,16 @@
   margin-left: 20px;
 }
 
-.fill__input--addabilitiebutton .fa-minus {
+.abilitiesbutton .fa-plus {
   color: #e17334;
+}
+
+.abilitiesbutton .fa-minus {
+  color: #e17334;
+}
+
+.fill__ability--jshidden {
+  display: none;
 }
 
 .action__hiddenField {
