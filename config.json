@@ -13,7 +13,9 @@
 			"js/design.js",
 			"js/localStorage.js",
 			"js/reset.js",
-			"js/cardicons.js"
+			"js/cardicons.js",
+			"js/skills.js",
+			"js/share.js"
 
 		],
 		"dest": "js/"

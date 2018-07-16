@@ -1,4 +1,5 @@
 'use strict';
+
 var fr = new FileReader();
 var buttonImage=document.querySelector('.fill__input--addimgbutton');
 var inputHidden=document.querySelector('#img-selector');
@@ -11,6 +12,7 @@ function getImage(event){
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
+
 function writeImage() {
   urlPhoto='url('+ fr.result+')';
   miniPhoto='url('+ fr.result+')';
@@ -18,9 +20,11 @@ function writeImage() {
   miniImage.style.backgroundImage= 'url('+ fr.result+')';
   guardarCardLocal();
 }
+
 function fakeFileClick() {
   inputHidden.click();
 
 }
+
 inputHidden.addEventListener('change', getImage);
 buttonImage.addEventListener('click', fakeFileClick);
