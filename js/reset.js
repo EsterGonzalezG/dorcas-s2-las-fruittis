@@ -15,7 +15,7 @@ var resetGithub = document.getElementById('element-linkedin');
 
 
 function resetForm() {
-  document.getElementById('fill__form--itemscontainer').reset();
+  document.querySelector('.main__form').reset();
   resetCard();
 }
 
