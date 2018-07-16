@@ -48,3 +48,18 @@ addAbilityButton.addEventListener('click', addAbility);
 removeAbilityButton[0].addEventListener('click', removeAbility);
 removeAbilityButton[1].addEventListener('click', removeAbility);
 callAbilitiesAPI();
+
+function transferabilitiesToCard () {
+  var abilitiesFromSelect;
+  var abilitiesParagraph = document.querySelectorAll('.skilltext');
+
+  for (var i = 0; i < abilitiesParagraph.length; i++) {
+    abilitiesFromSelect = document.createTextNode(abilitiesDropdown[i].value);
+    abilitiesParagraph[i].innerHTML = '';
+    abilitiesParagraph[i].appendChild(abilitiesFromSelect);
+  }
+}
+
+for (var i = 0; abilitiesDropdown.length; i++) {
+  abilitiesDropdown[i].addEventListener('change', transferabilitiesToCard);
+}
