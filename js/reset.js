@@ -1,4 +1,5 @@
 'use strict';
+
 var buttonReset= document.querySelector('.viewfinder__button-reset');
 
 var resetName = document.getElementById('element-name');
@@ -9,11 +10,12 @@ var resetColor2=document.getElementById('viewfinder');
 var resetFont = document.getElementById('viewfinder');
 
 
-function resetForm (){
+function resetForm() {
   document.getElementById('fill__form--itemscontainer').reset();
   resetCard();
 }
-function resetCard (){
+
+function resetCard() {
   resetName.innerHTML='Nombre Apellido';
   resetJob.innerHTML='Front-end developer';
   // las imagenes de la card y la pequeña del formulario
@@ -25,6 +27,6 @@ function resetCard (){
   // cambiar las Fuentes
   resetFont.classList.remove('comic', 'ubuntu', 'montserrat');
   resetFont.classList.add('comic');
-
 }
+
 buttonReset.addEventListener('click', resetForm);
