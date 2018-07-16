@@ -13,7 +13,8 @@
 			"js/design.js",
 			"js/reset.js",
 			"js/cardicons.js",
-			"js/share.js"
+			"js/skills.js",
+			"js/share.js",
 
 		],
 		"dest": "js/"
