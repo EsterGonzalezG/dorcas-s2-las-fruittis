@@ -1,4 +1,5 @@
 'use strict';
+
 var buttonReset= document.querySelector('.viewfinder__button-reset');
 
 var resetName = document.getElementById('element-name');
@@ -13,11 +14,12 @@ var resetLinkedin = document.getElementById('element-linkedin');
 var resetGithub = document.getElementById('element-linkedin');
 
 
-function resetForm (){
+function resetForm() {
   document.getElementById('fill__form--itemscontainer').reset();
   resetCard();
 }
-function resetCard (){
+
+function resetCard() {
   resetName.innerHTML='Nombre Apellido';
   resetJob.innerHTML='Front-end developer';
   // las imagenes de la card y la pequeña del formulario
@@ -36,4 +38,5 @@ function resetCard (){
   resetGithub.href= '';
 
 }
+
 buttonReset.addEventListener('click', resetForm);
