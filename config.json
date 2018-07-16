@@ -11,6 +11,7 @@
 			"js/colapsable.js",
 			"js/main.js",
 			"js/design.js",
+			"js/localStorage.js",
 			"js/reset.js",
 			"js/cardicons.js",
 			"js/skills.js",
