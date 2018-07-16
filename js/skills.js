@@ -72,6 +72,6 @@ function transferabilitiesToCard () {
   }
 }
 
-for (var i = 0; abilitiesDropdown.length; i++) {
+for (var i = 0; i < abilitiesDropdown.length; i++) {
   abilitiesDropdown[i].addEventListener('change', transferabilitiesToCard);
 }
