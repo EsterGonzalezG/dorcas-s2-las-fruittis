@@ -44,26 +44,6 @@ function removeAbility(event) {
   parentBox.classList.add('fill__ability--jshidden');
 }
 
-// function transferAbilityToCard (event) {
-//   var guiltyElement = event.currentTarget;
-//   var abilitiesOptions = guiltyElement.getAttribute('.option');
-//
-//   if (guiltyElement.classList.contains('fill__input-mail')) {
-//     fillHref.href = 'mailto:' + guiltyElement.value;
-//   } else if (guiltyElement.classList.contains('fill__input-phone')){
-//     fillHref.href = 'tel: +34' + guiltyElement.value;
-//   } else if (guiltyElement.classList.contains('fill__input-linkedin')) {
-//     fillHref.href = 'https://www.linkedin.com/in/' + guiltyElement.value;
-//   } else {
-//     fillHref.href = 'https://github.com/' + guiltyElement.value;
-//   }
-// }
-//
-// mailInput.addEventListener('select', transferValueToHref);
-// phoneInput.addEventListener('select', transferValueToHref);
-// linkedinInput.addEventListener('select', transferValueToHref);
-// githubInput.addEventListener('select', transferValueToHref);
-
 addAbilityButton.addEventListener('click', addAbility);
 removeAbilityButton[0].addEventListener('click', removeAbility);
 removeAbilityButton[1].addEventListener('click', removeAbility);
