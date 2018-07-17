@@ -608,8 +608,8 @@
   font-family: "Merriweather", serif;
 }
 
-.bookmark {
-  border: 0.5px solid #d8d8d8;
+.border {
+  border-bottom: 0.5px solid #d8d8d8;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -757,6 +757,10 @@
 }
 
 .action__hiddenField {
+  display: none;
+}
+
+.skill__hidden--incard {
   display: none;
 }
 

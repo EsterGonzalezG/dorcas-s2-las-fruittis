@@ -6,7 +6,6 @@ var buttonTwitter = document.querySelector('.shares__twitter');
 var sharesUrl = document.querySelector('.shares__url');
 var loader = document.querySelector('.loader');
 var shares = document.querySelector('.shares');
-var cardForm = document.querySelector('.main__form');
 var nameForm = document.querySelector('.fill__input-name');
 var jobForm = document.querySelector('.fill__input-job');
 var phoneForm = document.querySelector('.fill__input-phone');
@@ -34,7 +33,7 @@ function createUrlCard () {
       linkedin: linkedinForm.value,
       github: githubForm.value,
       photo: photoFileReader.result,
-      skills: ['HTML', 'Sass', 'JavaScript'],
+      skills: getSkillsValue(),
     })
   })
     .then(function(response){
@@ -67,6 +66,15 @@ function getTypographyValue() {
     }
   }
   return parseInt(value);
+}
+
+function getSkillsValue() {
+  var value = [];
+  var skills = document.querySelectorAll('.fill__ability--js:not(.fill__ability--jshidden) select');
+  for(var i = 0; i < skills.length; i++) {
+    value.push(skills[i].value);
+  }
+  return value;
 }
 
 function setCardUrl(url) {

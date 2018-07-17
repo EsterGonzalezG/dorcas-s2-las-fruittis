@@ -1,5 +1,5 @@
-.bookmark {
-  border: 0.5px solid $colorHrBookmarks;
+.border{
+  border-bottom: 0.5px solid $colorHrBookmarks;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -117,5 +117,9 @@
 }
 
 .action__hiddenField {
+  display: none;
+}
+
+.skill__hidden--incard {
   display: none;
 }
