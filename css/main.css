@@ -760,6 +760,10 @@
   display: none;
 }
 
+.skill__hidden--incard {
+  display: none;
+}
+
 .loader {
   color: #e17334;
   font-size: 40px;

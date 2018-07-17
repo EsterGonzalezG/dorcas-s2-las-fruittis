@@ -12,6 +12,7 @@ var resetTelefon= document.getElementById('element-phone');
 var resetMail= document.getElementById('element-mail');
 var resetLinkedin = document.getElementById('element-linkedin');
 var resetGithub = document.getElementById('element-linkedin');
+var resetAbility= document.querySelectorAll('.skilltext');
 
 
 function resetForm() {
@@ -36,7 +37,10 @@ function resetCard() {
   resetMail.href = '';
   resetLinkedin.href= '';
   resetGithub.href= '';
-
+  // cambiar Habilidades
+  for (var i = 0; i < resetAbility.length; i++) {
+    resetAbility[i].innerHTML= '';
+  }
 }
 
 buttonReset.addEventListener('click', resetForm);
