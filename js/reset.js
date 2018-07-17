@@ -23,7 +23,7 @@ function resetCard() {
   resetName.innerHTML='Nombre Apellido';
   resetJob.innerHTML='Front-end developer';
   // las imagenes de la card y la pequeña del formulario
-  resetPhoto.style.backgroundImage = 'url("https://place-hold.it/240x200/red")';
+  resetPhoto.style.backgroundImage = 'url("/images/thefruittis.jpg")';
   resetMiniPhoto.style.backgroundImage= 'url("http://placehold.it/29x29/ffffff/ffffff") ';
   //  cambiar los colores
   resetColor2.classList.remove('viewfinder--blue', 'viewfinder--red', 'viewfinder--grey');
