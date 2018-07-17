@@ -45,7 +45,7 @@ githubInputLocal.addEventListener('keyup',guardarCardLocal);
 //Faltan por poner las Habilidades y la fotos
 
 function guardarCardLocal() {
-if (!localStorage.getItem('Card')) {
+  if (!localStorage.getItem('Card')) {
     localCard ={
       palette:'',
       typography:'',
@@ -62,7 +62,7 @@ if (!localStorage.getItem('Card')) {
     localCard = JSON.parse(localStorage.getItem('Card'));
   }
 
-  localCard.palette=buttonsColors.value;/*ojo que hay que hacer el for para saber el value*/
+  localCard.palette=value;
   localCard.typography=buttonsText.value;/*ojo que hay que hacer el for para saber el value*/
   localCard.name = nameInputLocal.value;
   localCard.job = jobInputLocal.value;
@@ -81,6 +81,7 @@ if (!localStorage.getItem('Card')) {
 }
 function recuperarLocalCard() {
   localCard = JSON.parse(localStorage.getItem('Card'));
+  recuperarButton();
   nameCard.innerHTML=localCard.name;
   jobCard.innerHTML=localCard.job;
   nameInputLocal.value = localCard.name;
@@ -103,12 +104,32 @@ function recuperarLocalCard() {
 }
 recuperarLocalCard();
 
-// guardarRadios(){
-// var button_value;
-// for(var i = 0; i < buttonsColors.length; i++){
-//     if(buttonsColors[i].checked){
-//         button_value = buttonsColors[i].value;
-//     }
-// }
-// localStorage.setItem('buttonRadioCard', JSON.stringify(buttonChecked));
-// }
+var radiosG = document.querySelectorAll('.radiosGroup');
+var rad = document.querySelectorAll('.radio');
+var value;
+for(var i = 0; i < radiosG.length; i++) {
+  rad[i].addEventListener('change', valorButonRadio);
+}
+function valorButonRadio() {
+
+  //bottonColors=getPaletteValue();
+  //console.log(bottonColors);
+  for(var i = 0; i < rad.length; i++) {
+    if (rad[i].checked) {
+      value = rad[i].value;
+      break;
+    }
+  }
+  guardarCardLocal();
+}
+function recuperarButton() {
+
+  var butonpaleta=parseInt(localCard.palette);
+  if(butonpaleta===1){
+    document.getElementById('blue').click();
+  }else if(butonpaleta===2){
+    document.getElementById('red').click();
+  }else if (butonpaleta===3){
+    document.getElementById('grey').click();
+  }
+}
