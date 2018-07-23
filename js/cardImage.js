@@ -6,7 +6,6 @@ const inputHidden = document.querySelector('#img-selector');
 const imageCard = document.querySelector('.viewfinder__photo');
 const miniImage = document.querySelector('.fill__input--miniimg');
 let urlPhoto;
-let miniPhoto;
 
 const getImage = (event) => {
   const myFile = event.currentTarget.files[0];
@@ -16,9 +15,8 @@ const getImage = (event) => {
 
 const writeImage = () => {
   urlPhoto = 'url(' + fr.result + ')';
-  miniPhoto = 'url(' + fr.result + ')';
-  imageCard.style.backgroundImage = 'url(' + fr.result + ')';
-  miniImage.style.backgroundImage = 'url(' + fr.result + ')';
+  imageCard.style.backgroundImage = urlPhoto;
+  miniImage.style.backgroundImage = urlPhoto;
   // guardarCardLocal();
 };
 
