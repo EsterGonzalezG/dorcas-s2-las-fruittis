@@ -7,17 +7,16 @@ const imageCard = document.querySelector('.viewfinder__photo');
 const miniImage = document.querySelector('.fill__input--miniimg');
 let urlPhoto;
 
-const getImage = (event) => {
-  const myFile = event.currentTarget.files[0];
-  fr.addEventListener('load', writeImage);
-  fr.readAsDataURL(myFile);
-};
-
 const writeImage = () => {
   urlPhoto = 'url(' + fr.result + ')';
   imageCard.style.backgroundImage = urlPhoto;
   miniImage.style.backgroundImage = urlPhoto;
   // guardarCardLocal();
+};
+const getImage = (event) => {
+  const myFile = event.currentTarget.files[0];
+  fr.addEventListener('load', writeImage);
+  fr.readAsDataURL(myFile);
 };
 
 const fakeFileClick = () => {
