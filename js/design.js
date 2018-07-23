@@ -1,20 +1,16 @@
 'use strict';
-
-var cardContainer = document.querySelector('.viewfinder');
-var radiosGroup = document.querySelectorAll('.radiosGroup');
-var radioRed = document.querySelector('.radio--red');
-var radioGrey = document.querySelector('.radio--grey');
-var radios = document.querySelectorAll('.radio');
-var radioComic = document.querySelector('.radio--comic');
-var radioMontserrat = document.querySelector('.radio--montserrat');
-
-function init() {
-  for(var i = 0; i < radiosGroup.length; i++) {
-    radios[i].addEventListener('click', setStyles);
+const cardContainer = document.querySelector('.viewfinder');
+const radioRed = document.querySelector('.radio--red');
+const radioGrey = document.querySelector('.radio--grey');
+const radios = document.querySelectorAll('.radio');
+const radioComic = document.querySelector('.radio--comic');
+const radioMontserrat = document.querySelector('.radio--montserrat');
+const init = () => {
+  for(const element of radios) {
+    element.addEventListener('click', setStyles);
   }
-}
-
-function setStyles() {
+};
+const setStyles = () => {
   resetColor();
   if (radioRed.checked) {
     cardContainer.classList.add('viewfinder--red');
@@ -30,10 +26,8 @@ function setStyles() {
   } else {
     cardContainer.classList.add('ubuntu');
   }
-}
-
-function resetColor() {
+};
+const resetColor = () => {
   cardContainer.classList.remove('viewfinder--red', 'viewfinder--grey', 'viewfinder--blue', 'comic', 'montserrat', 'ubuntu');
-}
-
+};
 init();
