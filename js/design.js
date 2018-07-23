@@ -5,10 +5,8 @@ const radioGrey = document.querySelector('.radio--grey');
 const radios = document.querySelectorAll('.radio');
 const radioComic = document.querySelector('.radio--comic');
 const radioMontserrat = document.querySelector('.radio--montserrat');
-const init = () => {
-  for(const element of radios) {
-    element.addEventListener('click', setStyles);
-  }
+const resetColor = () => {
+  cardContainer.classList.remove('viewfinder--red', 'viewfinder--grey', 'viewfinder--blue', 'comic', 'montserrat', 'ubuntu');
 };
 const setStyles = () => {
   resetColor();
@@ -27,7 +25,9 @@ const setStyles = () => {
     cardContainer.classList.add('ubuntu');
   }
 };
-const resetColor = () => {
-  cardContainer.classList.remove('viewfinder--red', 'viewfinder--grey', 'viewfinder--blue', 'comic', 'montserrat', 'ubuntu');
+const init = () => {
+  for(const element of radios) {
+    element.addEventListener('click', setStyles);
+  }
 };
 init();

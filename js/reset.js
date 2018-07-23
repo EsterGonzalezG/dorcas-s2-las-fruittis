@@ -13,13 +13,6 @@ const resetMail = document.getElementById('element-mail');
 const resetLinkedin = document.getElementById('element-linkedin');
 const resetGithub = document.getElementById('element-linkedin');
 const resetAbility = document.querySelectorAll('.skilltext');
-
-
-const resetForm = () => {
-  document.querySelector('.main__form').reset();
-  resetCard();
-};
-
 const resetCard = () => {
   resetName.innerHTML = 'Nombre Apellido';
   resetJob.innerHTML = 'Front-end developer';
@@ -43,5 +36,12 @@ const resetCard = () => {
     ability.innerHTML = '';
   }
 };
+
+const resetForm = () => {
+  document.querySelector('.main__form').reset();
+  resetCard();
+};
+
+
 
 buttonReset.addEventListener('click', resetForm);

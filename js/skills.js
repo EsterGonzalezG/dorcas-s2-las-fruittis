@@ -52,7 +52,7 @@ const addAbility = () => {
 const removeAbility= (event) => {
   const parentBox = event.currentTarget.parentElement;
   parentBox.classList.add('fill__ability--jshidden');
-}
+};
 
 //Las llamadas a las funciones anteriores mediante click
 
