@@ -28,7 +28,7 @@
 }
 
 .viewfinder {
-  background-image: url("/images/fruit-13.jpg");
+  background-image: url("../images/fruit-13.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -45,7 +45,7 @@
 }
 
 .viewfinder__photo {
-  background-image: url("/images/fruittis.jpg");
+  background-image: url("../images/fruittis.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
